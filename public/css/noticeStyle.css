@@ -17,6 +17,7 @@ a {
 }
 
 .board_wrap {
+    padding-top: 40px;
     width: 1000px;
     margin: 100px auto;
 }
@@ -38,7 +39,6 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-    text-align: center;
     font-size: 0;
 }
 
@@ -57,39 +57,42 @@ a {
 }
 
 .bt_wrap a.prev {
+    text-align: center;
+    box-sizing: border-box;
     display: inline-block;
-    padding: 5px 15px !important;
-    height: auto !important;
+    padding: 5px 15px 5px 30px;
     font-size: 17px;
     background-color: #fff;
-    background-image: none;
+    background: url('../images/notice/arrowL.png') no-repeat 20px center/10px 12px;
+    width: 100px;
     border: 1px solid #ddd;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 .bt_wrap a.next {
+    text-align: center;
+    box-sizing: border-box;
     display: inline-block;
-    padding: 5px 15px !important;
-    height: auto !important;
+    padding: 5px 30px 5px 15px;
     font-size: 17px;
     background-color: #fff;
-    background-image: none;
+    background: url('../images/notice/arrowR.png') no-repeat 70px center/10px 12px;;
+    width: 100px;
     border: 1px solid #ddd;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 .bt_wrap a.on {
+    text-align: center;
     display: inline-block;
-    padding: 5px 15px !important;
-    height: auto !important;
+    padding: 5px 15px;
+    height: auto;
     font-size: 17px;
     background-color: #fff;
     background-image: none;
+    width: 60px;
     border: 1px solid #ddd;
     border-radius: 2px;
-    cursor: pointer;
 }
 
 .board_list {
@@ -243,10 +246,21 @@ a {
 }
 
 .board_view .cont {
+    max-width: 100%; /* 부모 요소의 최대 너비에 맞춤 */
+    height: auto; /* 세로 비율을 유지 */
+    display: block;
+    margin: 0 auto; /* 가운데 정렬을 위해 */
     padding: 30px 0;
     border-bottom: 1px solid #000;
     line-height: 160%;
     font-size: 1.4rem;
+}
+
+.board_view .cont img {
+    max-width: 100%; /* 이미지를 부모 요소의 최대 너비에 맞춤 */
+    height: auto; /* 이미지의 세로 비율을 유지 */
+    display: block; /* 이미지를 블록 요소로 설정 */
+    margin: 0 auto; /* 이미지를 가운데 정렬을 위해 */
 }
 
 .board_write {
