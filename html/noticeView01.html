@@ -1,11 +1,17 @@
-
-<html lang="ko"><head>
+<html lang="ko">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공지사항</title>
+    
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/compose_header.css">
     <link rel="stylesheet" href="../public/css/notice.css">
+
+    <script src="../public/js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+    <div id="header"></div>
     <div class="board_wrap">
         <div class="board_title">
             <strong>공지사항</strong>
@@ -30,17 +36,30 @@
                 </div>
                 <div class="cont">
                     <p style="text-align: center;">
-                        <img src="../images/notice/validity.jpg" alt="210811 쿠폰 적립 유효기간 안내문.jpg">
+                        <img src="../public/images/notice/noticeOfExpirationDate.jpg" alt="210811 쿠폰 적립 유효기간 안내문.jpg">
                     </p>
                     <p>&nbsp;</p>
                 </div>
             </div>
             <div class="bt_wrap">
-                <a href="" class="prev">PREV</a>
-                <a href="" class="next">NEXT</a>
-                <a href="../html/notice.html" class="on">목록</a>
+                <div>
+                    <a href="history.back()" class="prev">PREV</a>
+                    <a href="history.forward()" class="next">NEXT</a>
+                </div>
+                <div>
+                    <a href="../html/notice.html" class="on">목록</a>
+                </div>
             </div>
+
         </div>
     </div>
+    <div id="footer"></div>
 
-</body></html>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("compose_header.html");
+        });
+    </script>
+</body>
+
+</html>

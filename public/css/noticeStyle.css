@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -36,6 +35,8 @@ a {
 }
 
 .bt_wrap {
+    display: flex;
+    justify-content: space-between;
     margin-top: 30px;
     text-align: center;
     font-size: 0;
@@ -152,6 +153,7 @@ a {
 }
 
 .board_page a {
+    text-align: center;
     display: inline-block;
     width: 32px;
     height: 32px;
