@@ -16,7 +16,6 @@
    
 }
 
-
 /* slick */
 
 
@@ -36,15 +35,14 @@
     overflow: hidden;    
   }
 
-  .slide_wrap{
+.slide_wrap{
     width: 300%; /*ul3개 flex 묶여있음. 간격조절 width*/   
     display: flex;       
     justify-content: space-between;
-  }
+}
 
 .slide_wrap ul{          
     width: 100%;     
-  
     display: flex;       
     justify-content: space-between;   
     
@@ -54,7 +52,6 @@
     width: 23.5%;           
     text-align: center;       
 }
-
 
 .compose_sns li img {
     width: 100%;
@@ -71,7 +68,7 @@
     bottom: 8%;
     border-radius: 50%;
     box-shadow: 1px 1px 5px 0 #00000083;
-   }
+}
 
 /* sns이전다음버튼 */
 .prev_next {

@@ -42,9 +42,6 @@ header {
     box-sizing: border-box;
 }
 
-
-
-
 .header_wrap nav .gnb>li{
     position: relative;
     text-align: center;
@@ -119,7 +116,6 @@ header {
     padding-bottom: 4px;
     width: 20px;
 }
-
 
 .gnb_bg {
     display: none;
