@@ -16,7 +16,7 @@ https://docs.google.com/spreadsheets/d/1E7Zdu8rgUF_nO5uU9H8PPmIpPQ5T5-1rljDWf0Yy
 매장 찾기는 서울지역만 진행<br>
 KaKao Maps API 이용하여 진행 ( + node.js)<br>
 * 개인 발급 Key는 올라가지 않도록 주의!<br>
-<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="개인 발급 Key 입력 부분" crossorigin="anonymous"></script><br>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="개인 발급 Key 입력 부분" crossorigin="anonymous"></script><br><br>
 * 작업 시작 전 pull 받고 개인 브랜치에 꼭 작업 내용 commit 및 push할 것 !! <br>
 (충돌 싫어요 정말 싫어요 충돌나면 너무 슬퍼 혹시 문제가 생긴다면 해당 부분 알려 주세요)
 <br><br>
