@@ -1,6 +1,6 @@
 # compose_coffee
 ComeposeCoffee Site Renewal(4조 팀 프로젝트)<br>
-프론트 수업을 배우며 HTML, CSS, JavaScript, jQuery을 사용하여 작업을 진행하고 있습니다.
+프론트를 배우며 HTML, CSS, JavaScript, jQuery을 사용하여 작업을 진행하고 있습니다.
 <br><br>
 기존 ComeposeCoffee Site를 Renewal하는 프로젝트로써<br>
 참고 사이트로 더벤티, 달콤커피, 스타벅스, 폴바셋 4개를 참고 하였습니다.

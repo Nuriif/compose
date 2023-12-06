@@ -5,120 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>컴포즈커피_리뉴얼</title>
     <link rel="icon" href="../public/images/icon/favicon.ico">
-
     <link rel="stylesheet" href="../public/css/reset.css">
 
-     <!--문희-->
-    <link rel="stylesheet" href="../public/css/compose_main_mh.css">
-    <link rel="stylesheet" href="../public/css/slick.css">
-    <link rel="stylesheet" href="../public/css/slick-theme.css">
-    
-
-    <script src="js/jquery-3.7.1.min.js"></script>
     <!--문희-->
-    <script src="js/slick.js"></script>    
+    <link rel="stylesheet" href="../public/css/moon.css">
+
+    <script src="../public/js/jquery-3.7.1.min.js"></script>
+    <!--문희-->
+    <script src="../public/js/slick.js"></script>
     <script>
-         $(document).ready(function(){
-            $('.element').slick();
+        $(document).ready(function () {
+            $('.slider').slick({
+                //   autoplay: true,
+                autoplaySpeed: 1000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            });
         });
     </script>
-    
+
 </head>
 
 <body>
     <div class="wrap">
         <!--header-->
-        <header id="header"></header>
-        <script>
-            $(function(){
-                $('#header').load('compose_header.html');
-            })
-        </script>
-        <main class="main">
+        <div id="header">
+            <script>
+                $(function () {
+                    $('#header').load('compose_header.html');
+                })
+            </script>
+        </div>
+        <main id="main">
             <!-- 문희_메인(sns) -->
-            <div class="element" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-                <div><h3>1</h3></div>
-                <div><h3>2</h3></div>
-                <div><h3>3</h3></div>
-                <div><h3>4</h3></div>
-                <div><h3>5</h3></div>
-                <div><h3>6</h3></div>
-              </div>
-            
-         
-
-
-
             <section class="compose_sns">
                 <h2>컴포즈커피 SNS</h2>
-                <div class="sns_mask">
-                    <div class="slide_wrap">
-                        <ul class="slide">
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns9.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns10.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns11.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns12.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                        </ul>
-                        <ul class="slide">
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns1.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns2.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns3.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns4.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                        </ul>
-                        <ul class="slide">
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns5.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns6.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns7.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                            <li>
-                                <a href="#none"> <img src="../public/images/sns/conpose_sns8.jpg" alt="">
-                                    <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a>
-                            </li>
-                        </ul>
-
-
-                    </div>
+                <div class="slider">
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns1.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns2.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns3.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns4.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns5.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns6.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns7.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns8.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns9.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
+                    <div> <a href="#none"> <img src="../public/images/sns/conpose_sns10.jpg" alt="">
+                            <img src="../public/images/sns/icon/insta-icon.png" alt="인스타바로가기"></a></div>
                 </div>
-                <div class="prev_next">
-                    <p class="prev"><a href="#none">이전</a></p>
-                    1/4
-                    <p class="next"><a href="#none">다음</a></p>
-                </div>
-            
+            </section>
         </main>
-
 
         <footer> </footer>
     </div>
