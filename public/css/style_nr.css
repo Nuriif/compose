@@ -231,6 +231,24 @@
 }
 
 
+/* menu */
+.sub_menu_main{
+    position: relative;
+    top: 100px;
+    line-height: 1;
+}
+.sub_menu_main ul{
+    display: flex;
+}
+.sub_menu_main ul:not(:first-of-type){
+    display: none;
+}
+
+.sub_menu_main .dpth1{
+    margin-top: 20px;
+    justify-content: center;
+    gap: 10%;
+}
 
 
 
