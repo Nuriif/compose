@@ -4,7 +4,7 @@ ComeposeCoffee Site Renewal(4조 팀 프로젝트)<br>
 <br><br>
 기존 ComeposeCoffee Site를 Renewal하는 프로젝트로써<br>
 참고 사이트로 더벤티, 달콤커피, 스타벅스, 폴바셋 4개를 참고 하였습니다.
-<br>
+<br><br>
 팀원들에게 공유하는 내용:<br>
 작업 현황은 팀원으로 공유된 구글 스프레드 시트를 참고해주세요<br>
 https://docs.google.com/spreadsheets/d/109Fw6WaKPWzMtm5ufYxK-brHV26H3AaQo6xyOc51nwg/edit#gid=902353634
