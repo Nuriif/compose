@@ -6,7 +6,7 @@
 
 
 /* --------------------------헤더*/
-header {
+#header {
     z-index: 500;
     position: fixed;
     width: 100%;
@@ -20,6 +20,7 @@ header {
     padding: 0 5%;
     align-items: center; 
     background: #fff;
+    margin-bottom: 100px;
 }
 
 .header_wrap .logo {
