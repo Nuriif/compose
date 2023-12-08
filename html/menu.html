@@ -1,0 +1,289 @@
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴포즈커피</title>
+
+    <!-- favicon-->
+    <link rel="icon" href="../public/images/icon/favicon.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/moon.css">
+    <link rel="stylesheet" href="../public/css/style_nr.css">
+
+    <!-- jquery -->
+    <script src="../public/js/jquery-3.7.1.min.js"></script>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <script>
+        $(document).ready(function(){
+            
+            // tab menu
+            $(".sub_menu_main .menu_1dpth li").hover(function(){
+                $(this).css('border-bottom','3px solid #f0d041')
+            }, function(){
+                $(this).css('border-bottom', '3px solid transparent')
+            });
+            $(".sub_menu_main .menu_1dpth li").click(function(){
+                $(this).css('border-bottom','3px solid #f0d041')
+            });
+
+
+
+            $(".dpth2_season").css('display', 'flex');
+            $("#tab_season").click(function(){
+                $(".menu_2dpth ul").not(".dpth2_season").css('display', 'none');
+                $(".dpth2_season").css('display', 'flex');
+            });
+            /*
+            $("#tab_all").click(function(){
+                $(".menu_2dpth ul").not(".dpth2_all").css('display', 'none');
+                $(".dpth2_all").css('display', 'flex');
+            });*/
+            $("#tab_coffee").click(function(){
+                $(".menu_2dpth ul").not(".dpth2_coffee").css('display', 'none');
+                $(".dpth2_coffee").css('display', 'flex');
+            });
+            $("#tab_noncoffee").click(function(){
+                $(".menu_2dpth ul").not(".dpth2_noncoffee").css('display', 'none');
+                $(".dpth2_noncoffee").css('display', 'flex');
+            });
+            $("#tab_desert").click(function(){
+                $(".menu_2dpth ul").not(".dpth2_desert").css('display', 'none');
+                $(".dpth2_desert").css('display', 'flex');
+            });
+            $("#tab_product").click(function(){
+                $(".menu_2dpth ul").not(".dpth2_product").css('display', 'none');
+                $(".dpth2_product").css('display', 'flex');
+            });
+
+
+            // 
+            $(".sub_menu_main .menu_list li").hover(function(){
+                $(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
+            }, function(){
+                $(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
+            });
+
+            // menu-2dpth addClass
+            $(".menu_2dpth li").click(function(){
+                var activeTab = $(this).attr('data-tab');
+                $(".menu_2dpth li").removeClass("on");
+                $(".menu_2dpth li").eq(0).addClass("on");
+                $(".menu_tab_cont").removeClass("on");
+                $(this).addClass("on");
+                $("#" + activeTab).addClass("on");
+            });
+
+
+            $("#header").load("compose_header.html");
+        });
+    </script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+
+    <main class="sub_menu_main">
+        <ul class="menu_1dpth">
+            <li><a href="#" id="tab_season">시즌메뉴</a></li>
+            <!-- <li><a href="#" id="tab_all">전체메뉴</a></li> -->
+            <li><a href="#" id="tab_coffee">커피</a></li>
+            <li><a href="#" id="tab_noncoffee">음료</a></li>
+            <li><a href="#" id="tab_desert">디저트</a></li>
+            <li><a href="#" id="tab_product">MD 상품</a></li>
+        </ul>
+        <div class="menu_2dpth">
+            <ul class="dpth2_season">
+                <li class="on" data-tab="season"><a href="#">시즌메뉴</a></li>
+            </ul>
+            <!-- <ul class="dpth2_all">
+                <li><a href="#">전체메뉴</a></li>
+            </ul> -->
+            <ul class="dpth2_coffee">
+                <li class="on" data-tab="coffee"><a href="#coffee">커피</a></li>
+                <li data-tab="coffee_dutch"><a href="#coffee_dutch">더치커피</a></li>
+                <li data-tab="coffee_decaf"><a href="#coffee_decaf">디카페인 커피</a></li>
+            </ul>
+            <ul class="dpth2_noncoffee">
+                <li class="on"><a href="#">라떼</a></li>
+                <li><a href="#">주스</a></li>
+                <li><a href="#">스무디</a></li>
+                <li><a href="#">티</a></li>
+                <li><a href="#">에이드</a></li>
+                <li><a href="#">프라페</a></li>
+                <li><a href="#">밀크쉐이크</a></li>
+            </ul>
+            <ul class="dpth2_desert">
+                <li class="on"><a href="#">디저트</a></li>
+            </ul>
+            <ul class="dpth2_product">
+                <li class="on"><a href="#">MD 상품</a></li>
+            </ul>
+        </div>
+        <div class="menu_list">
+            <ul id="coffee" class="menu_tab_cont">
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소1</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소2</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소3</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소4</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소5</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소6</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소7</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소8</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+            </ul>
+            <ul id="coffee_dutch" class="menu_tab_cont">
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+            </ul>
+            <ul id="coffee_decaf" class="menu_tab_cont">
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="img_wrap">
+                            <img src="../public/images/menu/coffee_01.jpg" alt="">
+                        </div>
+                        <p>에스프레소</p>
+                        <p>Espresso</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+</body>
+</html>
