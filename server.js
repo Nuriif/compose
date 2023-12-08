@@ -11,26 +11,26 @@ var app = express();
   ex) 만약 notice.css 파일을 불러오고자 하는 경우 다음과 같이 작성
   <link rel="stylesheet" href="/css/notice.css">
 */
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
 /*
   url 연결 목록 start
 */
-app.use('/', express.static(path.join(__dirname, 'html')));
-app.use('/findStore', express.static(path.join(__dirname, '/html/store.html')));
-app.use('/noticeMain', express.static(path.join(__dirname, '/html/noticeList.html')));
+app.use("/", express.static(path.join(__dirname, "html")));
+app.use("/findStore", express.static(path.join(__dirname, "/html/store.html")));
+app.use("/noticeMain", express.static(path.join(__dirname, "/html/noticeList.html")));
 /*
   url 연결 목록 end
 */
 
 // json 데이터 조회
-app.get('/data', (req, res) => {
+app.get("/data", (req, res) => {
   try {
-    const jsonData = JSON.parse(fs.readFileSync(__dirname + '/public/json/composeStore.json', 'utf8'));
+    const jsonData = JSON.parse(fs.readFileSync(__dirname + "/public/json/composeStore.json", "utf8"));
     res.json(jsonData);
   } catch (err) {
     console.error(err);
-    res.status(500).send('서버 오류');
+    res.status(500).send("서버 오류");
   }
 });
 
