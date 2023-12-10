@@ -15,7 +15,7 @@ body {
     line-height: 2;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: inherit;
     font-weight: normal;
     font-size: 13px;
@@ -37,6 +37,10 @@ img {
     border: none;     
     vertical-align: top;
 
+}
+
+blockquote, q {
+	quotes: none;
 }
 
 .hide {
