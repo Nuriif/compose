@@ -685,28 +685,62 @@ button {
     padding: 5% 0;
     margin: auto;
 }
-.interview_wrap{
-    position: relative;
-    background: #dddddd;      
+.interview_wrap{  
+    min-width: 800px;
+    background: #dddddd;
+        
 }
-.interview1{
-    position: relative;
+.interview_l{
+    position: relative;    
+    width: 100%;
     height: 300px;   
-    background: pink;     
+    background: pink;               
 }
-.interview_l{         
-    background:url(../images/franchise/speech_bubble_l.svg) center no-repeat;  
-    width: 60%;        
-    padding: 5% 5% 10%;       
-    margin-left: 240px; }
 
-.store{
+.interview_l p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    max-width: 90%;
+     
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;  
+    padding: 5% 5%;
+    box-sizing: border-box;
+    background: url(../images/franchise/speech_bubble_l.svg) right no-repeat;
+    background-color: red;
+    background-size: 100%;
+    
+    
+}
+
+
+.interview_l span{    
+    width: 100%;
+    height: 35px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    background: url(../images/logo/compose_logo_emblem_b.svg) no-repeat right;      
+    background-position-x: 100%;
+    background-size: 35px;    
+    padding: 0 1% 0 0;    
+    box-sizing: border-box;
+  
+}
+
+
+
+.interview_l .store{
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 200px;
-    height: 200px;
+    width: 25%;   
     background: rebeccapurple;
+    border-radius: 20px;
 }
 .interview_r{   
       
@@ -719,7 +753,7 @@ button {
 }
 
 .franchise_step_card{   
-    min-width: 670px;      
+    min-width: 800px;      
     display: flex;   
     justify-content: space-between; 
     flex-wrap: wrap;       
