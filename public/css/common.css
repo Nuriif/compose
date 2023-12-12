@@ -36,24 +36,30 @@
 /* fotter */
 #footer {
   background: #1e2029;
-  position: fixed;
   width: 100%;
-  bottom: 0;
-  z-index: 1;
-}
-
-.footer_wrap {
-  width: 100%;
-  margin: auto;
-  padding-bottom: 30px;
-}
-
-.footer_bottom_cont1,
-.footer_bottom_cont2 {
+  margin-top: 10%;
+  padding: 20px 0;
   display: flex;
+}
+
+.footer_info {
+  padding-left: 20px;
+}
+
+.footer_info p {
+  text-align: start;
+}
+
+.footer_term {
+  display: flex;
+  text-align: start;
+}
+
+.footer_term p {
+  margin-left: 30px;
 }
 
 .bar {
   margin-right: 20px;
-  color: #fff;
+  color: rgb(255, 255, 255);
 }
