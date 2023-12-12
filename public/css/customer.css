@@ -96,6 +96,12 @@ h2 {
   border-bottom: 1px solid #dddddd75;
 }
 
+.customer_content:hover {
+  background-color: #fff4d4;
+  color: #000000;
+  font-weight: bold;
+}
+
 .customer_content .num,
 .writer,
 .date,
