@@ -685,33 +685,127 @@ button {
     padding: 5% 0;
     margin: auto;
 }
-.interview_wrap{
-    position: relative;
-    background: #dddddd;      
-}
-.interview1{
-    position: relative;
-    height: 300px;   
-    background: pink;     
-}
-.interview_l{         
-    background:url(../images/franchise/speech_bubble_l.svg) center no-repeat;  
-    width: 60%;        
-    padding: 5% 5% 10%;       
-    margin-left: 240px; }
 
-.store{
+.interview_bg{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/franchise/yellow_bg-03.svg);  
+    opacity: 0.05; 
+    height: 48%;
+    z-index: -3;
+}
+
+.interview_wrap{
+    min-width: 800px;     
+    margin: 50px 0 100px;   
+}
+
+.interview_l{         
+    position: relative;    
+    width: 100%;
+    height: 320px;   
+    margin-bottom: 30px;
+}
+
+.bubble_l_wrap{         
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;  
+    align-items: flex-end;      
+}
+
+.bubble_l_wrap p{
+    position: absolute;
+    padding: 0 5%;
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 90%;              
+}
+
+.bubble_l_wrap > img{
+    width: 75%;
+}
+
+.bubble_l_wrap span{    
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    background: url(../images/logo/compose_logo_emblem_b.svg) right 0/25px no-repeat;      
+    padding: 0 1% 15px 0;    
+    box-sizing: border-box;     
+}
+
+.interview_l .store{
+    z-index: -1;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 200px;
-    height: 200px;
-    background: rebeccapurple;
+    width: 230px;   
+    height: 230px;    
+    overflow: hidden;
+    border-radius: 110px;    
 }
-.interview_r{   
-      
-    padding: 5% 5% 10%;
-    background:url(../images/franchise/speech_bubble_r.svg) center no-repeat; 
+
+.interview_l .store img{   
+    width: 105%;    
+}
+
+.interview_r{
+    position: relative;    
+    width: 100%;
+    height: 320px;     
+    margin-bottom: 30px;            
+}
+
+.bubble_r_wrap{         
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;  
+    align-items: flex-start;      
+}
+
+.bubble_r_wrap p{
+    position: absolute;
+    padding: 0 5%;
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 90%;              
+}
+
+.bubble_r_wrap > img{
+    width: 75%;
+}
+
+.bubble_r_wrap span{    
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    background: url(../images/logo/compose_logo_emblem_b.svg) right 0/25px no-repeat;      
+    padding: 0 1% 15px 0;    
+    box-sizing: border-box;     
+}
+
+.interview_r .store{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 215px;    
+    height: 215px;   
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.interview_r .store img{
+    width: 110%;  
 }
 
 .franchise_step{
