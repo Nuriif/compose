@@ -645,3 +645,55 @@ h2 {
 }
 
 /* 문희-프랜차이즈 info  !!end!!*/
+
+
+/* 문희-회원가입 */
+.join_wrap{
+    width: 100%;
+    margin: auto;
+}
+.join_wrap fieldset{
+    border: none;
+}
+.join_wrap .title{
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+.join_wrap>form>fieldset>div{
+    margin-bottom: 25px;
+}
+.join_wrap label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.join_wrap input{
+    font-size: 15px;
+    border: 1px solid #ddd;
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;   
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+::placeholder{
+    color: #bbbbbbd5;   
+    font-size: 15px;    
+}
+#charLimitMessage{ 
+    font-size: 13px;
+    color: rgb(245, 39, 24);
+    display: none;
+    text-align: left;
+    padding-left: 13px;
+}
+
+
+
+
+
+
+
+/* 문희-회원가입 !!end!! */
