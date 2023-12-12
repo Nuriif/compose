@@ -1,91 +1,108 @@
-
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>컴포즈커피</title>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>컴포즈커피 - APP</title>
+
     <!-- favicon-->
-    <link rel="icon" href="../public/images/icon/favicon.ico">
+    <link rel="icon" href="../public/images/icon/favicon.ico" />
 
     <!-- css -->
-    <link rel="stylesheet" href="../public/css/reset.css">
-    <link rel="stylesheet" href="../public/css/compose_header.css">
-    <link rel="stylesheet" href="../public/css/style_nr.css">
+    <link rel="stylesheet" href="../public/css/style_nr.css" />
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
-    
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <script>
-        $(document).ready(function(){
-            $(".sub_app_main .cont2 .box_4").hover(function(){
-                $(this).css('border', '1px solid transparent').css('box-shadow', '0 0 0 3px inset #f0d041');
-            }, function(){
-                $(this).css('box-shadow', 'none').css('border', '1px solid #ccc');
-            });
 
-            $("#header").load("compose_header.html");
-        });
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      $(document).ready(function () {
+        $(".sub_app_main .cont2 .box_4").hover(
+          function () {
+            $(this).css("border", "1px solid transparent").css("box-shadow", "0 0 0 3px inset #f0d041");
+          },
+          function () {
+            $(this).css("box-shadow", "none").css("border", "1px solid #ccc");
+          }
+        );
+
+        $("#header").load("compose_header.html");
+
+        $("#footer").load("compose_footer.html");
+      });
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header"></header>
 
     <main class="sub_app_main">
-        <section>
-            <div class="cont1">
-                <h2 class="hide">컴포즈커피 앱 소개</h2>
-                <div class="text_box">
-                    <h3 class="sub_title">Compose App</h3>
-                    <div class="text_wrap">
-                        <h4>더 편리한 컴포즈 커피 앱</h4>
-                        <p>지금 바로 컴포즈커피 app을 통해<br>다향한 이벤트와 멤버십 혜택을 만나보세요</p>
-                    </div>
-                    <div class="img_wrap">
-                        <a target="_blank" href="https://apps.apple.com/kr/app/%EC%BB%B4%ED%8F%AC%EC%A6%88%EC%BB%A4%ED%94%BC/id1543112499"><img src="../public/images/appstore/app-store.png" alt="앱스토어로 이동" title="앱스토어로 이동"></a>
-                        <a target="_blank" href="https://play.google.com/store/apps/details?id=kr.co.posbank.compose"><img src="../public/images/appstore/google-store.png" alt="구글스토어로 이동" title="구글스토어로 이동"></a>
-                    </div>
-                </div>
-                <img src="../public/images/appstore/sub_appstore.png" alt="">
+      <section>
+        <div class="cont1">
+          <h2 class="hide">컴포즈커피 앱 소개</h2>
+          <div class="text_box">
+            <h3 class="sub_title">Compose App</h3>
+            <div class="text_wrap">
+              <h4>더 편리한 컴포즈 커피 앱</h4>
+              <p>지금 바로 컴포즈커피 app을 통해<br />다향한 이벤트와 멤버십 혜택을 만나보세요</p>
             </div>
-            <div class="cont2">
-                <h2 class="hide">컴포즈커피 멤버십 소개</h2>
-                <div class="title_box">
-                    <h3 class="sub_title">Compose Membership</h3>
-                    <p>더 다양한 혜택 컴포즈 커피 앱</p>
-                </div>
-                <div class="box_4_wrap">
-                    <div class="box_4">
-                        <h4>주문하기</h4>
-                        <img src="../public/images/appstore/order.png" alt="">
-                        <p>가까운 매장과 나만의 메뉴 설정으로 더 빠르고 쉽게 주문이 가능합니다</p>
-                    </div>
-                    <div class="box_4">
-                        <h4>쿠폰/스탬프</h4>
-                        <img src="../public/images/appstore/stamp.png" alt="">
-                        <p>스탬프 10개 적립 시 1500원 할인 쿠폰이 발행됩니다 (매장 별 적립)</p>
-                    </div>
-                    <div class="box_4">
-                        <h4>주문내역</h4>
-                        <img src="../public/images/appstore/order_list.png" alt="">
-                        <p>이전에 주문했던 메뉴를 재주문하여 더 빠르게 이용이 가능합니다</p>
-                    </div>
-                    <div class="box_4">
-                        <h4>선물하기</h4>
-                        <img src="../public/images/appstore/gift.png" alt="">
-                        <p>컴포즈 커피 앱에서 모바일 상품권 선물과 사용이 가능합니다</p>
-                    </div>
-                </div>
+            <div class="img_wrap">
+              <a
+                target="_blank"
+                href="https://apps.apple.com/kr/app/%EC%BB%B4%ED%8F%AC%EC%A6%88%EC%BB%A4%ED%94%BC/id1543112499"
+                ><img src="../public/images/appstore/app-store.png" alt="앱스토어로 이동" title="앱스토어로 이동"
+              /></a>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=kr.co.posbank.compose"
+                ><img
+                  src="../public/images/appstore/google-store.png"
+                  alt="구글스토어로 이동"
+                  title="구글스토어로 이동"
+              /></a>
             </div>
-        </section>
+          </div>
+          <img src="../public/images/appstore/sub_appstore.png" alt="" />
+        </div>
+        <div class="cont2">
+          <h2 class="hide">컴포즈커피 멤버십 소개</h2>
+          <div class="title_box">
+            <h3 class="sub_title">Compose Membership</h3>
+            <p>더 다양한 혜택 컴포즈 커피 앱</p>
+          </div>
+          <div class="box_4_wrap">
+            <div class="box_4">
+              <h4>주문하기</h4>
+              <img src="../public/images/appstore/order.png" alt="" />
+              <p>가까운 매장과 나만의 메뉴 설정으로 더 빠르고 쉽게 주문이 가능합니다</p>
+            </div>
+            <div class="box_4">
+              <h4>쿠폰/스탬프</h4>
+              <img src="../public/images/appstore/stamp.png" alt="" />
+              <p>스탬프 10개 적립 시 1500원 할인 쿠폰이 발행됩니다 (매장 별 적립)</p>
+            </div>
+            <div class="box_4">
+              <h4>주문내역</h4>
+              <img src="../public/images/appstore/order_list.png" alt="" />
+              <p>이전에 주문했던 메뉴를 재주문하여 더 빠르게 이용이 가능합니다</p>
+            </div>
+            <div class="box_4">
+              <h4>선물하기</h4>
+              <img src="../public/images/appstore/gift.png" alt="" />
+              <p>컴포즈 커피 앱에서 모바일 상품권 선물과 사용이 가능합니다</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <footer id="footer"></footer>
-</body>
+  </body>
 </html>

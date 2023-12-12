@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>고객센터</title>
+    <title>컴포즈커피 - 고객센터</title>
+
     <!-- favicon-->
     <link rel="icon" href="../public/images/icon/favicon.ico" />
 
     <!-- css -->
-    <link rel="stylesheet" href="../public/css/reset.css" />
-    <link rel="stylesheet" href="../public/css/notice.css" />
+    <link rel="stylesheet" href="../public/css/customer.css" />
+
+    <!-- Font Awesome CSS를 가져옴 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
@@ -114,17 +117,15 @@
           </div>
         </div>
 
-        <div class="customer_board_page">
-          <a href="#none"><img src="../public/images/icon/btn_prev02.png" alt="" /></a>
-          <a href="#none"><img src="../public/images/icon/btn_prev01.png" alt="" /></a>
-          <a href="#none" class="strong">1</a>
-          <a href="#none">2</a>
-          <a href="#none">3</a>
-          <a href="#none"><img src="../public/images/icon/btn_next01.png" alt="" /></a>
-          <a href="#none"><img src="../public/images/icon/btn_next02.png" alt="" /></a>
+        <div class="board_page">
+          <a href="#" class="bt first" alt="첫 페이지로 이동">
+            <i class="fa-solid fa-caret-left"></i>
+          </a>
+          <a href="#" class="num on">1</a>
+          <a href="#" class="bt last" alt="마지막 페이지로 이동">
+            <i class="fa-solid fa-caret-right"></i>
+          </a>
         </div>
-
-        <button type="submit">글쓰기</button>
       </div>
     </main>
 
@@ -132,9 +133,7 @@
     <script>
       $(document).ready(function () {
         $("#header").load("compose_header.html");
-      });
 
-      $(document).ready(function () {
         $("#footer").load("compose_footer.html");
       });
     </script>
