@@ -8,12 +8,22 @@
     <link rel="icon" href="../public/images/icon/favicon.ico" />
 
     <!-- css -->
-    <link rel="stylesheet" href="../public/css/reset.css" />
-    <link rel="stylesheet" href="../public/css/moon.css" />
     <link rel="stylesheet" href="../public/css/noticeView.css" />
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -61,11 +71,13 @@
       </div>
     </div>
 
-    <div id="footer"></div>
+    <footer id="footer"></footer>
 
     <script>
       $(document).ready(function () {
         $("#header").load("compose_header.html");
+
+        $("#footer").load("compose_footer.html");
       });
     </script>
   </body>

@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 15.02 5.38" style="enable-background:new 0 0 15.02 5.38;" xml:space="preserve">
+	 y="0px" viewBox="0 0 15.02 6.56" style="enable-background:new 0 0 15.02 6.56;" xml:space="preserve">
 <style type="text/css">
-	<![CDATA[
-	.st0{
-		fill:#FFFFFF;
-		stroke:#fdd32b8f;
-		stroke-width:0.15;
-		stroke-miterlimit:10;
-		
-	}
-]]>
+.st0{fill:#fff;stroke:#ffea96;stroke-width:0.1;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M14.3,0.24H0.77c-0.35,0-0.64,0.25-0.64,0.57v2.54v0.2v1.59l1.08-1.02H14.3c0.35,0,0.64-0.25,0.64-0.57V0.81
-	C14.94,0.5,14.65,0.24,14.3,0.24z"/>
+<path class="st0" d="M14.28,0.47H0.74c-0.35,0-0.64,0.25-0.64,0.57v3.27v0.2v1.59l1.08-1.02h13.09c0.35,0,0.64-0.25,0.64-0.57V1.04
+	C14.92,0.72,14.63,0.47,14.28,0.47z"/>
 </svg>

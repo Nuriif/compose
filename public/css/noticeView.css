@@ -1,3 +1,6 @@
+@import url("../css/common.css");
+@import url("../css/reset.css");
+
 html {
   font-size: 10px;
 }
@@ -170,11 +173,6 @@ li {
   border-color: #ddd;
   background: #fff;
   color: #000;
-}
-
-/* Page Button Click Mouse hover*/
-.board_page a.num:hover {
-  color: #0d6efd;
 }
 
 .board_page a:first-child {
