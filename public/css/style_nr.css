@@ -110,7 +110,7 @@
     display: none;
 }
 
-.bestmenu_desert{
+.bestmenu_dessert{
     display: none;
 }
 .link_on{
@@ -146,7 +146,7 @@
 .sub_app_main{
     position: relative;
     top: 100px;
-    line-height: 1;
+    line-height: 1 !important;
 }
 .cont1 .sub_title{
     font-size: 3.75rem;
@@ -232,11 +232,29 @@
 
 
 /* menu */
+.sub_menu_main .sub_background::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.sub_menu_main .sub_background{
+    position: relative;
+    /* background: url(../images/menu/bg/season_bg.jpg) no-repeat center center; */
+    height: 333px;
+}
+.sub_menu_main .sub_background li{
+    display: none;
+}
+.sub_menu_main .sub_background li.on{
+    display: block;
+}
 .sub_menu_main{
     width: 100%;
     position: relative;
     top: 100px;
-    line-height: 1;
+    line-height: 1 !important;
 }
 .sub_menu_main ul{
     display: flex;
@@ -301,7 +319,7 @@
 
 .sub_menu_main .menu_2dpth a{
     line-height: 38px;
-    padding: 20px 0;
+    padding: 10px 15px;
     box-sizing: border-box;
 }
 .sub_menu_main .menu_list > div .menu_cont_wrap{
@@ -313,17 +331,22 @@
 .sub_menu_main .menu_list .season_off{
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 60px;
 }
 .sub_menu_main .menu_list .season_off h3{
     font-size: 25px;
-    padding: 30px 15px;
+    padding: 30px 0;
     position: relative;
+    margin: 0 3%;
+}
+.sub_menu_main .menu_list .season_off h3 span{
+    padding: 0 15px;
     background: #fff;
-    display: inline-block;
 }
 .sub_menu_main .menu_list .season_off h3::before{
     content: "";
     border-bottom: 1px solid #333;
+    box-sizing: border-box;
     width: 100%;
     height: 1px;
     z-index: -1;
@@ -341,6 +364,7 @@
 .sub_menu_main .menu_list .season_off li img{
     width: 100%;
 }
+
 /* .sub_menu_main .menu_list .season_off li:nth-of-type(4) ~ li{
     display: none;
 } */
@@ -369,8 +393,8 @@
     margin-bottom: 20px;
 }
 .sub_menu_main .menu_list .img_wrap{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     background: #f6f6f6;
     border: 3px solid transparent;
     border-radius: 50%;
@@ -387,8 +411,11 @@
     position: relative;
 }
 .sub_menu_main .menu_list li p{
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 5px;
+}
+.sub_menu_main .menu_list li p:first-of-type{
+    font-size: 17px;
 }
 /* .sub_menu_main .menu_tab_cont{
     display: none;
@@ -448,14 +475,32 @@
 
     /* ---- sub - menu ---- */
     .sub_menu_main .menu_list ul{
-        gap:20%;
+        gap:10%;
         max-width: 635px;
+    }
+    .sub_menu_main .menu_2dpth ul{
+        max-width: 560px;
+    }
+    .sub_menu_main .menu_2dpth ul.on{
+        flex-wrap: wrap;
+    }
+    .sub_menu_main .menu_2dpth ul.on li{
+        margin-bottom: 2%;
     }
     .sub_menu_main .menu_list .season_list img{
         width: 100%;
     }
+    .sub_menu_main .menu_list .season_off{
+        max-width: 900px;
+    }
     .sub_menu_main .menu_list .season_off li{
         width: 40%;
+    }
+    .sub_menu_main .menu_list .season_off ul{
+        gap: 10%;
+    }
+    .sub_menu_main .menu_1dpth a{
+        padding: 0;
     }
 
 
@@ -466,5 +511,9 @@
     .sub_menu_main .menu_list ul{
         max-width: 470px;
     }
+
+
+    /* sub - header background */
+
 
 }
