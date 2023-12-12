@@ -1,4 +1,4 @@
-/* header, main-SNS combined CSS */
+/* header, footer, 목록 page common combined CSS */
 .wrap {
   min-width: 1024px;
 }
@@ -162,7 +162,7 @@
   color: #fdd22b;
 }
 
-/* fotter */
+/* footer */
 #footer {
   background: #1e2029;
   width: 100%;
