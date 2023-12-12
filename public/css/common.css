@@ -1,4 +1,4 @@
-/* header, main-SNS combined CSS */
+/* header, footer, 목록 page common combined CSS */
 .wrap {
   min-width: 1024px;
 }
@@ -67,7 +67,18 @@
   align-items: center;
 }
 
-/* franchise button */
+
+
+/* util */
+.util_menu {
+  width: 15%;
+}
+
+.util_menu ul {
+  display: flex;
+  font-size: 13px;
+  justify-content: flex-end;
+}/* franchise button */
 .franchise {
   min-width: 140px;
   white-space: nowrap;
@@ -90,17 +101,6 @@
   position: relative;
   padding-left: 1px;
   padding-top: 7px;
-}
-
-/* util */
-.util_menu {
-  width: 15%;
-}
-
-.util_menu ul {
-  display: flex;
-  font-size: 13px;
-  justify-content: flex-end;
 }
 
 .util_menu li:first-child {
@@ -162,7 +162,7 @@
   color: #fdd22b;
 }
 
-/* fotter */
+/* footer */
 #footer {
   background: #1e2029;
   width: 100%;
