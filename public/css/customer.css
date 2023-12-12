@@ -23,9 +23,12 @@ h2 {
   margin-bottom: 20px;
 }
 
-.customer_title h2,
-p {
+.customer_title h2 {
   margin-top: 20px;
+  text-align: center;
+}
+
+.customer_title p {
   text-align: center;
 }
 
