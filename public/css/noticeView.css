@@ -172,11 +172,6 @@ li {
   color: #000;
 }
 
-/* Page Button Click Mouse hover*/
-.board_page a.num:hover {
-  color: #0d6efd;
-}
-
 .board_page a:first-child {
   border-left: 1px solid #ddd;
 }
