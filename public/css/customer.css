@@ -23,13 +23,13 @@ h2 {
   margin-bottom: 20px;
 }
 
-.notice_title h2,
+.customer_title h2,
 p {
   margin-top: 20px;
   text-align: center;
 }
 
-.notice_title dl {
+.customer_title dl {
   width: 510px;
   display: flex;
   justify-content: space-between;
@@ -39,20 +39,20 @@ p {
   align-items: baseline;
 }
 
-.notice_title dt {
+.customer_title dt {
   font-weight: bold;
 }
 
-.notice_title img {
+.customer_title img {
   padding-bottom: 4px;
   vertical-align: middle;
 }
 
-.notice_title dd {
+.customer_title dd {
   font-size: 13px;
 }
 
-.notice_title dd:before {
+.customer_title dd:before {
   content: "";
   display: block;
   clear: both;
@@ -65,17 +65,17 @@ p {
   border-radius: 2px;
 }
 
-.notice_board_wrap {
+.customer_board_wrap {
   margin: auto;
   padding: 0 0 50px;
   text-align: center;
 }
 
-.notice_board_list div {
+.customer_board_list div {
   display: flex;
 }
 
-.notice_top {
+.customer_top {
   font-weight: bold;
   border-top: 2px solid #000000;
   height: 55px;
@@ -83,50 +83,45 @@ p {
   background: rgba(240, 240, 240, 0.808);
 }
 
-.notice_top div {
+.customer_top div {
   justify-content: center;
 }
 
-.notice_content {
+.customer_content {
   height: 45px;
   align-items: center;
   border-bottom: 1px solid #dddddd75;
 }
 
-.notice_content:hover {
-  background-color: #fdd22b;
-  color: #fff;
-  font-weight: bold;
-}
-
-.notice_content .num,
+.customer_content .num,
 .writer,
 .date,
-.count {
+.answer {
   justify-content: center;
 }
 
-.notice_board_list .num {
+.customer_board_list .num {
   width: 10%;
 }
 
-.notice_board_list .title {
+.customer_board_list .title {
   width: 45%;
 }
 
-.notice_board_list .writer {
+.customer_board_list .writer {
   width: 15%;
 }
 
-.notice_board_list .date {
+.customer_board_list .date {
   width: 15%;
 }
 
-.notice_board_list .count {
+.customer_board_list .answer {
   width: 15%;
+  font-weight: bold;
 }
 
-.notice_board_page {
+.customer_board_page {
   margin: auto;
   width: 300px;
   display: flex;
@@ -135,7 +130,7 @@ p {
   margin-top: 50px;
 }
 
-.notice_board_page a {
+.customer_board_page a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,12 +138,24 @@ p {
   height: 30px;
 }
 
-.notice_board_page img {
+.customer_board_page img {
   width: 100%;
 }
 
-.notice_board_page .strong {
+.customer_board_page .strong {
   position: relative;
   font-weight: bold;
   box-shadow: 0 3px 0 0 #fdd22b;
+}
+
+button {
+  font-weight: bold;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 50px;
+  border: none;
+  width: 140px;
+  height: 50px;
+  background: #fdd22b;
+  cursor: pointer;
 }

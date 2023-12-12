@@ -1,52 +1,12 @@
-<html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>footer</title>
-
-    <link rel="stylesheet" href="../public/css/moon.css" />
-
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  </head>
-
-  <footer id="footer">
-    <div class="footer_warp">
-      <address>서울사무소 : 서울특별시 송파구 법원로9길 26, H비지니스파크 C동 1206호-1209호</address>
-      <address>부산본사 : 부산시 기장군 기장읍 대변3길 11</address>
-      <div class="footer_bottom_cont1">
-        <p class="bar">TEL : 1899-5685 / FAX : 02-5236-9635 / e-mail : compose@composecoffee.com</p>
-        <p class="bar">사업자등록번호 : 521-81-02386 / 통신판매업신고증 : 제2023-부산기장-0326호 | 대표 : 김진성</p>
-      </div>
-
-      <div class="footer_bottom_cont2">
-        <p class="bar">호스팅사업자 : CJ올리브네트웍스</p>
-        <p class="bar">개인정보보호 책임자 : 도형구</p>
-        <p>대표이메일 : cjcgvmaster@cj.net</p>
-      </div>
-
-      <p>© 2021. COMPOSECOFFEE. ALL RIGHTS RESERVED.</p>
-    </div>
-  </footer>
-
-  <script>
-    $(document).ready(function () {
-      $(window).scroll(function () {
-        // 현재 스크롤 위치
-        var scrollPosition = $(window).scrollTop();
-        // 문서의 높이
-        var documentHeight = $(document).height();
-        // 브라우저 높이
-        var windowHeight = $(window).height();
-
-        // 스크롤이 페이지 가장 아래로 내려갔을 때
-        if (scrollPosition + windowHeight >= documentHeight) {
-          // 푸터를 보여줌
-          $("#footer").fadeIn();
-        } else {
-          // 스크롤이 다른 위치에 있을 때 푸터를 감춤
-          $("#footer").fadeOut();
-        }
-      });
-    });
-  </script>
-</html>
+<div class="footer_info">
+  <p>상호 : 주식회사 컴포즈커피</p>
+  <p>서울사무소 : 서울특별시 송파구 법원로9길 26, H비지니스파크 C동 1206호-1209호</p>
+  <p>부산본사 : 부산시 기장군 기장읍 대변3길 11</p>
+  <p>TEL : 1899-5685 / FAX : 02-5236-9635 / e-mail : compose@composecoffee.com</p>
+  <p>사업자등록번호 : 521-81-02386 / 통신판매업신고증 : 제2023-부산기장-0326호 | 대표 : 김진성</p>
+  <p>© 2021. COMPOSECOFFEE. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="footer_term">
+  <p>이용약관</p>
+  <p>개인정보처리방침</p>
+</div>
