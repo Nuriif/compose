@@ -145,11 +145,7 @@
     top: 101px;
 }
 
-<<<<<<< HEAD
-/* 대제목- 컴포즈커피sns */
-=======
 /* h2 - compose coffee SNS */
->>>>>>> a29166cfc26b32772f91a91ebbcd4f70f2c53c0c
 h2 {
     font-size: 35px;
     font-weight: bold;
@@ -543,20 +539,6 @@ h2 {
     color: black;
 }
 
-<<<<<<< HEAD
-/* ---------문희 header, main-sns !!!end!!! ----------*/
-
-/* 문희-고객센터 게시판 */
-
-.customer_title{
-    text-align: center;
-}
-
-.customer_board_wrap{
-    margin: auto;
-    margin-top: 50px;
-    padding:  0 0 50px;   
-=======
 /* 문희-고객센터 게시판 */
 .customer_title h2,
 p {
@@ -602,16 +584,11 @@ p {
 .customer_board_wrap {
     margin: auto;
     padding: 0 0 50px;
->>>>>>> a29166cfc26b32772f91a91ebbcd4f70f2c53c0c
     text-align: center;
 }
 
 .customer_board_list div {
-<<<<<<< HEAD
-    display: flex;   
-=======
     display: flex;
->>>>>>> a29166cfc26b32772f91a91ebbcd4f70f2c53c0c
 }
 
 .customer_top {
@@ -622,95 +599,16 @@ p {
     background: rgba(240, 240, 240, 0.808)
 }
 
-<<<<<<< HEAD
-.customer_top div{
-    justify-content: center;   
-}
-
-
-.customer_content{
-=======
 .customer_top div {
     justify-content: center;
 }
 
 .customer_content {
->>>>>>> a29166cfc26b32772f91a91ebbcd4f70f2c53c0c
     height: 45px;
     align-items: center;
     border-bottom: 1px solid #dddddd75;
 }
 
-<<<<<<< HEAD
-
-.customer_content .num, .writer, .date, .answer{
-    justify-content: center;  
-}
-
-
-.customer_board_list .num{
-    width: 10%;   
-}
-.customer_board_list .title{
-    width: 45%;
-}
-.customer_board_list .writer{
-    width: 15%;
-}
-.customer_board_list .date{
-    width: 15%; 
-}
-.customer_board_list .answer{
-    width: 15%; 
-    font-weight: bold;
-}
-
-
-
-
-.customer_board_page{
-    margin: auto;
-    width: 300px;
-    display: flex;  
-    align-items: center;   
-    justify-content: space-between;  
-    margin-top: 50px;      
-}
-
-
-.customer_board_page a{  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;  
-    height: 30px;  
-}
-.customer_board_page img{         
-    width: 100%;
-}
-.customer_board_page .strong{
-    position: relative;
-    font-weight: bold;           
-    box-shadow: 0 3px 0 0 #FDD22B;        
-}
-
-
-.customer_board_wrap button{
-    font-weight: bold;
-    margin: auto;
-    margin-top: 50px;   
-    border: none;
-    width: 120px;
-    height: 40px;
-    background: #FDD22B;
-}
-
-
-
-
-/* 문희-고객센터 게시판  !!end!!*/
-
-=======
 .customer_content .num,
 .writer,
 .date,
@@ -787,67 +685,127 @@ button {
     padding: 5% 0;
     margin: auto;
 }
-.interview_wrap{  
-    min-width: 800px;
-    background: #dddddd;
-        
-}
-.interview_l{
-    position: relative;    
-    width: 100%;
-    height: 300px;   
-    background: pink;               
-}
 
-.interview_l p{
+.interview_bg{
+    width: 100%;
     position: absolute;
     top: 0;
-    right: 0;
-    width: 80%;
-    max-width: 90%;
-     
+    left: 0;
+    background: url(../images/franchise/yellow_bg-03.svg);  
+    opacity: 0.05; 
+    height: 48%;
+    z-index: -3;
+}
+
+.interview_wrap{
+    min-width: 800px;     
+    margin: 50px 0 100px;   
+}
+
+.interview_l{         
+    position: relative;    
+    width: 100%;
+    height: 320px;   
+    margin-bottom: 30px;
+}
+
+.bubble_l_wrap{         
     display: flex;
     flex-direction: column;    
     justify-content: center;  
-    padding: 5% 5%;
-    box-sizing: border-box;
-    background: url(../images/franchise/speech_bubble_l.svg) right no-repeat;
-    background-color: red;
-    background-size: 100%;
-    
-    
+    align-items: flex-end;      
 }
 
+.bubble_l_wrap p{
+    position: absolute;
+    padding: 0 5%;
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 90%;              
+}
 
-.interview_l span{    
+.bubble_l_wrap > img{
+    width: 75%;
+}
+
+.bubble_l_wrap span{    
     width: 100%;
-    height: 35px;
+    height: 45px;
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
     align-items: center;    
-    background: url(../images/logo/compose_logo_emblem_b.svg) no-repeat right;      
-    background-position-x: 100%;
-    background-size: 35px;    
-    padding: 0 1% 0 0;    
-    box-sizing: border-box;
-  
+    background: url(../images/logo/compose_logo_emblem_b.svg) right 0/25px no-repeat;      
+    padding: 0 1% 15px 0;    
+    box-sizing: border-box;     
 }
 
-
-
 .interview_l .store{
+    z-index: -1;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 25%;   
-    background: rebeccapurple;
-    border-radius: 20px;
+    width: 230px;   
+    height: 230px;    
+    overflow: hidden;
+    border-radius: 110px;    
 }
-.interview_r{   
-      
-    padding: 5% 5% 10%;
-    background:url(../images/franchise/speech_bubble_r.svg) center no-repeat; 
+
+.interview_l .store img{   
+    width: 105%;    
+}
+
+.interview_r{
+    position: relative;    
+    width: 100%;
+    height: 320px;     
+    margin-bottom: 30px;            
+}
+
+.bubble_r_wrap{         
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;  
+    align-items: flex-start;      
+}
+
+.bubble_r_wrap p{
+    position: absolute;
+    padding: 0 5%;
+    box-sizing: border-box;
+    width: 75%;
+    max-width: 90%;              
+}
+
+.bubble_r_wrap > img{
+    width: 75%;
+}
+
+.bubble_r_wrap span{    
+    width: 100%;
+    height: 45px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;    
+    background: url(../images/logo/compose_logo_emblem_b.svg) right 0/25px no-repeat;      
+    padding: 0 1% 15px 0;    
+    box-sizing: border-box;     
+}
+
+.interview_r .store{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 215px;    
+    height: 215px;   
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.interview_r .store img{
+    width: 110%;  
 }
 
 .franchise_step{
@@ -855,7 +813,7 @@ button {
 }
 
 .franchise_step_card{   
-    min-width: 800px;      
+    min-width: 670px;      
     display: flex;   
     justify-content: space-between; 
     flex-wrap: wrap;       
@@ -975,4 +933,3 @@ button {
 
 
 /* 문희-프랜차이즈 info  !!end!!*/
->>>>>>> a29166cfc26b32772f91a91ebbcd4f70f2c53c0c
