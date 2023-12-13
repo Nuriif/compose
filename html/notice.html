@@ -9,28 +9,19 @@
 
     <!-- css -->
     <link rel="stylesheet" href="../public/css/notice.css" />
+    <link rel="stylesheet" href="../public/css/quickmenu.css" />
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
 
     <!-- Font Awesome CSS를 가져옴 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
     <div id="header"></div>
+
+    <div id="quickmenu"></div>
 
     <main id="main">
       <div class="notice_title">
@@ -120,6 +111,8 @@
         $("#header").load("compose_header.html");
 
         $("#footer").load("compose_footer.html");
+
+        $("#quickmenu").load("quickmenu.html");
       });
     </script>
   </body>

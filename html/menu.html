@@ -1,5 +1,5 @@
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>컴포즈커피 - 메뉴</title>
@@ -16,14 +16,6 @@
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"
-    />
-
     <script>
         $(document).ready(function(){
 
@@ -38,13 +30,16 @@
             });
             $(".sub_menu_main .sub_background li").eq(0).addClass("on");
 
-            $(".sub_menu_main .menu_list li").hover(function(){
-                $(this).find(".img_wrap").addClass("on");
-                //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
-            }, function(){
-                $(this).find(".img_wrap").removeClass("on");
-                //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
-            });
+        $(".sub_menu_main .menu_list li").hover(
+          function () {
+            $(this).find(".img_wrap").addClass("on");
+            //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
+          },
+          function () {
+            $(this).find(".img_wrap").removeClass("on");
+            //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
+          }
+        );
 
             
             $(".menu_1dpth li").eq(0).click(function(){
@@ -94,13 +89,19 @@
                 $(".sub_menu_main .menu_2dpth ul").removeClass("on");
                 $(".sub_menu_main .menu_2dpth ul").eq($(this).index()).addClass("on");
 
-                $(".menu_2dpth li").removeClass("on");
-                $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on");
+          $(".menu_2dpth li").removeClass("on");
+          $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on");
 
-                $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
-                $(".sub_menu_main .menu_list > div > .menu_cont_wrap").find("ul").removeClass("on");
-                $(".sub_menu_main .menu_list > div").eq($(this).index()).find(".menu_cont_wrap").addClass("on").find("ul").eq(0).addClass("on");
-            });
+          $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
+          $(".sub_menu_main .menu_list > div > .menu_cont_wrap").find("ul").removeClass("on");
+          $(".sub_menu_main .menu_list > div")
+            .eq($(this).index())
+            .find(".menu_cont_wrap")
+            .addClass("on")
+            .find("ul")
+            .eq(0)
+            .addClass("on");
+        });
 
             $(".menu_2dpth li").on("click", function () {
                 $(".menu_2dpth li").removeClass("on"); //전체 li에서 on remove
@@ -113,19 +114,19 @@
                 // $(".sub_menu_main .menu_list > div").eq(m).find("ul").eq($(this).index()).addClass("on");
             });
 
-            $(".sub_menu_main .menu_list .season_off li:gt(3)").css("display", "none");
-            $(".more_season_off").click(function () {
-                $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
-                $(this).css("display", "none");
-            });
+        $(".sub_menu_main .menu_list .season_off li:gt(3)").css("display", "none");
+        $(".more_season_off").click(function () {
+          $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
+          $(this).css("display", "none");
+        });
 
             $("#header").load("compose_header.html");
             $("#footer").load("compose_footer.html");
         });
     </script>
     <script></script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header"></header>
 
     <main class="sub_menu_main">
@@ -1504,5 +1505,5 @@
     </main>
 
     <footer id="footer"></footer>
-</body>
+  </body>
 </html>
