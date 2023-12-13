@@ -490,6 +490,125 @@
     display: block;
 } */
 
+
+/* ----------- 상세 페이지 ------------*/
+/* iced americano */
+.sub_menuinfo_main {
+    width: 100%;
+    position: relative;
+    line-height: 1 !important;
+    background: #f5f0e9;
+}
+.sub_menuinfo_main ul {
+    display: flex;
+    justify-content: center;
+}
+.sub_menuinfo_main .info_cont_wrap{
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    max-width: 900px;
+    justify-content: center;
+    gap: 5%;
+}
+.sub_menuinfo_main .info_cont_wrap h3{
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+.sub_menuinfo_main .info_cont_wrap h3 span{
+    font-size: 17px;
+    font-weight: lighter;
+}
+.sub_menuinfo_main .info_cont_wrap .img_wrap{
+    width: 400px;
+    height: 400px;
+    border: 2px solid wheat;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+.sub_menuinfo_main .info_cont_wrap .img_wrap img{
+    height: 100%;
+}
+.sub_menuinfo_main .info_cont_wrap > div{
+    width: 50%;
+    /* text-align: right; */
+}
+.sub_menuinfo_main .info_cont_wrap > div:first-of-type{
+    padding-top: 20px;
+}
+.ingredients .nutri_wrap{
+    display: flex;
+    justify-content: space-between;
+    background: url(../images/menu/dot.png) center 0 repeat-y;
+}
+.ingredients > div:first-of-type{
+    margin-bottom: 30px;
+}
+.ingredients dl{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.ingredients ul{
+    width: 45%;
+    flex-direction: column;
+}
+.ingredients li{
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+.ingredients .venti{
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+.ingredients .venti > dt{
+    background: #fff;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+.ingredients .allergy{
+    display: flex;
+    background: url(../images/menu/dot.png) center 0 repeat-y;
+}
+.ingredients .allergy div{
+    width: 50%;
+}
+.ingredients .allergy h4{
+    display: inline-block;
+    background: #fff;
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.ingredients li dl{
+    width: 100%;
+}
+.ingredients li dt{
+    width: 50%;
+}
+.ingredients li dd{
+    text-align: right;
+    width: 50%;
+}
+.ingredients li:first-of-type dt{
+    width: 30%;
+}
+.ingredients li:first-of-type dd{
+    width: 70%;
+}
+
+
+
+
+
 /* 반응형 */
 @media screen and (max-width: 1023px) {
     body {

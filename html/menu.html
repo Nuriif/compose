@@ -28,16 +28,16 @@
             });
             $(".sub_menu_main .sub_background li").eq(0).addClass("on");
 
-        $(".sub_menu_main .menu_list li").hover(
-          function () {
-            $(this).find(".img_wrap").addClass("on");
-            //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
-          },
-          function () {
-            $(this).find(".img_wrap").removeClass("on");
-            //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
-          }
-        );
+            $(".sub_menu_main .menu_list li").hover(
+            function () {
+                $(this).find(".img_wrap").addClass("on");
+                //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
+            },
+            function () {
+                $(this).find(".img_wrap").removeClass("on");
+                //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
+            }
+            );
 
             
             $(".menu_1dpth li").eq(0).click(function(){
@@ -77,29 +77,23 @@
             })
             
 
-            $(".menu_1dpth li").on("click", function(){
+            $(".menu_1dpth li").on("click", function () {
                 $(".sub_menu_main .menu_1dpth li").removeClass("on");
                 $(this).addClass("on");
-                
+
                 $(".sub_menu_main .sub_background li").removeClass("on");
                 $(".sub_menu_main .sub_background ul").find("li").eq($(this).index()).addClass("on");
 
                 $(".sub_menu_main .menu_2dpth ul").removeClass("on");
                 $(".sub_menu_main .menu_2dpth ul").eq($(this).index()).addClass("on");
 
-          $(".menu_2dpth li").removeClass("on");
-          $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on");
+                $(".menu_2dpth li").removeClass("on");
+                $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on");
 
-          $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
-          $(".sub_menu_main .menu_list > div > .menu_cont_wrap").find("ul").removeClass("on");
-          $(".sub_menu_main .menu_list > div")
-            .eq($(this).index())
-            .find(".menu_cont_wrap")
-            .addClass("on")
-            .find("ul")
-            .eq(0)
-            .addClass("on");
-        });
+                $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
+                $(".sub_menu_main .menu_list > div > .menu_cont_wrap").find("ul").removeClass("on");
+                $(".sub_menu_main .menu_list > div").eq($(this).index()).find(".menu_cont_wrap").addClass("on").find("ul").eq(0).addClass("on");
+            });
 
             $(".menu_2dpth li").on("click", function () {
                 $(".menu_2dpth li").removeClass("on"); //전체 li에서 on remove
@@ -112,11 +106,11 @@
                 // $(".sub_menu_main .menu_list > div").eq(m).find("ul").eq($(this).index()).addClass("on");
             });
 
-        $(".sub_menu_main .menu_list .season_off li:gt(3)").css("display", "none");
-        $(".more_season_off").click(function () {
-          $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
-          $(this).css("display", "none");
-        });
+            $(".sub_menu_main .menu_list .season_off li:gt(3)").css("display", "none");
+            $(".more_season_off").click(function () {
+                $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
+                $(this).css("display", "none");
+            });
 
         $("#header").load("compose_header.html");
 
@@ -226,17 +220,17 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 아메리카노</p>
-                                <p>HOT Americano</p>
+                                <p>Hot 아메리카노</p>
+                                <p>Hot Americano</p>
                             </a>
                         </li>
                         <li>
-                            <a href="menu_sub/iced_americano.html">
+                            <a href="iced_americano.html">
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>*ICED 아메리카노</p>
-                                <p>ICED Americano</p>
+                                <p>*Iced 아메리카노</p>
+                                <p>Iced Americano</p>
                             </a>
                         </li>
                         <li>
@@ -244,8 +238,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 카페라떼</p>
-                                <p>HOT Cafe Latte</p>
+                                <p>Hot 카페라떼</p>
+                                <p>Hot Cafe Latte</p>
                             </a>
                         </li>
                         <li>
@@ -253,8 +247,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 카페라떼</p>
-                                <p>ICED Cafe Latte</p>
+                                <p>Iced 카페라떼</p>
+                                <p>Iced Cafe Latte</p>
                             </a>
                         </li>
                         <li>
@@ -271,8 +265,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_03.jpg" alt="">
                                 </div>
-                                <p>HOT 바닐라라떼</p>
-                                <p>HOT Vanilla Latte</p>
+                                <p>Hot 바닐라라떼</p>
+                                <p>Hot Vanilla Latte</p>
                             </a>
                         </li>
                         <li>
@@ -280,8 +274,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_04.jpg" alt="">
                                 </div>
-                                <p>ICED 바닐라라떼</p>
-                                <p>ICED Vanilla Latte</p>
+                                <p>Iced 바닐라라떼</p>
+                                <p>Iced Vanilla Latte</p>
                             </a>
                         </li>
                         <li>
@@ -289,8 +283,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_05.jpg" alt="">
                                 </div>
-                                <p>HOT 헤이즐넛라떼</p>
-                                <p>HOT Hazelnut Latte</p>
+                                <p>Hot 헤이즐넛라떼</p>
+                                <p>Hot Hazelnut Latte</p>
                             </a>
                         </li>
                         <li>
@@ -298,8 +292,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_06.jpg" alt="">
                                 </div>
-                                <p>ICED 헤이즐넛라떼</p>
-                                <p>ICED Hazelnut Latte</p>
+                                <p>Iced 헤이즐넛라떼</p>
+                                <p>Iced Hazelnut Latte</p>
                             </a>
                         </li>
                         <li>
@@ -307,8 +301,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_07.jpg" alt="">
                                 </div>
-                                <p>HOT 카라멜마끼아또</p>
-                                <p>HOT Caramel Macchiato</p>
+                                <p>Hot 카라멜마끼아또</p>
+                                <p>Hot Caramel Macchiato</p>
                             </a>
                         </li>
                         <li>
@@ -316,8 +310,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_08.jpg" alt="">
                                 </div>
-                                <p>ICED 카라멜마끼아또</p>
-                                <p>ICED Caramel Macchiato</p>
+                                <p>Iced 카라멜마끼아또</p>
+                                <p>Iced Caramel Macchiato</p>
                             </a>
                         </li>
                         <li>
@@ -325,8 +319,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 카페모카</p>
-                                <p>HOT Cafe Mocha</p>
+                                <p>Hot 카페모카</p>
+                                <p>Hot Cafe Mocha</p>
                             </a>
                         </li>
                         <li>
@@ -334,8 +328,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 카페모카</p>
-                                <p>ICED Cafe Mocha</p>
+                                <p>Iced 카페모카</p>
+                                <p>Iced Cafe Mocha</p>
                             </a>
                         </li>
                         <li>
@@ -343,8 +337,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 돌체라떼</p>
-                                <p>HOT Dolce Latte</p>
+                                <p>HotHot 돌체라떼</p>
+                                <p>HotHot Dolce Latte</p>
                             </a>
                         </li>
                         <li>
@@ -352,8 +346,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 돌체라떼</p>
-                                <p>ICED Dolce Latte</p>
+                                <p>Iced 돌체라떼</p>
+                                <p>Iced Dolce Latte</p>
                             </a>
                         </li>
                         <li>
@@ -390,8 +384,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 더치커피</p>
-                                <p>HOT Dutch Coffee</p>
+                                <p>Hot 더치커피</p>
+                                <p>Hot Dutch Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -399,8 +393,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 더치커피</p>
-                                <p>ICED 더치커피</p>
+                                <p>Iced 더치커피</p>
+                                <p>Iced 더치커피</p>
                             </a>
                         </li>
                         <li>
@@ -408,8 +402,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 더치라떼</p>
-                                <p>HOT Dutch Latte</p>
+                                <p>Hot 더치라떼</p>
+                                <p>Hot Dutch Latte</p>
                             </a>
                         </li>
                         <li>
@@ -417,8 +411,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 더치라떼</p>
-                                <p>ICED Dutch Latte</p>
+                                <p>Iced 더치라떼</p>
+                                <p>Iced Dutch Latte</p>
                             </a>
                         </li>
                         <li>
@@ -435,8 +429,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 디카페인 더치커피</p>
-                                <p>HOT Decaf Dutch Coffee</p>
+                                <p>Hot 디카페인 더치커피</p>
+                                <p>Hot Decaf Dutch Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -444,8 +438,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 디카페인 더치커피</p>
-                                <p>ICED Decaf Dutch Coffee</p>
+                                <p>Iced 디카페인 더치커피</p>
+                                <p>Iced Decaf Dutch Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -453,8 +447,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 디카페인 더치라떼</p>
-                                <p>HOT Decaf Dutch Latte</p>
+                                <p>Hot 디카페인 더치라떼</p>
+                                <p>Hot Decaf Dutch Latte</p>
                             </a>
                         </li>
                         <li>
@@ -462,8 +456,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 디카페인 더치라떼</p>
-                                <p>ICED Decaf Dutch Latte</p>
+                                <p>Iced 디카페인 더치라떼</p>
+                                <p>Iced Decaf Dutch Latte</p>
                             </a>
                         </li>
                     </ul>
@@ -473,8 +467,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 디카페인 아메리카노</p>
-                                <p>HOT Decaf Americano</p>
+                                <p>Hot 디카페인 아메리카노</p>
+                                <p>Hot Decaf Americano</p>
                             </a>
                         </li>
                         <li>
@@ -482,8 +476,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 디카페인 아메리카노</p>
-                                <p>ICED Decaf Americano</p>
+                                <p>Iced 디카페인 아메리카노</p>
+                                <p>Iced Decaf Americano</p>
                             </a>
                         </li>
                         <li>
@@ -491,8 +485,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 디카페인 카페라떼</p>
-                                <p>HOT Decaf Cafe Latte</p>
+                                <p>Hot 디카페인 카페라떼</p>
+                                <p>Hot Decaf Cafe Latte</p>
                             </a>
                         </li>
                         <li>
@@ -500,8 +494,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 디카페인 카페라떼</p>
-                                <p>ICED Decaf Cafe Latte</p>
+                                <p>Iced 디카페인 카페라떼</p>
+                                <p>Iced Decaf Cafe Latte</p>
                             </a>
                         </li>
                         <li>
@@ -509,8 +503,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 디카페인 더치커피</p>
-                                <p>HOT Decaf Dutch Coffee</p>
+                                <p>Hot 디카페인 더치커피</p>
+                                <p>Hot Decaf Dutch Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -518,8 +512,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 디카페인 더치커피</p>
-                                <p>ICED Decaf Dutch Coffee</p>
+                                <p>Iced 디카페인 더치커피</p>
+                                <p>Iced Decaf Dutch Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -527,8 +521,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 디카페인 더치라떼</p>
-                                <p>HOT Decaf Dutch Latte</p>
+                                <p>Hot 디카페인 더치라떼</p>
+                                <p>Hot Decaf Dutch Latte</p>
                             </a>
                         </li>
                         <li>
@@ -536,8 +530,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 디카페인 더치라떼</p>
-                                <p>ICED Decaf Dutch Latte</p>
+                                <p>Iced 디카페인 더치라떼</p>
+                                <p>Iced Decaf Dutch Latte</p>
                             </a>
                         </li>
                     </ul> 
@@ -552,8 +546,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 곡물라떼</p>
-                                <p>HOT Cereal Latte</p>
+                                <p>Hot 곡물라떼</p>
+                                <p>Hot Cereal Latte</p>
                             </a>
                         </li>
                         <li>
@@ -561,8 +555,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 곡물라떼</p>
-                                <p>ICED Cereal Latte</p>
+                                <p>Iced 곡물라떼</p>
+                                <p>Iced Cereal Latte</p>
                             </a>
                         </li>
                         <li>
@@ -570,8 +564,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 고구마라떼</p>
-                                <p>HOT Sweet Potato Latte</p>
+                                <p>Hot 고구마라떼</p>
+                                <p>Hot Sweet Potato Latte</p>
                             </a>
                         </li>
                         <li>
@@ -579,8 +573,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 고구마라떼</p>
-                                <p>ICED Sweet Potato Latte</p>
+                                <p>Iced 고구마라떼</p>
+                                <p>Iced Sweet Potato Latte</p>
                             </a>
                         </li>
                         <li>
@@ -588,8 +582,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 더블초코라떼</p>
-                                <p>HOT Double Chocolate Latte</p>
+                                <p>Hot 더블초코라떼</p>
+                                <p>Hot Double Chocolate Latte</p>
                             </a>
                         </li>
                         <li>
@@ -597,8 +591,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 더블초코라떼</p>
-                                <p>ICED Double Chocolate Latte</p>
+                                <p>Iced 더블초코라떼</p>
+                                <p>Iced Double Chocolate Latte</p>
                             </a>
                         </li>
                         <li>
@@ -606,8 +600,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 쿠키초코라떼</p>
-                                <p>HOT Cookie Chocolate Latte</p>
+                                <p>Hot 쿠키초코라떼</p>
+                                <p>Hot Cookie Chocolate Latte</p>
                             </a>
                         </li>
                         <li>
@@ -615,8 +609,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 쿠키초코라떼</p>
-                                <p>ICED Cookie Chocolate Latte</p>
+                                <p>Iced 쿠키초코라떼</p>
+                                <p>Iced Cookie Chocolate Latte</p>
                             </a>
                         </li>
                         <li>
@@ -624,8 +618,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 그린티라떼</p>
-                                <p>HOT Greentea Latte</p>
+                                <p>Hot 그린티라떼</p>
+                                <p>Hot Greentea Latte</p>
                             </a>
                         </li>
                         <li>
@@ -633,8 +627,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 그린티라떼</p>
-                                <p>ICED Greentea Latte</p>
+                                <p>Iced 그린티라떼</p>
+                                <p>Iced Greentea Latte</p>
                             </a>
                         </li>
                         <li>
@@ -642,8 +636,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 민트초코오레오라떼</p>
-                                <p>HOT Mint Chocolate Oreo Latte</p>
+                                <p>Hot 민트초코오레오라떼</p>
+                                <p>Hot Mint Chocolate Oreo Latte</p>
                             </a>
                         </li>
                         <li>
@@ -651,8 +645,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 민트초코오레오라떼</p>
-                                <p>ICED Mint Chocolate Oreo Latte</p>
+                                <p>Iced 민트초코오레오라떼</p>
+                                <p>Iced Mint Chocolate Oreo Latte</p>
                             </a>
                         </li>
                         <li>
@@ -696,8 +690,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 밀크티</p>
-                                <p>HOT Milktea</p>
+                                <p>Hot 밀크티</p>
+                                <p>Hot Milktea</p>
                             </a>
                         </li>
                         <li>
@@ -705,8 +699,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 밀크티</p>
-                                <p>ICED Milktea</p>
+                                <p>Iced 밀크티</p>
+                                <p>Iced Milktea</p>
                             </a>
                         </li>
                     </ul>
@@ -716,7 +710,7 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>복숭아주스</p>
+                                <p>*복숭아주스</p>
                                 <p>Peach Juice</p>
                             </a>
                         </li>
@@ -828,8 +822,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 복숭아티</p>
-                                <p>HOT Peach Tea</p>
+                                <p>Hot 복숭아티</p>
+                                <p>Hot Peach Tea</p>
                             </a>
                         </li>
                         <li>
@@ -837,8 +831,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 복숭아티</p>
-                                <p>ICED Peach Tea</p>
+                                <p>Iced 복숭아티</p>
+                                <p>Iced Peach Tea</p>
                             </a>
                         </li>
                         <li>
@@ -846,8 +840,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 자몽허니블랙티</p>
-                                <p>HOT Grapefruit Honey Black Tea</p>
+                                <p>Hot 자몽허니블랙티</p>
+                                <p>Hot Grapefruit Honey Black Tea</p>
                             </a>
                         </li>
                         <li>
@@ -855,8 +849,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 자몽허니블랙티</p>
-                                <p>ICED Grapefruit Honey Black Tea</p>
+                                <p>Iced 자몽허니블랙티</p>
+                                <p>Iced Grapefruit Honey Black Tea</p>
                             </a>
                         </li>
                         <li>
@@ -864,8 +858,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 페퍼민트</p>
-                                <p>HOT Peppermint Tea</p>
+                                <p>Hot 페퍼민트</p>
+                                <p>Hot Peppermint Tea</p>
                             </a>
                         </li>
                         <li>
@@ -873,8 +867,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 페퍼민트</p>
-                                <p>ICED Peppermint Tea</p>
+                                <p>Iced 페퍼민트</p>
+                                <p>Iced Peppermint Tea</p>
                             </a>
                         </li>
                         <li>
@@ -882,8 +876,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 캐모마일</p>
-                                <p>HOT Chamomile Tea</p>
+                                <p>Hot 캐모마일</p>
+                                <p>Hot Chamomile Tea</p>
                             </a>
                         </li>
                         <li>
@@ -891,8 +885,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 캐모마일</p>
-                                <p>ICED Chamomile Tea</p>
+                                <p>Iced 캐모마일</p>
+                                <p>Iced Chamomile Tea</p>
                             </a>
                         </li>
                         <li>
@@ -900,8 +894,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 로즈마리</p>
-                                <p>HOT Rosemary Tea</p>
+                                <p>Hot 로즈마리</p>
+                                <p>Hot Rosemary Tea</p>
                             </a>
                         </li>
                         <li>
@@ -909,8 +903,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 로즈마리</p>
-                                <p>ICED Rosemary Tea</p>
+                                <p>Iced 로즈마리</p>
+                                <p>Iced Rosemary Tea</p>
                             </a>
                         </li>
                         <li>
@@ -918,8 +912,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 얼그레이</p>
-                                <p>HOT Earl Grey Tea</p>
+                                <p>Hot 얼그레이</p>
+                                <p>Hot Earl Grey Tea</p>
                             </a>
                         </li>
                         <li>
@@ -927,8 +921,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 얼그레이</p>
-                                <p>ICED Earl Grey Tea</p>
+                                <p>Iced 얼그레이</p>
+                                <p>Iced Earl Grey Tea</p>
                             </a>
                         </li>
                         <li>
@@ -936,8 +930,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 블랙퍼스트</p>
-                                <p>HOT Breakfast Tea</p>
+                                <p>Hot 블랙퍼스트</p>
+                                <p>Hot Breakfast Tea</p>
                             </a>
                         </li>
                         <li>
@@ -945,8 +939,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 블랙퍼스트</p>
-                                <p>ICED Breakfast Tea</p>
+                                <p>Iced 블랙퍼스트</p>
+                                <p>Iced Breakfast Tea</p>
                             </a>
                         </li>
                         <li>
@@ -954,8 +948,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 허니자몽티</p>
-                                <p>HOT Honey Grapefruit Tea</p>
+                                <p>Hot 허니자몽티</p>
+                                <p>Hot Honey Grapefruit Tea</p>
                             </a>
                         </li>
                         <li>
@@ -963,8 +957,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 허니자몽티</p>
-                                <p>ICED Honey Grapefruit Tea</p>
+                                <p>Iced 허니자몽티</p>
+                                <p>Iced Honey Grapefruit Tea</p>
                             </a>
                         </li>
                         <li>
@@ -972,8 +966,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 허니레몬티</p>
-                                <p>HOT Honey Lemon Tea</p>
+                                <p>Hot 허니레몬티</p>
+                                <p>Hot Honey Lemon Tea</p>
                             </a>
                         </li>
                         <li>
@@ -981,8 +975,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 허니레몬티</p>
-                                <p>ICED Honey Lemon Tea</p>
+                                <p>Iced 허니레몬티</p>
+                                <p>Iced Honey Lemon Tea</p>
                             </a>
                         </li>
                         <li>
@@ -990,8 +984,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>HOT 허니유자티</p>
-                                <p>HOT Honey Yuja Tea</p>
+                                <p>Hot 허니유자티</p>
+                                <p>Hot Honey Yuja Tea</p>
                             </a>
                         </li>
                         <li>
@@ -999,8 +993,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 허니유자티</p>
-                                <p>ICED Honey Yuja Tea</p>
+                                <p>Iced 허니유자티</p>
+                                <p>Iced Honey Yuja Tea</p>
                             </a>
                         </li>
                     </ul>
@@ -1201,7 +1195,7 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>초코 생크림 롤케이크</p>
+                                <p>*초코 생크림 롤케이크</p>
                                 <p>Chocolate Cream Rollcake</p>
                             </a>
                         </li>
@@ -1469,7 +1463,7 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>컴포즈 블랙엣지</p>
+                                <p>*컴포즈 블랙엣지</p>
                                 <p>Compose Black Edge Coffee</p>
                             </a>
                         </li>
