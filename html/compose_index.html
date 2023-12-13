@@ -22,20 +22,21 @@
           slidesToShow: 4,
           slidesToScroll: 1,
         });
+
+        $("#header").load("compose_header.html");
+
+        $("#footer").load("compose_footer.html");
+
+        $("#quickmenu").load("quickmenu.html");
       });
     </script>
   </head>
 
   <body>
     <div class="wrap">
-      <!--header-->
-      <div id="header">
-        <script>
-          $(function () {
-            $("#header").load("compose_header.html");
-          });
-        </script>
-      </div>
+      <div id="header"></div>
+      <div id="quickmenu"></div>
+
       <main id="main">
         <!-- 문희_메인(sns) -->
         <section class="compose_sns">
@@ -105,7 +106,7 @@
         </section>
       </main>
 
-      <footer></footer>
+      <div id="footer"></div>
     </div>
   </body>
 </html>
