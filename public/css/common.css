@@ -67,8 +67,6 @@
   align-items: center;
 }
 
-
-
 /* util */
 .util_menu {
   width: 15%;
@@ -78,7 +76,7 @@
   display: flex;
   font-size: 13px;
   justify-content: flex-end;
-}/* franchise button */
+} /* franchise button */
 .franchise {
   min-width: 140px;
   white-space: nowrap;
