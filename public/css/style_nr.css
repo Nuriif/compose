@@ -1,5 +1,6 @@
 @import url("../css/common.css");
 @import url("../css/reset.css");
+@import url("../css/animate.css");
 
 /* ---- main ---- */
 .container {
@@ -250,13 +251,14 @@
 }
 
 /* menu */
+/*
 .sub_menu_main .sub_background::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
-}
+}*/
 
 .sub_menu_main .sub_background {
     position: relative;
@@ -267,8 +269,24 @@
 .sub_menu_main .sub_background li {
     display: none;
 }
-
+.sub_menu_main .sub_background li h2{
+    font-size: 50px;
+    color: #fff;
+    padding: 136px 0 10px;
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+.sub_menu_main .sub_background li span{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-delay: 0.2s;
+}
 .sub_menu_main .sub_background li.on {
+    text-align: center;
     display: block;
 }
 
