@@ -8,8 +8,6 @@
     <link rel="icon" href="../public/images/icon/favicon.ico" />
 
     <!-- css -->
-    <link rel="stylesheet" href="../public/css/reset.css" />
-    <link rel="stylesheet" href="../public/css/moon.css" />
     <link rel="stylesheet" href="../public/css/style_nr.css" />
     <link rel="stylesheet" href="../public/css/animate.css">
 
@@ -114,14 +112,18 @@
                 $(this).css("display", "none");
             });
 
-            $("#header").load("compose_header.html");
-            $("#footer").load("compose_footer.html");
-        });
+        $("#header").load("compose_header.html");
+
+        $("#footer").load("compose_footer.html");
+
+        $("#quickmenu").load("quickmenu.html");
+      });
     </script>
     <script></script>
   </head>
   <body>
     <header id="header"></header>
+    <div id="quickmenu"></div>
 
     <main class="sub_menu_main">
         <div class="sub_background">
@@ -1498,6 +1500,6 @@
         </div>
     </main>
 
-    <footer id="footer"></footer>
+    <div id="footer"></div>
   </body>
 </html>

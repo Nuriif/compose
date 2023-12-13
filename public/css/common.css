@@ -125,6 +125,121 @@
   border-bottom: 1px solid rgba(221, 221, 221, 0.5);
 }
 
+/* quick */
+.quick_main {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .quick_main {
+    display: none;
+  }
+}
+
+.quick_main li {
+  padding: 1rem 15px;
+  font-size: 14px;
+  background-color: #1d1d1d;
+  position: relative;
+}
+
+.quick_main li::before {
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quick_main li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.quick_main li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.quick_main li:last-child::before {
+  content: none;
+}
+
+.quick_main li figure {
+  margin-bottom: 0;
+}
+
+.q-icon,
+.q-tit {
+  color: #fff !important;
+}
+
+.font45 {
+  font-size: 45px !important;
+}
+
+.q-img {
+  width: 41px;
+  height: 41px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.q-img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 41px;
+  height: 41px;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+}
+
+.quick_main li a:hover .q-tit,
+.quick_main li a:hover .q-icon {
+  color: #fed900 !important;
+}
+
+.quick_main li a:hover .q-img-hover {
+  display: block;
+  top: 16px;
+  left: 29.2px;
+}
+
+.q-icon {
+  font-size: 30px;
+}
+
+.q-icon i {
+  position: relative;
+  bottom: 6px;
+}
+
+.quick_main ul {
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  border-radius: 10px;
+}
+
+.xi-kakaostory:before {
+  content: "\ebef";
+}
+
+.xi-kakaotalk:before {
+  content: "\ebee";
+}
+
+.xi-emoticon:before {
+  content: "\ebef";
+}
+
+.xi-emoticon:before {
+  content: "\ebee";
+}
+
 /* 목록 page 공통 CSS */
 .board_page {
   margin-top: 20px;
