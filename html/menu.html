@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../public/css/reset.css" />
     <link rel="stylesheet" href="../public/css/moon.css" />
     <link rel="stylesheet" href="../public/css/style_nr.css" />
+    <link rel="stylesheet" href="../public/css/animate.css">
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
@@ -31,10 +32,11 @@
             $(".sub_menu_main .menu_1dpth li").eq(0).addClass("on"); // 1dpth underbar
             $(".sub_menu_main .menu_list > div").eq(0).find(".menu_cont_wrap").eq(0).addClass("on").find("ul").addClass("on"); //menu_cont_wrap show
             $(".sub_menu_main .sub_background").css({
-                "background": "url(../public/images/menu/bg/season_bg_2.jpg)",
+                "background": "url(../public/images/menu/bg/season_bg_3.jpg)",
                 "background-repeat": "no-repeat",
                 "background-position": "center center"
             });
+            $(".sub_menu_main .sub_background li").eq(0).addClass("on");
 
             $(".sub_menu_main .menu_list li").hover(function(){
                 $(this).find(".img_wrap").addClass("on");
@@ -47,7 +49,7 @@
             
             $(".menu_1dpth li").eq(0).click(function(){
                 $(".sub_menu_main .sub_background").css({
-                    "background": "url(../public/images/menu/bg/season_bg_2.jpg)",
+                    "background": "url(../public/images/menu/bg/season_bg_3.jpg)",
                     "background-repeat": "no-repeat",
                     "background-position": "center center"
                 });
@@ -86,6 +88,8 @@
                 $(".sub_menu_main .menu_1dpth li").removeClass("on");
                 $(this).addClass("on");
                 
+                $(".sub_menu_main .sub_background li").removeClass("on");
+                $(".sub_menu_main .sub_background ul").find("li").eq($(this).index()).addClass("on");
 
                 $(".sub_menu_main .menu_2dpth ul").removeClass("on");
                 $(".sub_menu_main .menu_2dpth ul").eq($(this).index()).addClass("on");
@@ -98,7 +102,7 @@
                 $(".sub_menu_main .menu_list > div").eq($(this).index()).find(".menu_cont_wrap").addClass("on").find("ul").eq(0).addClass("on");
             });
 
-        $(".menu_2dpth li").on("click", function () {
+            $(".menu_2dpth li").on("click", function () {
                 $(".menu_2dpth li").removeClass("on"); //전체 li에서 on remove
                 $(this).addClass("on"); //현재 li background-color
                 let m = $(this).parent().index(); //1뎁스의 인덱스 가져옴
@@ -117,7 +121,7 @@
 
             $("#header").load("compose_header.html");
             $("#footer").load("compose_footer.html");
-      });
+        });
     </script>
     <script></script>
 </head>
@@ -128,10 +132,10 @@
         <div class="sub_background">
             <ul>
                 <li><h2>SEASON MENU</h2><span>컴포즈 커피의 시즌 메뉴를 소개합니다</span></li>
-                <li><h2>COFFEE</h2><span>커피</span></li>
-                <li><h2>NON COFFEE</h2><span>음료</span></li>
-                <li><h2>DESSERTS</h2><span>디저트</span></li>
-                <li><h2>MD</h2><span>MD 상품</span></li>
+                <li><h2>COFFEE</h2><span>컴포즈 스페셜티 블렌딩의 풍미를 선사합니다</span></li>
+                <li><h2>NON COFFEE</h2><span>컴포즈 커피의 특별한 레시피로 완성된 non coffee 음료</span></li>
+                <li><h2>DESSERTS</h2><span>커피와 함께 즐기는 달콤한 디저트</span></li>
+                <li><h2>MD</h2><span>컴포즈 커피의 MD 상품을 만나보세요</span></li>
             </ul>
         </div>
         <ul class="menu_1dpth">
@@ -144,15 +148,15 @@
         </ul>
         <div class="menu_2dpth">
             <ul class="dpth2_season">
-                <li class="on" data-tab="season"><a href="#">시즌메뉴</a></li>
+                <li class="on"><a href="#">시즌메뉴</a></li>
             </ul>
             <!-- <ul class="dpth2_all">
                 <li><a href="#">전체메뉴</a></li>
             </ul> -->
             <ul class="dpth2_coffee">
-                <li class="on" data-tab="coffee"><a href="#coffee">커피</a></li>
-                <li data-tab="coffee_dutch"><a href="#coffee_dutch">더치커피</a></li>
-                <li data-tab="coffee_decaf"><a href="#coffee_decaf">디카페인 커피</a></li>
+                <li class="on"><a href="#">커피</a></li>
+                <li><a href="#">더치커피</a></li>
+                <li><a href="#">디카페인 커피</a></li>
             </ul>
             <ul class="dpth2_noncoffee">
                 <li class="on"><a href="#">라떼</a></li>
@@ -224,11 +228,11 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="menu_sub/iced_americano.html">
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>ICED 아메리카노</p>
+                                <p>*ICED 아메리카노</p>
                                 <p>ICED Americano</p>
                             </a>
                         </li>
@@ -1212,7 +1216,7 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>팥절미 크루아상 와플</p>
+                                <p>팥절미 크루아상와플</p>
                                 <p>Redbean Injeolmi Croissant Waffle</p>
                             </a>
                         </li>
@@ -1221,8 +1225,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>에스프레소7</p>
-                                <p>Espresso</p>
+                                <p>티라미수 크루아상와플</p>
+                                <p>Tiramisu Croissant Waffle</p>
                             </a>
                         </li>
                         <li>
@@ -1230,8 +1234,224 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>에스프레소8</p>
-                                <p>Espresso</p>
+                                <p>카라멜쿠키 크루아상와플</p>
+                                <p>Caramel Cookie Croissant Waffle</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>크루아상와플</p>
+                                <p>Croissant Waffle</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>시나몬카라멜와플</p>
+                                <p>Cinnamon Caramel Waffle</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>오레오생크림와플</p>
+                                <p>Oreo Cream Waffle</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>사과생크림와플</p>
+                                <p>Apple Cream Waffle</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>더블샷카라멜팝콘</p>
+                                <p>Double Shot Caramel Popcorn</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>콘소메수프맛팝콘</p>
+                                <p>Consomme Soup Flavor Popcorn</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>트러플체다치즈 팝콘</p>
+                                <p>Truffle Cheddar Cheese Popcorn</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>브리틀 밀크초콜릿</p>
+                                <p>Brittle Milk Chocolate</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>달고나 다크초콜릿</p>
+                                <p>Dalgona Dark Chocolate</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>달고나 녹차초콜릿</p>
+                                <p>Dalgona Greentea Chocolate</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>까망베르치즈 단백질쿠키</p>
+                                <p>Camembert Cheese Protein Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>체다치즈 단백질쿠키</p>
+                                <p>Cheddar Cheese Protein Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>바닐라 마카롱</p>
+                                <p>Vanilla Macaron</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>모카 마카롱</p>
+                                <p>Mocha Macaron</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>산딸기 마카롱</p>
+                                <p>Raspberry Macaron</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>카라멜 마카롱</p>
+                                <p>Caramel Macaron</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>블루베리 마카롱</p>
+                                <p>Blueberry Macaron</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>더블초코칩쿠키</p>
+                                <p>Double Chocolate Chip Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>다크초코칩쿠키</p>
+                                <p>Dark Chocolate Chip Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>마시멜로우 코코넛쿠키</p>
+                                <p>Marshmallow Coconut Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>오트 크랜베리쿠키</p>
+                                <p>Oat Cranberry Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>피스타치오 아몬드쿠키</p>
+                                <p>Pistachio Almond Cookie</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>티라미수</p>
+                                <p>Tiramisu</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="img_wrap">
+                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
+                                </div>
+                                <p>뉴욕치즈케이크</p>
+                                <p>Newyork Cheese Cake</p>
                             </a>
                         </li>
                     </ul>
@@ -1246,8 +1466,8 @@
                                 <div class="img_wrap">
                                     <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>md</p>
-                                <p>Espresso</p>
+                                <p>컴포즈 블랙엣지</p>
+                                <p>Compose Black Edge Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -1255,8 +1475,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>에스프레소2</p>
-                                <p>Espresso</p>
+                                <p>컴포즈 드립백 하우스 블렌드</p>
+                                <p>Compose Drip Bag Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -1264,8 +1484,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>에스프레소3</p>
-                                <p>Espresso</p>
+                                <p>컴포즈 티백 하우스 블렌드</p>
+                                <p>Compose Tea Bag Coffee</p>
                             </a>
                         </li>
                         <li>
@@ -1273,44 +1493,8 @@
                                 <div class="img_wrap">
                                     <img src="../public/images/menu/coffee_01.jpg" alt="">
                                 </div>
-                                <p>에스프레소4</p>
-                                <p>Espresso</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img id="name" src="../public/images/menu/coffee_01.jpg" alt="">
-                                </div>
-                                <p>에스프레소5</p>
-                                <p>Espresso</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
-                                </div>
-                                <p>에스프레소6</p>
-                                <p>Espresso</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
-                                </div>
-                                <p>에스프레소7</p>
-                                <p>Espresso</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="img_wrap">
-                                    <img src="../public/images/menu/coffee_01.jpg" alt="">
-                                </div>
-                                <p>에스프레소8</p>
-                                <p>Espresso</p>
+                                <p>컴포즈 캡슐 하우스 블렌드</p>
+                                <p>Compose Capsule Coffee</p>
                             </a>
                         </li>
                     </ul>
