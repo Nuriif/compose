@@ -1,37 +1,39 @@
 <html lang="ko">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>컴포즈커피 - 메뉴</title>
 
     <!-- favicon-->
-    <link rel="icon" href="../public/images/icon/favicon.ico" />
+    <link rel="icon" href="../public/images/icon/favicon.ico">
 
     <!-- css -->
-    <link rel="stylesheet" href="../public/css/style_nr.css" />
+    <link rel="stylesheet" href="../public/css/style_nr.css">
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".sub_menu_main .menu_list li").hover(
-          function () {
-            $(this).find(".img_wrap").addClass("on");
-            //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
-          },
-          function () {
-            $(this).find(".img_wrap").removeClass("on");
-            //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
-          }
-        );
+        $(document).ready(function () {
+            $(".sub_menu_main .menu_list li").hover(
+                function () {
+                    $(this).find(".img_wrap").addClass("on");
+                    //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
+                },
+                function () {
+                    $(this).find(".img_wrap").removeClass("on");
+                    //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
+                }
+            );
 
-        $("#header").load("compose_header.html");
-        $("#footer").load("compose_footer.html");
+            $("#header").load("compose_header.html");
+            $("#footer").load("compose_footer.html");
 
-      });
+        });
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header id="header"></header>
     <main class="sub_menuinfo_main juice01">
         <h2 class="hide">복숭아주스 상세 페이지</h2>
@@ -88,7 +90,8 @@
                                     <dl>
                                         <dt>포화지방(g)</dt>
                                         <dd>0</dd>
-                                    </dl></li>
+                                    </dl>
+                                </li>
                                 <li>
                                     <dl>
                                         <dt>단백질(g)</dt>
@@ -108,7 +111,8 @@
                         <div>
                             <dl>
                                 <dt>제조시설 내 알레르기 유발 가능 식품</dt>
-                                <dd>우유, 대두, 밀, 메밀, 게, 새우, 고등어, 돼지고기, 토마토, 계란, 닭고기, 소고기, 오징어, 조개류(굴, 홍합, 전복포함), 땅콩, 복숭아, 아황산류</dd>
+                                <dd>우유, 대두, 밀, 메밀, 게, 새우, 고등어, 돼지고기, 토마토, 계란, 닭고기, 소고기, 오징어, 조개류(굴, 홍합, 전복포함), 땅콩, 복숭아,
+                                    아황산류</dd>
                             </dl>
                         </div>
                     </div>
@@ -120,5 +124,6 @@
         </div>
     </main>
     <footer id="footer"></footer>
-  </body>
+</body>
+
 </html>
