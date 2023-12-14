@@ -1,10 +1,18 @@
 @import url("../css/common.css");
 @import url("../css/reset.css");
 
+/* h2 - compose coffee SNS */
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-left: 10%;
+}
 
 /* slick */
 .slider {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .slick-prev:before,
@@ -391,10 +399,12 @@
 
 /* 문희-프랜차이즈 info */
 .franchise_wrap {
-  max-width: 1000px;
   text-align: center;
-  padding: 5% 0;
-  margin: auto;
+}
+
+.franchise_interview {
+  background-color: #fffdf4;
+  padding: 5% 15%;
 }
 
 .interview_bg {
@@ -452,12 +462,10 @@
 }
 
 .interview_l .store {
-  z-index: -1;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 230px;
-  height: 230px;
+  width: 180px;
   overflow: hidden;
   border-radius: 110px;
 }
@@ -505,12 +513,10 @@
 }
 
 .interview_r .store {
-  z-index: -1;
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 215px;
-  height: 215px;
+  width: 180px;
   border-radius: 20px;
   overflow: hidden;
 }
