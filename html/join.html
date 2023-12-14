@@ -1,143 +1,216 @@
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>컴포즈커피 - 회원가입</title>
 
-    <!-- favicon-->
-    <link rel="icon" href="../public/images/icon/favicon.ico" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>컴포즈커피 - 회원가입</title>
 
-    <!-- css -->
-    <link rel="stylesheet" href="../public/css/moon.css" />
+  <!-- favicon-->
+  <link rel="icon" href="../public/images/icon/favicon.ico" />
 
-    <!-- jquery -->
-    <script src="../public/js/jquery-3.7.1.min.js"></script>
-  </head>
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/moon.css" />
 
-  <body>
-    <div id="header"></div>
-    <main>
-      <div class="join_wrap">
-        <h2>
-          컴포즈 커피와<br />
-          즐거운 만남을 시작해볼까요?
-        </h2>
-        <form action="/register" method="post">
-          <fieldset>
-            <legend class="title">필수정보</legend>
-            <div>
-              <label for="name">이름</label>
-              <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required />
-            </div>
-            <div>
-              <label for="phone">휴대폰번호</label>
-              <input type="tel" id="phone" name="phone" placeholder="숫자만 입력하세요 (-)제외" required />
-            </div>
-            <div>
-              <label for="username">아이디</label>
-              <input type="text" id="username" name="username" placeholder="6~16자/영문, 숫자 조합" required />
-              <p id="charLimitMessage"></p>
-              <script>
-                const inputField = document.getElementById("username");
-                const charLimitMessage = document.getElementById("charLimitMessage");
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+</head>
 
-                inputField.addEventListener("input", function () {
-                  const inputText = this.value;
-                  const maxLength = 16;
-                  const minLength = 6;
-
-                  if (inputText.length < minLength) {
-                    charLimitMessage.textContent = "*최소 6자 이상 입력해주세요.";
-                    charLimitMessage.style.display = "block";
-                  } else if (inputText.length > maxLength) {
-                    charLimitMessage.textContent = "*최대 16자까지 입력 가능합니다.";
-                    charLimitMessage.style.display = "block";
-                  } else {
-                    charLimitMessage.textContent = "사용할 수 있습니다.";
-                    charLimitMessage.style.display = "none";
-                  }
-                });
-              </script>
-            </div>
-            <div>
-              <label for="password">비밀번호</label>
-              <input
-                type="password"
-                id="password"
-                name="password"
-                placeholder="8~16자/영문, 숫자, 특수문자 조합"
-                required
-              />
-            </div>
-            <div>
-              <label for="confirm_password">비밀번호 재입력</label>
-              <input
-                type="password"
-                id="confirm_password"
-                name="confirm_password"
-                placeholder="비밀번호를 한번 더 입력해 주세요"
-                required
-              />
-            </div>
-            <div>
-              <label for="email">이메일</label>
-              <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" required />
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend class="title">선택정보</legend>
-            <div>
-              <label for="gender">성별</label>
-              <select name="gender" id="select_box" class="select_box">
-                <option value="" disabled selected>성별</option>
-                <option value="N">선택안함</option>
-                <option value="M">남</option>
-                <option value="F">여</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="birthdate">생년월일</label>
-              <select name="year" id="select_box" class="select_box">
-                <option value="">년도</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-              </select>
-              <select name="month" id="select_box" class="select_box">
-                <option value="">월</option>
-                <option value="2024">1월</option>
-                <option value="2023">2월</option>
-                <option value="2022">3월</option>
-              </select>
-              <select name="day" id="select_box" class="select_box">
-                <option value="">일</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>약관 동의</legend>
-            <div>
-              <input type="checkbox" id="agree" name="agree" required />
-              <label for="agree">약관에 동의합니다.</label>
-            </div>
-          </fieldset>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="join_wrap">
+      <h2>
+        컴포즈 커피와<br />
+        즐거운 만남을 시작해볼까요?
+      </h2>
+      <form action="/register" method="post">
+        <fieldset>
+          <legend class="title">필수정보</legend>
           <div>
-            <input type="submit" value="가입하기" />
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required />
           </div>
-        </form>
-      </div>
-    </main>
-    <div id="footer"></div>
-    <script>
-      $(document).ready(function () {
-        $("#header").load("compose_header.html");
+          <div>
+            <label for="phone">휴대폰번호</label>
+            <input type="tel" id="phone" name="phone" placeholder="숫자만 입력하세요 (-)제외" required />
+          </div>
+          <div>
+            <label for="username">아이디</label>
+            <input type="text" id="username" name="username" placeholder="6~16자/영문, 숫자 조합" required />
+            <p id="charLimitMessage"></p>
+            <script>
+              const inputField = document.getElementById("username");
+              const charLimitMessage = document.getElementById("charLimitMessage");
 
-        $("#footer").load("compose_footer.html");
-      });
-    </script>
-  </body>
+              inputField.addEventListener("input", function () {
+                const inputText = this.value;
+                const maxLength = 16;
+                const minLength = 6;
+
+                if (inputText.length < minLength) {
+                  charLimitMessage.textContent = "*최소 6자 이상 입력해주세요.";
+                  charLimitMessage.style.display = "block";
+                } else if (inputText.length > maxLength) {
+                  charLimitMessage.textContent = "*최대 16자까지 입력 가능합니다.";
+                  charLimitMessage.style.display = "block";
+                } else {
+                  charLimitMessage.textContent = "사용할 수 있습니다.";
+                  charLimitMessage.style.display = "none";
+                }
+              });
+            </script>
+          </div>
+          <div>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" placeholder="8~16자/영문, 숫자, 특수문자 조합" required />
+          </div>
+          <div>
+            <label for="confirm_password">비밀번호 재입력</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="비밀번호를 한번 더 입력해 주세요"
+              required />
+          </div>
+          <div>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" required />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="title">선택정보</legend>
+          <div>
+            <label for="gender">성별</label>
+            <select name="gender" class="select_box">
+              <option value="">성별</option>
+              <option value="male">남자</option>
+              <option value="female">여자</option>
+              <option value="none">선택안함</option>
+            </select>
+          </div>
+          <div>
+            <label for="birthdate">생년월일</label>
+            <select name="year" class="select_box">
+              <option value="">년도</option>
+              <option value="2024">2024</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+            </select>
+            <select name="month" class="select_box">
+              <option value="">월</option>
+              <option value="1">1월</option>
+              <option value="2">2월</option>
+              <option value="3">3월</option>
+            </select>
+            <select name="day" class="select_box">
+              <option value="">일</option>
+              <option value="1">1일</option>
+              <option value="2">2일</option>
+              <option value="3">3일</option>
+            </select>
+            <p>생년월일 등록시 생일 쿠폰 발급 및 맞춤 상품을 추천해 드릴게요</p>
+          </div>
+          <script>
+            const selectBoxes = document.querySelectorAll('.select_box');
+            selectBoxes.forEach(selectBox => {
+              selectBox.addEventListener('change', function () {
+                if (selectBox.value !== '') {
+                  selectBox.classList.add('valid');
+                } else {
+                  selectBox.classList.remove('valid');
+                }
+              });
+            });
+          </script>
+        </fieldset>
+        <fieldset class="terms_box">
+          <legend class="hide">약관 동의</legend>
+
+          <!-- 전체 동의 -->
+          <label>
+            <input type="checkbox" class="all_agree">
+            약관 전체 동의
+          </label>
+
+          <!-- 필수 약관 동의 -->
+          <label>
+            <input type="checkbox" class="required" id="termsAgree">
+            (필수) 이용약관 동의           
+          </label>
+
+          <label>
+            <input type="checkbox" class="required" id="privacyAgree">
+            (필수) 개인정보 수집 및 이용 동의
+          </label>
+
+          <!-- 선택적 약관 동의 -->
+          <label>
+            <input type="checkbox" class="marketing_agree">
+            (선택) 마케팅 수신 동의
+            <p>다양한 혜택을 가장 먼저 전달 드릴게요.​</p>
+          </label>
+
+          <!-- 선택적 수신 수단 -->
+          <label>
+            <input type="checkbox">
+            이메일 수신
+          </label>
+
+          <label>
+            <input type="checkbox">
+            문자 수신
+          </label>
+          <script>
+            // 약관 동의 체크박스 요소들을 가져오기
+            const allAgreeCheckbox = document.getElementById('allAgree');
+            const termsAgreeCheckbox = document.getElementById('termsAgree');
+            const privacyAgreeCheckbox = document.getElementById('privacyAgree');
+            const marketingAgreeCheckbox = document.getElementById('marketingAgree');
+
+            // 필수 약관 동의 체크박스들을 배열에 담기
+            const requiredCheckboxes = [termsAgreeCheckbox, privacyAgreeCheckbox];
+
+            // 약관 전체 동의 체크박스를 클릭했을 때
+            allAgreeCheckbox.addEventListener('change', function () {
+              // 전체 동의 체크박스의 상태에 따라 필수 항목 체크박스들을 전체 선택 또는 해제
+              requiredCheckboxes.forEach(checkbox => {
+                checkbox.checked = allAgreeCheckbox.checked;
+              });
+            });
+
+            // 필수 약관 항목들이 모두 동의되었을 때만 다음 단계로 진행
+            requiredCheckboxes.forEach(checkbox => {
+              checkbox.addEventListener('change', function () {
+                const allRequiredChecked = requiredCheckboxes.every(checkbox => checkbox.checked);
+                allAgreeCheckbox.checked = allRequiredChecked;
+                allAgreeCheckbox.indeterminate = !allRequiredChecked;
+
+                // 필수 약관 항목들이 모두 동의되었을 때 다음 단계로 진행 (예시)
+                // 여기에 실제로 할 작업을 넣으면 됩니다.
+                if (allRequiredChecked) {
+                  // 동의된 경우의 처리
+                  console.log('필수 약관 모두 동의됨');
+                  // 이 부분에 실제 다음 단계로 진행하는 로직을 추가하세요.
+                } else {
+                  // 동의가 안 된 경우의 처리
+                  console.log('필수 약관 중 하나 이상 미동의');
+                  // 이 부분에 필요한 처리를 추가하세요.
+                }
+              });
+            });
+          </script>
+        </fieldset>
+        <div>
+          <input type="submit" value="가입하기" />
+        </div>
+      </form>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script>
+    $(document).ready(function () {
+      $("#header").load("compose_header.html");
+
+      $("#footer").load("compose_footer.html");
+    });
+  </script>
+</body>
+
 </html>

@@ -702,6 +702,7 @@ button {
 }
 
 .join_wrap .select_box {
+  color: #bbbbbbd5;
   appearance: none;
   display: inline-block;
   max-width: 100%;
@@ -716,13 +717,76 @@ button {
   transition: 0.3s;
 }
 
-.join_wrap .select_box option {
-  color: #555;
-}
-.join_wrap .select_box option[selected] {
-  color: #555;
-}
-::disabled {
+.join_wrap .select_box option{
+  color: black;
 }
 
-/* 문희-회원가입 !!end!! */
+.join_wrap .select_box.valid {
+  color: black;
+}
+.join_wrap .terms_box{
+  width: 450px;
+  font-size: 15px;
+  border: 1px solid #ddd;
+  width: 450px;  
+  border-radius: 5px;
+  padding: 25px;
+  box-sizing: border-box;  
+}
+.terms_box label{
+  font-weight:400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.terms_box input[type="checkbox"].required{ 
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  content: '';
+  width: 25px;
+  height: 25px;  
+  margin-right: 10px;
+  border: none;
+  background: #fff url(../images/icon/icon_check_gray.svg) center/18px no-repeat;
+}
+.terms_box input[type="checkbox"].required:checked{    
+  background: #fff url(../images/icon/icon_check_yellow.svg) center/18px no-repeat;
+}
+
+.terms_box input[type="checkbox"].all_agree{ 
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  content: '';
+  width: 25px;
+  height: 25px;  
+  margin-right: 10px;
+  
+  background: #fff url(../images/icon/icon_check_gray.svg) center/15px no-repeat;
+}
+.terms_box input[type="checkbox"].all_agree:checked{    
+  background: #fff url(../images/icon/icon_check_yellow.svg) center/15px no-repeat;
+}
+
+.terms_box input[type="checkbox"].marketing_agree{ 
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  content: '';
+  width: 25px;
+  height: 25px;  
+  margin-right: 10px;
+  border: none;
+  background: #fff url(../images/icon/icon_check_gray.svg) center/18px no-repeat;
+}
+.terms_box input[type="checkbox"].marketing_agree:checked{    
+  background: #fff url(../images/icon/icon_check_yellow.svg) center/18px no-repeat;
+}
+
+.
+
+
