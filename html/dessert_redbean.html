@@ -1,37 +1,39 @@
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>컴포즈커피 - 메뉴</title>
 
     <!-- favicon-->
-    <link rel="icon" href="../public/images/icon/favicon.ico" />
+    <link rel="icon" href="../public/images/icon/favicon.ico">
 
     <!-- css -->
-    <link rel="stylesheet" href="../public/css/style_nr.css" />
+    <link rel="stylesheet" href="../public/css/style_nr.css">
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".sub_menu_main .menu_list li").hover(
-          function () {
-            $(this).find(".img_wrap").addClass("on");
-            //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
-          },
-          function () {
-            $(this).find(".img_wrap").removeClass("on");
-            //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
-          }
-        );
+        $(document).ready(function () {
+            $(".sub_menu_main .menu_list li").hover(
+                function () {
+                    $(this).find(".img_wrap").addClass("on");
+                    //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
+                },
+                function () {
+                    $(this).find(".img_wrap").removeClass("on");
+                    //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
+                }
+            );
 
-        $("#header").load("compose_header.html");
-        $("#footer").load("compose_footer.html");
+            $("#header").load("compose_header.html");
+            $("#footer").load("compose_footer.html");
 
-      });
+        });
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header id="header"></header>
     <main class="sub_menuinfo_main dessert01">
         <h2 class="hide">팥절미크루아상와플 상세 페이지</h2>
@@ -88,7 +90,8 @@
                                     <dl>
                                         <dt>포화지방(g)</dt>
                                         <dd>17.71</dd>
-                                    </dl></li>
+                                    </dl>
+                                </li>
                                 <li>
                                     <dl>
                                         <dt>단백질(g)</dt>
@@ -108,7 +111,8 @@
                         <div>
                             <dl>
                                 <dt>제조시설 내 알레르기 유발 가능 식품</dt>
-                                <dd>알류, 메밀, 땅콩, 잣, 고등어, 게, 새우, 돼지고기, 복숭아, 토마토, 아황산류, 호두, 닭고기, 쇠고기, 오징어, 조개류(굴, 전복, 홍합)</dd>
+                                <dd>알류, 메밀, 땅콩, 잣, 고등어, 게, 새우, 돼지고기, 복숭아, 토마토, 아황산류, 호두, 닭고기, 쇠고기, 오징어, 조개류(굴, 전복, 홍합)
+                                </dd>
                             </dl>
                         </div>
                     </div>
@@ -120,5 +124,6 @@
         </div>
     </main>
     <footer id="footer"></footer>
-  </body>
+</body>
+
 </html>
