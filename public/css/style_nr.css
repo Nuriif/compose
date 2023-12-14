@@ -521,6 +521,7 @@
 .sub_menuinfo_main .info_cont_wrap h3 span{
     font-size: 17px;
     font-weight: lighter;
+    color: #987346;
 }
 .sub_menuinfo_main .info_cont_wrap .img_wrap{
     width: 400px;
@@ -573,11 +574,11 @@
     border-radius: 25px;
 }
 .ingredients .allergy{
-    display: flex;
-    background: url(../images/menu/dot.png) center 0 repeat-y;
-}
-.ingredients .allergy div{
-    width: 50%;
+    /* display: flex; */
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    /* background: url(../images/menu/dot.png) center 0 repeat-y; */
 }
 .ingredients .allergy h4{
     display: inline-block;
