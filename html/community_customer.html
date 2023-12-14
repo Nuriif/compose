@@ -1,0 +1,144 @@
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴포즈커피 - 고객센터</title>
+
+    <!-- favicon-->
+    <link rel="icon" href="../public/images/icon/favicon.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../public/css/customer.css">
+
+    <!-- Font Awesome CSS를 가져옴 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div id="quickmenu"></div>
+
+  <main id="main">
+    <div class="customer_title">
+      <h2>고객센터</h2>
+      <p>
+        COMPOSE COFFEE를 이용하시며 불편하셨던 사항이나 칭찬하고 싶은 경험 등을 올려주세요.<br>
+        고객님과 함께하는 공간이 더욱 편안할 수 있도록 최선을 다하겠습니다.
+      </p>
+      <dl>
+        <dt><img src="../public/images/icon/notice.png" alt=""> 참고사항</dt>
+        <div>
+          <dd>답변완료 시, 앱 PUSH로 안내해드립니다.</dd>
+          <dd>전화상담(1899-8829) - 9:00~12:00 | 13:00~17:30, 주말 및 공휴일 휴무</dd>
+        </div>
+      </dl>
+    </div>
+    <div class="customer_board_wrap">
+      <div class="customer_board_list">
+        <div class="customer_top">
+          <div class="num">No</div>
+          <div class="title">제목</div>
+          <div class="writer">글쓴이</div>
+          <div class="date">작성일</div>
+          <div class="answer">답변여부</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">10</div>
+          <div class="title"><a href="#none">아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">9</div>
+          <div class="title"><a href="#none">아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">8</div>
+          <div class="title"><a href="#none">아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">7</div>
+          <div class="title"><a href="#none">아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">6</div>
+          <div class="title"><a href="#none">아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">5</div>
+          <div class="title"><a href="#none">아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">4</div>
+          <div class="title"><a href="#none">뜨아 주세여</a></div>
+          <div class="writer">리리</div>
+          <div class="date">2023.12.08</div>
+          <div class="answer">O</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">3</div>
+          <div class="title"><a href="#none">아바라 주세여</a></div>
+          <div class="writer">정정이</div>
+          <div class="date">2023.12.09</div>
+          <div class="answer">O</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">2</div>
+          <div class="title"><a href="#none">후추라떼 주세여</a></div>
+          <div class="writer">현현이</div>
+          <div class="date">2023.12.24</div>
+          <div class="answer">O</div>
+        </div>
+        <div class="customer_content">
+          <div class="num">1</div>
+          <div class="title"><a href="#none">핫쵸코 주세여</a></div>
+          <div class="writer">진진이</div>
+          <div class="date">2023.12.25</div>
+          <div class="answer">O</div>
+        </div>
+      </div>
+
+      <div class="board_page">
+        <a href="#" class="bt first" alt="첫 페이지로 이동">
+          <i class="fa-solid fa-caret-left"></i>
+        </a>
+        <a href="#" class="num on">1</a>
+        <a href="#" class="bt last" alt="마지막 페이지로 이동">
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script>
+    $(document).ready(function () {
+      $("#header").load("compose_header.html");
+
+      $("#footer").load("compose_footer.html");
+
+      $("#quickmenu").load("quickmenu.html");
+    });
+  </script>
+</body>
+
+</html>

@@ -43,22 +43,22 @@
   box-sizing: border-box;
 }
 
-.header_wrap nav .gnb > li {
+.header_wrap nav .gnb>li {
   position: relative;
   text-align: center;
   height: 100px;
   min-width: 120px;
 }
 
-.gnb > li:hover {
+.gnb>li:hover {
   box-shadow: 0px 5px 0 0px #fdd22b;
 }
 
-.header_wrap nav .gnb > li a:hover {
+.header_wrap nav .gnb>li a:hover {
   color: #fdd22b;
 }
 
-.header_wrap nav .gnb > li > ul {
+.header_wrap nav .gnb>li>ul {
   display: none;
   position: absolute;
   top: 100%;
@@ -66,7 +66,7 @@
   height: 230px;
 }
 
-.gnb > li:last-child {
+.gnb>li:last-child {
   display: flex;
   align-items: center;
 }
@@ -243,6 +243,19 @@
 
 .xi-emoticon:before {
   content: "\ebee";
+}
+
+/* button 공통 */
+.btn_submit {
+  font-weight: bold;
+  font-size: 15px;
+  margin: auto;
+  margin-top: 50px;
+  border: none;
+  width: 140px;
+  height: 50px;
+  background: #fdd22b;
+  cursor: pointer;
 }
 
 /* 목록 page 공통 CSS */

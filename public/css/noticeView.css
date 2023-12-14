@@ -12,7 +12,7 @@ li {
 
 .board_wrap {
   width: 1000px;
-  margin: 100px auto;
+  margin: 20px auto;
 }
 
 .board_title {
@@ -93,27 +93,27 @@ li {
   border-top: 2px solid #000;
 }
 
-.board_list > div {
+.board_list>div {
   border-bottom: 1px solid #ddd;
   font-size: 0;
 }
 
-.board_list > div.top {
+.board_list>div.top {
   border-bottom: 1px solid #999;
 }
 
-.board_list > div:last-child {
+.board_list>div:last-child {
   border-bottom: 1px solid #000;
 }
 
-.board_list > div > div {
+.board_list>div>div {
   display: inline-block;
   padding: 15px 0;
   text-align: center;
   font-size: 1.4rem;
 }
 
-.board_list > div.top > div {
+.board_list>div.top>div {
   font-weight: 600;
 }
 
@@ -226,8 +226,7 @@ li {
   font-size: 1.4rem;
 }
 
-.board_view .info dl dt {
-}
+.board_view .info dl dt {}
 
 .board_view .info dl dd {
   margin-left: 10px;
