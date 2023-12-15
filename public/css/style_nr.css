@@ -45,7 +45,7 @@
 .app_store {
     width: 480px;
     height: 250px;
-    background-color: #f0d041;
+    background-color: #fdd22b;
     border-top-right-radius: 0;
 }
 
@@ -140,7 +140,7 @@
     text-align: center;
     padding: 17px 0;
     box-sizing: border-box;
-    background-color: #f0d041;
+    background-color: #fdd22b;
     border-radius: 50%;
     z-index: 9999;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
@@ -165,7 +165,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f0d041;
+    background: #fdd22b;
 }
 
 .sub_app_main .text_box {
@@ -237,7 +237,7 @@
     padding: 20px 0;
     font-size: 1.8rem;
     font-weight: 500;
-    color: #f0d041;
+    color: #fdd22b;
 }
 
 .box_4 img {
@@ -259,36 +259,6 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
 }*/
-
-.sub_menu_main .sub_background {
-    position: relative;
-    /* background: url(../images/menu/bg/season_bg.jpg) no-repeat center center; */
-    height: 333px;
-}
-
-.sub_menu_main .sub_background li {
-    display: none;
-}
-.sub_menu_main .sub_background li h2{
-    font-size: 50px;
-    color: #fff;
-    padding: 136px 0 10px;
-    animation-duration: 0.75s;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
-}
-.sub_menu_main .sub_background li span{
-    font-size: 15px;
-    color: rgba(255, 255, 255, 0.7);
-    animation-duration: 0.75s;
-    animation-fill-mode: both;
-    animation-name: fadeInUp;
-    animation-delay: 0.2s;
-}
-.sub_menu_main .sub_background li.on {
-    text-align: center;
-    display: block;
-}
 
 .sub_menu_main {
     width: 100%;
@@ -322,12 +292,12 @@
 }
 
 .sub_menu_main .menu_1dpth li:hover {
-    border-bottom: 3px solid #f0d041;
+    border-bottom: 3px solid #fdd22b;
 }
 
 .sub_menu_main .menu_1dpth li.on {
     font-weight: bolder;
-    border-bottom: 3px solid #f0d041;
+    border-bottom: 3px solid #fdd22b;
 }
 
 .sub_menu_main .menu_1dpth a {
@@ -360,7 +330,7 @@
     /* box-sizing: border-box; */
     /* line-height: 38px; */
     /* padding: 20px 0; */
-    background: #f0d041;
+    background: #fdd22b;
     border: 1px solid transparent;
     /* border-radius: 20px; */
 }
@@ -465,7 +435,7 @@
 }
 
 .sub_menu_main .menu_list .img_wrap.on {
-    border: 3px solid #704616;
+    border: 3px solid #fdd22b;
 }
 
 .sub_menu_main .menu_list li img {
