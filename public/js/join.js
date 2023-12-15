@@ -1,9 +1,4 @@
 $(document).ready(function () {
-
-
-
-
-
     // 약관 동의 체크박스 요소들을 가져오기
     const all_agree_checkbox = document.getElementById('all_agree');
     const terms_agree_checkbox = document.getElementById('terms_agree');
@@ -42,11 +37,5 @@ $(document).ready(function () {
 
 
         });
-    });
-
-
-
-
-     
-  
+    });  
 })

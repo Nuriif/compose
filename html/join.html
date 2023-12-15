@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../public/css/join.css">
 
   <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>  
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
   <script src="../public/js/join.js"></script>
 </head>
 
@@ -20,12 +20,9 @@
   <div id="header"></div>
   <main>
     <div class="join_wrap">
-      <h2>
-        컴포즈 커피와<br>
-        즐거운 만남을 시작해볼까요?
-      </h2>
+      <h2>회원가입</h2>
       <form action="/register" method="post">
-        <fieldset>
+        <fieldset class="essencial">
           <legend class="title">필수정보</legend>
           <div>
             <label for="name">이름</label>
@@ -79,33 +76,35 @@
           <legend class="title">선택정보</legend>
           <div>
             <label for="gender">성별</label>
-            <select name="gender" class="select_box">
+            <select name="gender" class="select_box gender">
               <option value="">성별</option>
               <option value="male">남자</option>
               <option value="female">여자</option>
               <option value="none">선택안함</option>
             </select>
           </div>
-          <div>
+          <div class="birth_wrap">
             <label for="birthdate">생년월일</label>
-            <select name="year" class="select_box">
-              <option value="">년도</option>
-              <option value="2024">2024</option>
-              <option value="2023">2023</option>
-              <option value="2022">2022</option>
-            </select>
-            <select name="month" class="select_box">
-              <option value="">월</option>
-              <option value="1">1월</option>
-              <option value="2">2월</option>
-              <option value="3">3월</option>
-            </select>
-            <select name="day" class="select_box">
-              <option value="">일</option>
-              <option value="1">1일</option>
-              <option value="2">2일</option>
-              <option value="3">3일</option>
-            </select>
+            <div>
+                  <select name="year" class="select_box">
+                    <option value="">년도</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                  </select>
+                  <select name="month" class="select_box">
+                    <option value="">월</option>
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                    <option value="3">3월</option>
+                  </select>
+                  <select name="day" class="select_box">
+                    <option value="">일</option>
+                    <option value="1">1일</option>
+                    <option value="2">2일</option>
+                    <option value="3">3일</option>
+                  </select>
+            </div>
             <p>생년월일 등록시 생일 쿠폰 발급 및 맞춤 상품을 추천해 드릴게요.</p>
           </div>
           <script>
@@ -129,10 +128,11 @@
             <input type="checkbox" class="all_agree" id="all_agree">
             약관 전체 동의
           </label>
+          <hr class="all_agree_line">
 
           <!-- 필수 약관 동의 -->
           <label>
-            <input type="checkbox" class="required" id="terms_agree">
+            <input type="checkbox" class="required ab" id="terms_agree">
             (필수) 이용약관 동의
           </label>
 
@@ -149,23 +149,20 @@
           <p class="marketing_agree_tip">다양한 혜택을 가장 먼저 전달 드릴게요.</p>
 
           <!-- 선택적 수신 수단 -->
-          <label>
-            <input type="checkbox" class="marketing_choose">
-            이메일 수신
-          </label>
+          <div class="marketing_choose_wrap">
+            <label>
+              <input type="checkbox" class="marketing_choose">
+              이메일 수신
+            </label>
 
-          <label>
-            <input type="checkbox" class="marketing_choose">
-            문자 수신
-          </label>
-        </fieldset>
-      
-
-        
-
-        </fieldset>
+            <label>
+              <input type="checkbox" class="marketing_choose">
+              문자 수신
+            </label>
+          </div>
+        </fieldset>       
         <div>
-          <input type="submit" value="가입하기">
+          <input type="submit" value="가입하기" class="btn_submit" id="btn_add">
         </div>
       </form>
     </div>
@@ -174,7 +171,6 @@
   <script>
     $(document).ready(function () {
       $("#header").load("compose_header.html");
-
       $("#footer").load("compose_footer.html");
     });
   </script>
