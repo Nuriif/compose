@@ -17,14 +17,22 @@
   margin-top: 110px;
 }
 
+h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-
-
-.customer_title p {
+.board_title h2 {
+  margin-top: 20px;
   text-align: center;
 }
 
-.customer_title dl {
+.board_title p {
+  text-align: center;
+}
+
+.board_title dl {
   width: 510px;
   display: flex;
   justify-content: space-between;
@@ -34,20 +42,20 @@
   align-items: baseline;
 }
 
-.customer_title dt {
+.board_title dt {
   font-weight: bold;
 }
 
-.customer_title img {
+.board_title img {
   padding-bottom: 4px;
   vertical-align: middle;
 }
 
-.customer_title dd {
+.board_title dd {
   font-size: 13px;
 }
 
-.customer_title dd:before {
+.board_title dd:before {
   content: "";
   display: block;
   clear: both;
@@ -60,17 +68,17 @@
   border-radius: 2px;
 }
 
-.customer_board_wrap {
+.board_wrap {
   margin: auto;
   padding: 0 0 50px;
   text-align: center;
 }
 
-.customer_board_list div {
+.board_list div {
   display: flex;
 }
 
-.customer_top {
+.board_top {
   font-weight: bold;
   border-top: 2px solid #000000;
   height: 55px;
@@ -78,60 +86,58 @@
   background: rgba(240, 240, 240, 0.808);
 }
 
-.customer_top div {
+.board_top div {
   justify-content: center;
 }
 
-.customer_content {
+.board_content {
   height: 45px;
   align-items: center;
   border-bottom: 1px solid #dddddd75;
 }
 
-.customer_content:hover {
+.board_content:hover {
   background-color: #fff4d4;
   color: #000000;
   font-weight: bold;
 }
 
-.customer_content .num,
+.board_content .num,
 .writer,
 .date,
-.answer {
+.count {
   justify-content: center;
 }
 
-.customer_board_list .num {
+.board_list .num {
   width: 10%;
 }
 
-.customer_board_list .title {
+.board_list .title {
   width: 45%;
 }
 
-.customer_board_list .writer {
+.board_list .writer {
   width: 15%;
 }
 
-.customer_board_list .date {
+.board_list .date {
   width: 15%;
 }
 
-.customer_board_list .answer {
+.board_list .count {
   width: 15%;
-  font-weight: bold;
 }
 
-.customer_board_page {
+.board_page {
   margin: auto;
   width: 300px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-top: 50px;
 }
 
-.customer_board_page a {
+.board_page a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,24 +145,12 @@
   height: 30px;
 }
 
-.customer_board_page img {
+.board_page img {
   width: 100%;
 }
 
-.customer_board_page .strong {
+.board_page .strong {
   position: relative;
   font-weight: bold;
   box-shadow: 0 3px 0 0 #fdd22b;
-}
-
-button {
-  font-weight: bold;
-  font-size: 15px;
-  margin: auto;
-  margin-top: 50px;
-  border: none;
-  width: 140px;
-  height: 50px;
-  background: #fdd22b;
-  cursor: pointer;
 }
