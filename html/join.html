@@ -9,10 +9,11 @@
   <link rel="icon" href="../public/images/icon/favicon.ico">
 
   <!-- css -->
-  <link rel="stylesheet" href="../public/css/moon.css">
+  <link rel="stylesheet" href="../public/css/join.css">
 
   <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="../public/js/jquery-3.7.1.min.js"></script>  
+  <script src="../public/js/join.js"></script>
 </head>
 
 <body>
@@ -125,18 +126,18 @@
 
           <!-- 전체 동의 -->
           <label>
-            <input type="checkbox" class="all_agree">
+            <input type="checkbox" class="all_agree" id="all_agree">
             약관 전체 동의
           </label>
 
           <!-- 필수 약관 동의 -->
           <label>
-            <input type="checkbox" class="required" id="termsAgree">
+            <input type="checkbox" class="required" id="terms_agree">
             (필수) 이용약관 동의
           </label>
 
           <label>
-            <input type="checkbox" class="required" id="privacyAgree">
+            <input type="checkbox" class="required" id="privacy_agree">
             (필수) 개인정보 수집 및 이용 동의
           </label>
 
@@ -144,58 +145,24 @@
           <label>
             <input type="checkbox" class="marketing_agree">
             (선택) 마케팅 수신 동의
-            <p>다양한 혜택을 가장 먼저 전달 드릴게요.​</p>
           </label>
+          <p class="marketing_agree_tip">다양한 혜택을 가장 먼저 전달 드릴게요.</p>
 
           <!-- 선택적 수신 수단 -->
           <label>
-            <input type="checkbox" class="marketing_email">
+            <input type="checkbox" class="marketing_choose">
             이메일 수신
           </label>
 
           <label>
-            <input type="checkbox" class="marketing_sms">
+            <input type="checkbox" class="marketing_choose">
             문자 수신
           </label>
-          <script>
-            // 약관 동의 체크박스 요소들을 가져오기
-            const allAgreeCheckbox = document.getElementById('allAgree');
-            const termsAgreeCheckbox = document.getElementById('termsAgree');
-            const privacyAgreeCheckbox = document.getElementById('privacyAgree');
-            const marketingAgreeCheckbox = document.getElementById('marketingAgree');
+        </fieldset>
+      
 
-            // 필수 약관 동의 체크박스들을 배열에 담기
-            const requiredCheckboxes = [termsAgreeCheckbox, privacyAgreeCheckbox];
+        
 
-            // 약관 전체 동의 체크박스를 클릭했을 때
-            allAgreeCheckbox.addEventListener('change', function () {
-              // 전체 동의 체크박스의 상태에 따라 필수 항목 체크박스들을 전체 선택 또는 해제
-              requiredCheckboxes.forEach(checkbox => {
-                checkbox.checked = allAgreeCheckbox.checked;
-              });
-            });
-
-            // 필수 약관 항목들이 모두 동의되었을 때만 다음 단계로 진행
-            requiredCheckboxes.forEach(checkbox => {
-              checkbox.addEventListener('change', function () {
-                const allRequiredChecked = requiredCheckboxes.every(checkbox => checkbox.checked);
-                allAgreeCheckbox.checked = allRequiredChecked;
-                allAgreeCheckbox.indeterminate = !allRequiredChecked;
-
-                // 필수 약관 항목들이 모두 동의되었을 때 다음 단계로 진행 (예시)
-                // 여기에 실제로 할 작업을 넣으면 됩니다.
-                if (allRequiredChecked) {
-                  // 동의된 경우의 처리
-                  console.log('필수 약관 모두 동의됨');
-                  // 이 부분에 실제 다음 단계로 진행하는 로직을 추가하세요.
-                } else {
-                  // 동의가 안 된 경우의 처리
-                  console.log('필수 약관 중 하나 이상 미동의');
-                  // 이 부분에 필요한 처리를 추가하세요.
-                }
-              });
-            });
-          </script>
         </fieldset>
         <div>
           <input type="submit" value="가입하기">
