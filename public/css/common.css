@@ -137,6 +137,39 @@
   text-align: center;
 }
 
+/* 서브페이지 최상단 제목 + 배경이미지 */
+.sub_background {
+  position: relative;
+  height: 333px;
+}
+.sub_background li {
+  display: none;
+}
+.sub_background li.on {
+  text-align: center;
+  display: block;
+}
+.sub_background li h3{
+  font-size: 50px;
+  color: #fff;
+  padding: 136px 0 10px;
+  animation-duration: 0.75s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+.sub_background li span{
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  animation-duration: 0.75s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+  animation-delay: 0.2s;
+}
+
+
+
+
+/* ------------- 반응형 -------------- */
 @media screen and (max-width: 767px) {
   .quick_main {
     display: none;
