@@ -1,0 +1,114 @@
+@import url("../css/common.css");
+@import url("../css/reset.css");
+
+form {
+    margin: auto;
+}
+
+h2 {
+    width: 250px;
+    margin: 0 auto 50px;
+}
+
+.login_wrap {
+    width: 500px;
+    margin: auto;
+}
+
+.login_box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.login_wrap input[type="text"] {
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding-left: 15px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px 5px 0 0;
+    box-sizing: border-box;
+}
+
+.login_wrap input[type="password"] {
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    padding-left: 15px;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.login_wrap input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #1e2029;
+}
+
+::placeholder {
+    color: #bbbbbbd5;
+    font-size: 15px;
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.fotgot_pw::before {
+    content: '';      
+    display: inline-block;
+    height: 13px;  
+    border-left: 1px solid #555555a9;
+    vertical-align: middle;
+    margin: 0 8px 0 10px;
+    cursor: auto;
+}
+
+.login_wrap input[type="submit"] {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn_submit {
+    margin: 0;
+}
+
+.btn_login {
+    margin: 25px 0 15px;
+}
+
+.login_btn_wrap {
+    margin-bottom: 70px;
+}
+.sns_login_wrap{
+    text-align: center;
+}
+.sns_login_title{
+    color: black;
+    font-weight: bold;
+}
+
+
+.sns_google_box{
+    width: 60px;    
+    height: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;  
+    background: black;
+}
+.sns_google_box img{
+    width: 72px;     
+}
