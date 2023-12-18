@@ -1,0 +1,70 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>컴포즈커피 - 회원가입</title>
+
+  <!-- favicon-->
+  <link rel="icon" href="../public/images/icon/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/login.css">
+
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="login_wrap">
+      <h2><img src="../public/images/logo/compose_logo.svg" alt=""></h2>
+      <form action="/register" method="post">
+        <div class="login_box">
+          <div>
+            <input type="text" id="username" name="username" placeholder="아이디" required>
+          </div>
+          <div>
+            <input type="password" id="password" name="password" placeholder="비밀번호" required>
+          </div>
+        </div>
+        <div class="forgot">
+          <a href="#none">아이디 찾기</a>
+          <a href="#none" class="fotgot_pw">비밀번호 찾기</a>
+
+        </div>
+        <div class="login_btn_wrap">
+          <div>
+            <input type="submit" value="로그인" class="btn_submit btn_login">
+          </div>
+          <div>
+            <input type="submit" value="회원가입" class="btn_submit">
+          </div>
+        </div>
+      </form>
+      <div class="sns_login_wrap">
+        <div class="sns_login_title">SNS 계정으로 로그인</div>
+        <img src="../public/images/login/icon_sns_kakao.png" alt="카카오톡으로 로그인하기">
+        <img src="../public/images/login/icon_sns_naver.png" alt="네이버로 로그인하기">
+        <div class="sns_google_box">
+          <img src="../public/images/login/icon_sns_apple.png" alt="구글로 로그인하기">
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <div id="footer"></div>
+  <script>
+    $(document).ready(function () {
+      $("#header").load("compose_header.html");
+      $("#footer").load("compose_footer.html");
+    });
+  </script>
+</body>
+
+</html>
