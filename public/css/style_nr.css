@@ -352,7 +352,7 @@
 .sub_menu_main .menu_list .season_off {
     max-width: 1200px;
     margin: 0 auto;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 .sub_menu_main .menu_list .season_off h3 {
@@ -403,6 +403,10 @@
 
 .sub_menu_main .menu_list .season_list img {
     width: 40%;
+}
+
+.sub_menu_main .menu_list{
+    margin-bottom: 60px;
 }
 
 .sub_menu_main .menu_list ul {
@@ -461,8 +465,7 @@
 } */
 
 
-/* ----------- 상세 페이지 ------------*/
-/* iced americano */
+/* ----------- 메뉴 상세 페이지 ------------*/
 .sub_menuinfo_main #footer{
     margin-top: 0 !important;
 }
@@ -597,10 +600,90 @@
 }
 
 
+/* ----- news ----- */
+.sub_news_main {
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1 !important;
+}
+.sub_news_main .news_cont{
+    max-width: 1200px;
+    margin: 30px auto 60px;
+}
+.sub_news_main .news_cont ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.sub_news_main .news_cont ul li{
+    width: 282px;
+    height: 380px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    position: relative;
+}
+.sub_news_main .news_cont ul li a{
+    display: block;
+    max-width: 260px;
+    position: absolute;
+    padding: 10px 10px 14px;
+    top: 0;
+    left: 0;
+}
+.sub_news_main .news_cont ul li .img_wrap{
+    overflow: hidden;
+    margin-bottom: 15px;
+    max-width: 260px;
+}
+.sub_news_main .news_cont ul li img{
+    max-width: 260px;
+    transition: transform 0.3s ;
+}
+.sub_news_main .news_cont ul li img:hover{
+    transform: scale(1.1);
+}
+.sub_news_main .news_cont dl dt{
+    font-size: 17px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 30px;
+}
+.sub_news_main .news_cont dl dd{
+    font-size: 13px;
+}
+.sub_news_main .news_cont dl dd p:first-of-type{
+    margin-bottom: 7px;
+}
+
+
 
 
 
 /* 반응형 */
+@media screen and (max-width: 1216px) {
+    .sub_news_main .news_cont{
+        max-width: 900px;
+    }
+
+    .sub_news_main .news_cont ul{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 807px) {
+    .sub_news_main .news_cont{
+        max-width: 100%;
+    }
+
+    .sub_news_main .news_cont ul{
+        justify-content: center;
+    }
+}
+
+
+
 @media screen and (max-width: 1023px) {
     body {
         font-size: 14px;
@@ -651,6 +734,9 @@
     }
 
     /* ---- sub - menu ---- */
+    .sub_menu_main .menu_list{
+        margin-bottom: 60px;
+    }
     .sub_menu_main .menu_list ul {
         gap: 10%;
         max-width: 635px;

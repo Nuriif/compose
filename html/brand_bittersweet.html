@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>컴포즈커피 - 메뉴</title>
+  <title>컴포즈커피 - 비터스윗</title>
 
   <!-- favicon-->
   <link rel="icon" href="../public/images/icon/favicon.ico">
@@ -17,130 +17,9 @@
   <script>
     $(document).ready(function () {
       // 페이지 로드 시
-      $(".dpth2_season").addClass("on"); //2dpth show
-      $(".sub_menu_main .menu_1dpth li").eq(0).addClass("on"); // 1dpth underbar
-      $(".sub_menu_main .menu_list > div")
-        .eq(0)
-        .find(".menu_cont_wrap")
-        .eq(0)
-        .addClass("on")
-        .find("ul")
-        .addClass("on"); //menu_cont_wrap show
-      $(".sub_menu_main .sub_background").css({
-        background: "url(../public/images/menu/bg/season_bg_3.jpg)",
-        "background-repeat": "no-repeat",
-        "background-position": "center center",
-      });
-      $(".sub_menu_main .sub_background li").eq(0).addClass("on");
-
-      $(".sub_menu_main .menu_list li").hover(
-        function () {
-          $(this).find(".img_wrap").addClass("on");
-          //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
-        },
-        function () {
-          $(this).find(".img_wrap").removeClass("on");
-          //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
-        }
-      );
-
-      $(".menu_1dpth li")
-        .eq(0)
-        .click(function () {
-          $(".sub_menu_main .sub_background").css({
-            background: "url(../public/images/menu/bg/season_bg_3.jpg)",
-            "background-repeat": "no-repeat",
-            "background-position": "center center",
-          });
-        });
-      $(".menu_1dpth li")
-        .eq(1)
-        .click(function () {
-          $(".sub_menu_main .sub_background").css({
-            background: "url(../public/images/menu/bg/coffee_bg.jpg)",
-            "background-repeat": "no-repeat",
-            "background-position": "center center",
-          });
-        });
-      $(".menu_1dpth li")
-        .eq(2)
-        .click(function () {
-          $(".sub_menu_main .sub_background").css({
-            background: "url(../public/images/menu/bg/noncoffee_bg.jpg)",
-            "background-repeat": "no-repeat",
-            "background-position": "center center",
-          });
-        });
-      $(".menu_1dpth li")
-        .eq(3)
-        .click(function () {
-          $(".sub_menu_main .sub_background").css({
-            background: "url(../public/images/menu/bg/desserts_bg_2.jpg)",
-            "background-repeat": "no-repeat",
-            "background-position": "center center",
-          });
-        });
-      $(".menu_1dpth li")
-        .eq(4)
-        .click(function () {
-          $(".sub_menu_main .sub_background").css({
-            background: "url(../public/images/menu/bg/product_bg.jpg)",
-            "background-repeat": "no-repeat",
-            "background-position": "center center",
-          });
-        });
-
-      $(".menu_1dpth li").on("click", function () {
-        $(".sub_menu_main .menu_1dpth li").removeClass("on");
-        $(this).addClass("on");
-
-        $(".sub_menu_main .sub_background li").removeClass("on");
-        $(".sub_menu_main .sub_background ul").find("li").eq($(this).index()).addClass("on");
-
-        $(".sub_menu_main .menu_2dpth ul").removeClass("on");
-        $(".sub_menu_main .menu_2dpth ul").eq($(this).index()).addClass("on");
-
-        $(".menu_2dpth li").removeClass("on");
-        $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on");
-
-        $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
-        $(".sub_menu_main .menu_list > div > .menu_cont_wrap").find("ul").removeClass("on");
-        $(".sub_menu_main .menu_list > div")
-          .eq($(this).index())
-          .find(".menu_cont_wrap")
-          .addClass("on")
-          .find("ul")
-          .eq(0)
-          .addClass("on");
-      });
-
-      $(".menu_2dpth li").on("click", function () {
-        $(".menu_2dpth li").removeClass("on"); //전체 li에서 on remove
-        $(this).addClass("on"); //현재 li background-color
-        let m = $(this).parent().index(); //1뎁스의 인덱스 가져옴
-        $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
-        $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").find("ul").removeClass("on");
-        $(".sub_menu_main .menu_list > div")
-          .eq(m)
-          .find(".menu_cont_wrap")
-          .addClass("on")
-          .find("ul")
-          .eq($(this).index())
-          .addClass("on");
-        // $(".sub_menu_main .menu_list > div").find("ul").removeClass("on");
-        // $(".sub_menu_main .menu_list > div").eq(m).find("ul").eq($(this).index()).addClass("on");
-      });
-
-      $(".sub_menu_main .menu_list .season_off li:gt(3)").css("display", "none");
-      $(".more_season_off").click(function () {
-        $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
-        $(this).css("display", "none");
-      });
 
       $("#header").load("compose_header.html");
-
       $("#footer").load("compose_footer.html");
-
       $("#quickmenu").load("quickmenu.html");
     });
   </script>
@@ -152,31 +31,8 @@
   <div id="quickmenu"></div>
 
   <main class="sub_bitter_main">
-    <h2 class="hide"></h2>
-    <div class="sub_background">
-      <ul>
-        <li>
-          <h2>SEASON MENU</h2>
-          <span>컴포즈 커피의 시즌 메뉴를 소개합니다</span>
-        </li>
-        <li>
-          <h2>COFFEE</h2>
-          <span>컴포즈 스페셜티 블렌딩의 풍미를 선사합니다</span>
-        </li>
-        <li>
-          <h2>NON COFFEE</h2>
-          <span>컴포즈 커피의 특별한 레시피로 완성된 non coffee 음료</span>
-        </li>
-        <li>
-          <h2>DESSERTS</h2>
-          <span>커피와 함께 즐기는 달콤한 디저트</span>
-        </li>
-        <li>
-          <h2>MD</h2>
-          <span>컴포즈 커피의 MD 상품을 만나보세요</span>
-        </li>
-      </ul>
-    </div>
+    <h2 class="hide">컴포즈 커피 블렌드 비터스윗</h2>
+    
 
   </main>
 
