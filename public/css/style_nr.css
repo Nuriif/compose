@@ -2,6 +2,10 @@
 @import url("../css/reset.css");
 @import url("../css/animate.css");
 
+body{
+    overflow-x: hidden;
+}
+
 /* ---- main ---- */
 .container {
     /* max-width: 1360px; */
@@ -611,6 +615,9 @@
     margin: 30px auto 60px;
 }
 .sub_news_main .news_cont ul{
+    display: none;
+}
+.sub_news_main .news_cont ul.on{
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
@@ -635,10 +642,14 @@
 .sub_news_main .news_cont ul li .img_wrap{
     overflow: hidden;
     margin-bottom: 15px;
-    max-width: 260px;
+    width: 260px;
+    height: 260px;
 }
 .sub_news_main .news_cont ul li img{
-    max-width: 260px;
+    /* max-width: 260px; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform 0.3s ;
 }
 .sub_news_main .news_cont ul li img:hover{
@@ -657,13 +668,18 @@
 .sub_news_main .news_cont dl dd p:first-of-type{
     margin-bottom: 7px;
 }
+.sub_news_main .news_cont dl dd p:last-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 
 
 
 /* 반응형 */
-@media screen and (max-width: 1216px) {
+@media (min-width:899px) and (max-width: 1216px) {
     .sub_news_main .news_cont{
         max-width: 900px;
     }
@@ -671,6 +687,16 @@
     .sub_news_main .news_cont ul{
         justify-content: center;
     }
+    /* .last_item:first-of-type{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .last_item:last-of-type{
+        position: absolute;
+        bottom: 0;
+        left: 300;
+    } */
 }
 @media screen and (max-width: 807px) {
     .sub_news_main .news_cont{
