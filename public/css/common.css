@@ -402,6 +402,7 @@
 
 .board_page a.num {
   padding-top: 6px;
+  color: #555;
 }
 .board_page a.num.on{
   color: #fdd22b;
