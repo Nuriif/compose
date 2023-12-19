@@ -115,8 +115,7 @@
       });
 
       $(".menu_2dpth li").on("click", function () {
-        //$(".menu_2dpth li").removeClass("on"); //전체 li에서 on remove
-        $(this).removeClass("on");
+        $(".menu_2dpth li").removeClass("on"); //전체 li에서 on remove
         $(this).addClass("on"); //현재 li background-color
         let m = $(this).parent().index(); //1뎁스의 인덱스 가져옴
         $(".sub_menu_main .menu_list > div").find(".menu_cont_wrap").removeClass("on");
