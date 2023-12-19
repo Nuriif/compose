@@ -674,6 +674,33 @@ body{
 }
 
 
+/* news 상세페이지 */
+.news_view{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+}
+.news_view h4{
+    font-size: 22px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.news_view .news_date{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.news_view .news_view_src{
+    margin: 5px 0 50px;
+}
+.news_view .news_view_art{
+    width: 800px;
+    margin: 0 auto 30px;
+    line-height: 160%;
+}
+
+
 
 
 
