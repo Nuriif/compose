@@ -83,6 +83,21 @@
   justify-content: flex-end;
 }
 
+.util_menu li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.util_icon{
+  width: 50px;
+}
+.util_menu img{
+  width: 100%;
+}
+
+
+
 /* franchise button */
 .franchise {
   min-width: 140px;
@@ -106,17 +121,6 @@
   position: relative;
   padding-left: 1px;
   padding-top: 7px;
-}
-
-.util_menu li:first-child {
-  margin-right: 5%;
-}
-
-.util_menu ul img {
-  display: block;
-  margin: auto;
-  padding-bottom: 4px;
-  width: 20px;
 }
 
 .gnb_bg {
