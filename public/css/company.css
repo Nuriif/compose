@@ -1,19 +1,20 @@
 @import url("../css/common.css");
 @import url("../css/reset.css");
 
+.sub_wrap,
+.sub_wrap * {
+  box-sizing: border-box;
+}
+
+.sub_wrap {
+  position: relative;
+  z-index: 1;
+}
+
 #sub01 {
   display: flex;
   justify-content: space-evenly;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  padding: 250px 20px 175px;
-}
-
-#sub01>.sub_con {
-  position: relative;
-  z-index: 2;
-  max-width: 1300px;
+  margin: 10% 0 10% 0;
 }
 
 .sub01_tt {
@@ -76,7 +77,6 @@
 
 .sub01_tt>h2>p>span {
   display: block;
-  transform: translate(0, -100%);
   transition: 0.85s transform;
 }
 
@@ -352,6 +352,7 @@
 #sub02 {
   display: flex;
   justify-content: space-evenly;
+  gap: 2%;
 }
 
 .sub_con {
@@ -360,11 +361,11 @@
 }
 
 .sub_con>img {
-  height: 100%;
+  width: 100%;
 }
 
 .sub02_pt {
-  width: 40%;
+  width: 90%;
   margin: -15% 0 0 0;
   display: flex;
   overflow: hidden;
