@@ -702,12 +702,10 @@ body{
     .sub_news_main .news_cont{
         max-width: 100%;
     }
-
     .sub_news_main .news_cont ul{
         justify-content: center;
     }
 }
-
 
 
 @media screen and (max-width: 1023px) {
@@ -830,6 +828,13 @@ body{
     }
     .ingredients ul{
         width: 100%;
+    }
+
+
+
+    /* news */
+    .sub_news_main .news_cont ul{
+        justify-content: center;
     }
 
 
