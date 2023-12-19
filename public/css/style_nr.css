@@ -698,6 +698,10 @@ body{
     width: 800px;
     margin: 0 auto 30px;
     line-height: 160%;
+    font-size: 16px;
+}
+.news_view .bt_wrap{
+    line-height: 2;
 }
 
 
