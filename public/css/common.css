@@ -81,19 +81,31 @@
   display: flex;
   font-size: 13px;
   justify-content: flex-end;
+
 }
 
 .util_menu li a{
   display: flex;
   flex-direction: column;
   align-items: center;  
+  position: relative;
 }
 
 .util_icon{
-  width: 50px;
+  width: 50px;  
+  height: 50px;
+  
 }
-.util_menu img{
-  width: 100%;
+
+.login_icon{
+  width: 45%;   
+  padding-bottom: 5px;
+}
+.join_icon{
+  width: 45%;
+  position: relative;
+  right: -1px;  
+  padding-bottom: 5px;
 }
 
 

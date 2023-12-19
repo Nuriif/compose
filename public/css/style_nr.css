@@ -674,6 +674,43 @@ body{
 }
 
 
+/* news 상세페이지 */
+.news_view{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 5% 0;
+}
+.news_view h4{
+    font-size: 22px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+.news_view .news_date{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.news_view .news_view_src{
+    margin: 5px 0 50px;
+}
+.news_view .news_view_art{
+    width: 100%;
+    margin: 0 auto;
+    line-height: 160%;
+    font-size: 16px;
+}
+.news_view_cont{
+    padding: 50px 0 30px;
+}
+.news_view img{
+    max-width: 100%;
+}
+.news_view .bt_wrap{
+    line-height: 2;
+}
+
+
 
 
 
@@ -697,6 +734,10 @@ body{
         bottom: 0;
         left: 300;
     } */
+
+    .news_view{
+        max-width: 900px;
+    }
 }
 @media screen and (max-width: 807px) {
     .sub_news_main .news_cont{
@@ -704,6 +745,9 @@ body{
     }
     .sub_news_main .news_cont ul{
         justify-content: center;
+    }
+    .news_view{
+        max-width: 100%;
     }
 }
 
@@ -835,6 +879,15 @@ body{
     /* news */
     .sub_news_main .news_cont ul{
         justify-content: center;
+    }
+
+    /* 뉴스 상세페이지 */
+    .news_view{
+        max-width: 900px;
+    }
+    .news_view img{
+        height: auto;
+        width: 100%;
     }
 
 
