@@ -28,66 +28,6 @@ li {
   font-size: 1.4rem;
 }
 
-.bt_wrap {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  font-size: 0;
-}
-
-.bt_wrap a {
-  display: inline-block;
-  min-width: 80px;
-  margin-left: 10px;
-  padding: 10px;
-  border: 1px solid #000;
-  border-radius: 2px;
-  font-size: 1.4rem;
-}
-
-.bt_wrap a:first-child {
-  margin-left: 0;
-}
-
-.bt_wrap a.prev {
-  text-align: center;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 5px 15px 5px 30px;
-  font-size: 17px;
-  background-color: #fff;
-  background: url("../images/icon/arrow_l.svg") no-repeat 15px center/13px;
-  width: 100px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-}
-
-.bt_wrap a.next {
-  text-align: center;
-  box-sizing: border-box;
-  display: inline-block;
-  padding: 5px 30px 5px 15px;
-  font-size: 17px;
-  background-color: #fff;
-  background: url("../images/icon/arrow_r.svg") no-repeat 75px center/13px;
-  width: 100px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-}
-
-.bt_wrap a.on {
-  text-align: center;
-  display: inline-block;
-  padding: 5px 15px;
-  height: auto;
-  font-size: 17px;
-  background-color: #fff;
-  background-image: none;
-  width: 60px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-}
-
 .board_list {
   width: 100%;
   border-top: 2px solid #000;

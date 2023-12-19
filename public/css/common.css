@@ -83,6 +83,21 @@
   justify-content: flex-end;
 }
 
+.util_menu li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.util_icon{
+  width: 50px;
+}
+.util_menu img{
+  width: 100%;
+}
+
+
+
 /* franchise button */
 .franchise {
   min-width: 140px;
@@ -106,17 +121,6 @@
   position: relative;
   padding-left: 1px;
   padding-top: 7px;
-}
-
-.util_menu li:first-child {
-  margin-right: 5%;
-}
-
-.util_menu ul img {
-  display: block;
-  margin: auto;
-  padding-bottom: 4px;
-  width: 20px;
 }
 
 .gnb_bg {
@@ -143,14 +147,17 @@
   height: 333px;
   color: #fff;
 }
-.sub_background > ul li {
+
+.sub_background>ul li {
   display: none;
 }
-.sub_background > ul li.on {
+
+.sub_background>ul li.on {
   text-align: center;
   display: block;
 }
-.sub_background li h3{
+
+.sub_background li h3 {
   font-size: 50px;
   color: #fff;
   padding: 136px 0 10px;
@@ -158,7 +165,8 @@
   animation-fill-mode: both;
   animation-name: fadeInUp;
 }
-.sub_background li span{
+
+.sub_background li span {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
   animation-duration: 0.75s;
@@ -169,10 +177,11 @@
 
 
 /* breadcrumb */
-.sub_nav_wrap *{
+.sub_nav_wrap * {
   box-sizing: border-box;
 }
-.sub_nav_wrap{
+
+.sub_nav_wrap {
   width: 100%;
   height: 50px;
   position: absolute;
@@ -182,61 +191,78 @@
   background: rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
+
 .sub_nav {
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
   display: flex;
 }
-.sub_nav_home{
+
+.sub_nav_home {
   width: 90px;
   color: #fff;
   padding: 10px 32px;
   border-left: 1px solid rgba(221, 221, 221, 0.1);
 }
-.sub_nav_1d, .sub_nav_2d{
+
+.sub_nav_1d,
+.sub_nav_2d {
   position: relative;
   width: 250px;
   border-left: 1px solid rgba(221, 221, 221, 0.1);
 }
-.sub_nav_2d{
+
+.sub_nav_2d {
   border-right: 1px solid rgba(221, 221, 221, 0.1);
 }
-.sub_nav_dropdown{
+
+.sub_nav_dropdown {
   color: #fff;
   height: 100%;
   font-size: 17px;
   padding: 15px;
 }
-.sub_nav_1d ul, .sub_nav_2d ul{
+
+.sub_nav_1d ul,
+.sub_nav_2d ul {
   display: none;
 }
-.sub_nav_1d ul.on, .sub_nav_2d ul.on{
+
+.sub_nav_1d ul.on,
+.sub_nav_2d ul.on {
   display: flex;
   flex-direction: column;
   height: 100%;
   z-index: 30;
   background-color: #fff;
 }
-.sub_nav_1d ul li, .sub_nav_2d ul li{
+
+.sub_nav_1d ul li,
+.sub_nav_2d ul li {
   z-index: 20;
   height: 100%;
   background-color: #fff;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
-.sub_nav_1d ul li:last-child, .sub_nav_2d ul li:last-child{
+
+.sub_nav_1d ul li:last-child,
+.sub_nav_2d ul li:last-child {
   border-bottom: 1px solid #ddd;
 }
-.sub_nav > div li:hover{
+
+.sub_nav>div li:hover {
   color: #fdd22b;
 }
-.sub_nav > div a{
+
+.sub_nav>div a {
   display: block;
   padding: 0 10px;
   line-height: 50px;
 }
-.sub_nav > div h4 span{
+
+.sub_nav>div h4 span {
   position: absolute;
   right: 3%;
   top: 14px;
@@ -251,10 +277,13 @@
   .sub_nav {
     max-width: 885px;
   }
-  .sub_nav_1d, .sub_nav_2d{
+
+  .sub_nav_1d,
+  .sub_nav_2d {
     width: 180px;
   }
-  .sub_nav_home{
+
+  .sub_nav_home {
     width: 70px;
     padding: 10px 22px;
   }
@@ -411,7 +440,8 @@
   padding-top: 6px;
   color: #555;
 }
-.board_page a.num.on{
+
+.board_page a.num.on {
   color: #fdd22b;
 }
 
@@ -421,7 +451,66 @@
   color: #fdd22b;
 }
 
+/* Detail Page Button CSS */
+.bt_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-size: 0;
+}
 
+.bt_wrap a {
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 1.4rem;
+}
+
+.bt_wrap a:first-child {
+  margin-left: 0;
+}
+
+.bt_wrap a.prev {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px 15px 5px 30px;
+  font-size: 17px;
+  background-color: #fff;
+  background: url("../images/icon/arrow_l.svg") no-repeat 15px center/13px;
+  width: 100px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.bt_wrap a.next {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 5px 30px 5px 15px;
+  font-size: 17px;
+  background-color: #fff;
+  background: url("../images/icon/arrow_r.svg") no-repeat 75px center/13px;
+  width: 100px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+
+.bt_wrap a.on {
+  text-align: center;
+  display: inline-block;
+  padding: 5px 15px;
+  height: auto;
+  font-size: 17px;
+  background-color: #fff;
+  background-image: none;
+  width: 60px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
 
 /* footer */
 #footer {
