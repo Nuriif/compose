@@ -56,7 +56,7 @@ li {
   padding: 5px 15px 5px 30px;
   font-size: 17px;
   background-color: #fff;
-  background: url("../images/icon/arrowL.png") no-repeat 20px center/10px 12px;
+  background: url("../images/icon/arrow_l.svg") no-repeat 15px center/13px;
   width: 100px;
   border: 1px solid #ddd;
   border-radius: 2px;
@@ -69,7 +69,7 @@ li {
   padding: 5px 30px 5px 15px;
   font-size: 17px;
   background-color: #fff;
-  background: url("../images/icon/arrowR.png") no-repeat 70px center/10px 12px;
+  background: url("../images/icon/arrow_r.svg") no-repeat 75px center/13px;
   width: 100px;
   border: 1px solid #ddd;
   border-radius: 2px;
