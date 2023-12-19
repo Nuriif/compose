@@ -74,15 +74,12 @@
 /* Slider */
 .slick-slider {
   position: relative;
-
   display: block;
   box-sizing: border-box;
-
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   -webkit-touch-callout: none;
   -khtml-user-select: none;
   -ms-touch-action: pan-y;
@@ -92,10 +89,8 @@
 
 .slick-list {
   position: relative;
-
   display: block;
   overflow: hidden;
-
   margin: 0;
   padding: 0;
 }
@@ -122,7 +117,6 @@
   position: relative;
   top: 0;
   left: 0;
-
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -131,7 +125,6 @@
 .slick-track:before,
 .slick-track:after {
   display: table;
-
   content: "";
 }
 
@@ -278,7 +271,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/icon/util/join_icon.svg);
+  background-image: url(../images/icon/arrow_l.svg);
   background-size: cover;
 }
 
@@ -301,7 +294,7 @@
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(../images/icon/util/join_icon.svg);
+  background-image: url(../images/icon/arrow_r.svg);
   background-size: cover;
 }
 
