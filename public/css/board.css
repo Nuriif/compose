@@ -105,7 +105,7 @@ h2 {
 .board_content .num,
 .writer,
 .date,
-.count {
+.count, .answer {
   justify-content: center;
 }
 
@@ -127,6 +127,14 @@ h2 {
 
 .board_list .count {
   width: 15%;
+}
+
+.board_list .answer {
+  width: 15%;
+}
+
+.board_content .answer{
+  font-weight: bold;
 }
 
 .board_page {
