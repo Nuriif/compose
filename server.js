@@ -17,8 +17,7 @@ app.use(express.static(path.join(__dirname, "public")));
   url 연결 목록 start
 */
 app.use("/", express.static(path.join(__dirname, "html")));
-app.use("/findStore", express.static(path.join(__dirname, "/html/store.html")));
-app.use("/noticeMain", express.static(path.join(__dirname, "/html/noticeList.html")));
+app.use("/storeMap", express.static(path.join(__dirname, "/html/store_map.html")));
 /*
   url 연결 목록 end
 */

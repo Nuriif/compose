@@ -7,6 +7,49 @@
 
   <!-- favicon-->
   <link rel="icon" href="../public/images/icon/favicon.ico">
+
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+
+  <!-- CSS -->
+  <style>
+    #map {
+      width: 60%;
+      height: 100%;
+      float: left;
+    }
+
+    #searchBox {
+      width: 30%;
+      height: 100%;
+      overflow-y: scroll;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    #searchInput {
+      width: 80%;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    #searchResults {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .resultItem {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .resultItem:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,13 +57,12 @@
   <div id="quickmenu"></div>
 
   <main id="main">
-    <div>
-      <label for="address">매장 검색:</label>
-      <input type="text" id="address" placeholder="지역 & 매장 이름을 입력해 주세요">
-      <button onclick="searchStore()">검색</button>
+    <div id="map"></div>
+    <div id="searchBox">
+      <input type="text" id="searchInput" placeholder="지역 & 매장 이름을 입력해 주세요">
+      <button type="button">검색</button>
+      <ul id="searchResults"></ul>
     </div>
-
-    <div id="map" style="width: 500px; height: 400px"></div>
   </main>
 
   <div id="footer"></div>
