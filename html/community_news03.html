@@ -31,6 +31,13 @@
       });
       $(".sub_background li").eq(0).addClass("on");
 
+      $(".sub_background").css({
+        background: "url(../public/images/news/news_top_bg.jpg)", //배경이미지 바꾸시면 됩니다
+        "background-repeat": "no-repeat",
+        "background-position": "center center",
+      });
+      $(".sub_background li").eq(0).addClass("on");
+
       $(".sub_nav > div").hover(function(){
         $(this).find("div").addClass("on");
         $(this).find("ul").addClass("on");
@@ -82,7 +89,7 @@
     <div class="sub_background">
       <ul>
         <li>
-          <!-- 메인 상단에 나타날 제목으로 고쳐주세요 -->
+          <!-- 메인 상단에 나타날 제목 써주세요 -->
           <h3>NEWS</h3>
         </li>
       </ul>
@@ -96,7 +103,6 @@
 
           <div class="sub_nav_1d">
             <h4 class="sub_nav_dropdown">
-              <!-- 현재 페이지가 포함되어 있는 1뎁스 메뉴 이름으로 고쳐주세요 -->
               COMMUNITY
               <span class="material-symbols-rounded">
                 expand_more
@@ -113,7 +119,6 @@
 
           <div class="sub_nav_2d">
             <h4 class="sub_nav_dropdown">
-              <!-- 현제 페이지가 포함되어 있는 2뎁스 메뉴 이름으로 고쳐주세요 -->
               NEWS
               <span class="material-symbols-rounded">
                 expand_more
@@ -121,7 +126,7 @@
             </h4>
             <ul>
               <li><a href="community_notice.html">공지사항</a></li>
-              <li><a href="community_news.html">NEWS</a></li>
+              <li><a href="#">NEWS</a></li>
               <li><a href="community_events.html">EVENTS</a></li>
             </ul>
           </div>
@@ -130,28 +135,31 @@
     </div>
     <div class="news_view">
       <div>
-        <h4>컴포즈커피, 서울특별시 어린이병원 찾아 연말 봉사활동 진행</h4>
-        <p class="news_date">2023.12.11(10:17:52) | 조회수 11<span>컴포즈커피</span></p>
+        <h4>컴포즈커피, 소비자가 직접 뽑은 ‘2023 한국소비자평가 1위' 수상</h4>
+        <p class="news_date">2023.12.01(11:51:36) | 조회수 33<span>컴포즈커피</span></p>
         <div class="news_view_cont">
-          <p><img src="../public/images/news/news_view_01.jpg" alt="서울특별시 어린이병원 봉사활동 사진"></p>
-          <p class="news_view_src">(출처 : 이코노뉴스)</p>
+          <p><img src="../public/images/news/news_view_03.jpg" alt="컴포즈커피 럭키박스 이벤트 당첨자 사진"></p>
+          <p class="news_view_src">컴포즈커피 김진성 대표 (출처 : 비즈니스코리아)</p>
           <p class="news_view_art">
-            컴포즈커피는 지난 8일 서울특별시 어린이병원 발달센터에서 진행된 '일곱빛깔 문화예술 페스티벌'에 방문해<br>
-            ‘찾아가는 커피트럭’ 이벤트 및 봉사활동을 진행했다고 11일 밝혔다.<br>
+            컴포즈커피가 ‘2023 한국소비자평가1위’에 고객만족브랜드(카페) 부문을 수상했다고 29일 전했다.<br>
             <br>
-            일곱빛깔 문화예술 페스티벌은 발달장애 어린이들이 예술센터를 통해 갈고닦은 음악적 기량을 선보이는 행사다.<br>
+            한국소비자평가 1위는 공정한 조사를 통해 사회 각 분야에서 두각을 나타내고 있는 기업을<br>
+            소비자가 직접 선정하고, 기업의 노고를 치하하고자 제정됐다.<br>
             <br>
-            컴포즈커피는 공연을 진행한 어린이들과 학부모, 병원 임직원들은 물론 병원 내방객 약 700여명에게<br>
-            아메리카노, 딸기라떼, 레몬에이드, 자몽에이드 등을 제공했다. 특히, 어린이들에게는 콘소메수프맛 팝콘까지 추가로 제공했다.<br>
+            컴포즈커피는 지난 2014년 론칭 이래 고품질의 원두를 사용해 뛰어난 맛을 자랑하면서도, 대용량에 합리적인 가격의 제품을 꾸준히 선보였다.<br>
+            이런 노력의 결과로 2023년 11월 기준 국내 가맹점 2300호점을 돌파했으며 공식 애플리케이션(APP) 회원 수는 930만 명을 넘어섰다.<br>
             <br>
-            컴포즈커피는 커피트럭 이벤트 외에도 페이스 페인팅, 투호 놀이, 미니 축구, 양궁 등의 놀이활동프로그램을 진행했다.<br>
+            특히 국내 최대 규모의 자체 로스팅 공장을 운영하며, 최고의 전문가들이 엄격하게 생두를 선별하고 로스팅을 거쳐<br>
+            최상의 원두를 전국 가맹점에 공급하고 있다. 아울러 고객의 취향과 니즈를 적극 반영한 메뉴도 지속해서 선보이고 있다.<br>
             <br>
-            컴포즈커피 관계자는 “발달장애 어린이들의 노력이 결실을 맺는 의미 있는 날, 컴포즈커피가 함께할 수 있어 뜻깊다”며<br>
-            “이번 행사를 위해 준비한 어린이들과 학부모님, 그리고 소아과 부족 현실 속 서울특별시 어린이병원에서 노력해 주시는<br>
-            임직원분들에게 작게나마 힘이 됐길 바란다”고 전했다.<br>
+            2023년도에는 소비자들이 중요시하는 사회 공헌 활동도 더욱 강화했다. 연탄봉사(구로구 수궁동) 활동, 청운보육원 봉사활동을 진행했으며,<br>
+            대한적십자사 혈액관리본부와는 ‘생명나눔 헌혈문화 확산’을 위한 업무 협약을 체결을 체결하기도 했다.<br>
             <br>
-            출처 : 최아람 기자<br>
-            <a href="https://www.econonews.co.kr/news/articleView.html?idxno=316814" target="_blank">
+            컴포즈커피 김진성 대표는 ”소비자가 직접 선정한 상이라 더욱 의미있어서 감회가 새롭다”며 “컴포즈커피를 믿고 사랑해 주시는 고객들에게<br>
+            감사의 인사를 전하며, 앞으로도 철저한 원두 품질 관리과 최상의 맛, 다양한 서비스로 고객 만족을 위해 최선을 다하겠다”고 전했다.<br>
+            <br>
+            출처 : 김은진 기자<br>
+            <a href="https://www.businesskorea.co.kr/news/articleView.html?idxno=206629" target="_blank">
               기사 보러가기
               <i class="fa-solid fa-up-right-from-square"></i>
             </a>
@@ -159,8 +167,8 @@
         </div>
         <div class="bt_wrap">
           <div>
-            <a href="#" class="prev">PREV</a>
-            <a href="community_news02.html" class="next">NEXT</a>
+            <a href="community_news02.html" class="prev">PREV</a>
+            <a href="#" class="next">NEXT</a>
           </div>
           <div>
             <a href="community_news.html" class="on">목록</a>
