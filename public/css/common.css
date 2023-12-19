@@ -181,7 +181,6 @@
   border-top: 1px solid rgba(221, 221, 221, 0.1);
   background: rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  
 }
 .sub_nav {
   max-width: 1200px;
@@ -189,7 +188,6 @@
   margin: 0 auto;
   display: flex;
 }
-
 .sub_nav_home{
   width: 90px;
   color: #fff;
@@ -210,7 +208,6 @@
   font-size: 17px;
   padding: 15px;
 }
-
 .sub_nav_1d ul, .sub_nav_2d ul{
   display: none;
 }
@@ -227,6 +224,9 @@
   background-color: #fff;
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
+}
+.sub_nav_1d ul li:last-child, .sub_nav_2d ul li:last-child{
+  border-bottom: 1px solid #ddd;
 }
 .sub_nav > div li:hover{
   color: #fdd22b;
@@ -249,7 +249,14 @@
 /* ------------- 반응형 -------------- */
 @media screen and (max-width: 1216px) {
   .sub_nav {
-    max-width: 900px;
+    max-width: 885px;
+  }
+  .sub_nav_1d, .sub_nav_2d{
+    width: 180px;
+  }
+  .sub_nav_home{
+    width: 70px;
+    padding: 10px 22px;
   }
 }
 
