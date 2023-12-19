@@ -11,7 +11,7 @@ h2 {
 }
 
 .login_wrap {
-    width: 500px;
+    width: 450px;
     margin: 80px auto 100px;
 }
 
@@ -100,8 +100,7 @@ input[type="password"]:focus {
     position: relative;
     background: #ffffff;
 }
-.sns_login_title_wrap hr{
-    width: 450px;
+.sns_login_title_wrap hr{    
     border: 1px solid #dddddd41 ;   
     position: relative;
     bottom: 25px;
