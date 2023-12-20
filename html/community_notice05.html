@@ -17,10 +17,56 @@
   <div id="quickmenu"></div>
 
   <main id="main">
-    <div class="board_wrap">
-      <div class="board_title">
-        <strong>공지사항</strong>
+    <div class="sub_background">
+      <ul>
+        <li>
+          <h3>공지사항</h3>
+        </li>
+      </ul>
+
+      <div class="sub_nav_wrap">
+        <div class="sub_nav">
+          <a href="compose_index.html" class="sub_nav_home">
+            <span class="material-symbols-rounded">
+              house
+            </span>
+          </a>
+
+          <div class="sub_nav_1d">
+            <h4 class="sub_nav_dropdown">
+              COMMUNITY
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="brand_company.html">BRAND</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="community_notice.html">COMMUNITY</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="franchise.html">FRANCHISE</a></li>
+            </ul>
+          </div>
+
+          <div class="sub_nav_2d">
+            <h4 class="sub_nav_dropdown">
+              공지사항
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="community_notice.html">공지사항</a></li>
+              <li><a href="community_news.html">NEWS</a></li>
+              <li><a href="community_events.html">EVENTS</a></li>
+              <li><a href="community_customer.html">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="board_wrap">
       <div class="board_view_wrap">
         <div class="board_view">
           <div class="title">컴포즈커피 생두 안정성 정기 시험 성적서 결과</div>
@@ -50,7 +96,7 @@
               감사합니다.
             </p>
             <p>
-              <img src="../public/images/notice/a3a9db3dccd4a2e01e6108632aba7cf6.jpg" alt="원재료 안정성 검사성적서.jpg">
+              <img src="../public/images/notice/notice05.jpg" alt="원재료 안정성 검사성적서.jpg">
             </p>
             <p>&nbsp;</p>
           </div>
@@ -76,12 +122,53 @@
 <script src="../public/js/jquery-3.7.1.min.js"></script>
 
 <script>
+  // On page load
   $(document).ready(function () {
+    $(".sub_background").css({
+      "background": "url(../public/images/notice/notice_top_bg.jpg)",
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
+    });
+
+    $(".sub_background li").eq(0).addClass("on");
+
+    $(".sub_nav > div").hover(function () {
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function () {
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
+
     $("#header").load("compose_header.html");
 
     $("#footer").load("compose_footer.html");
 
     $("#quickmenu").load("quickmenu.html");
+  });
+
+  // List Page Click Action
+  $(".num").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
+
+    $(".num").removeClass("on");
+    $(this).addClass("on");
+  });
+
+  $(".bt.first").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(0).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(0).addClass("on");
+  });
+  $(".bt.last").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(2).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(2).addClass("on");
   });
 </script>
 

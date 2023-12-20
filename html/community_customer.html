@@ -20,8 +20,56 @@
   <div id="quickmenu"></div>
 
   <main id="main">
+    <div class="sub_background">
+      <ul>
+        <li>
+          <h3>고객센터</h3>
+        </li>
+      </ul>
+
+      <div class="sub_nav_wrap">
+        <div class="sub_nav">
+          <a href="compose_index.html" class="sub_nav_home">
+            <span class="material-symbols-rounded">
+              house
+            </span>
+          </a>
+
+          <div class="sub_nav_1d">
+            <h4 class="sub_nav_dropdown">
+              COMMUNITY
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="brand_company.html">BRAND</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="community_notice.html">COMMUNITY</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="franchise.html">FRANCHISE</a></li>
+            </ul>
+          </div>
+
+          <div class="sub_nav_2d">
+            <h4 class="sub_nav_dropdown">
+              고객센터
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="community_notice.html">공지사항</a></li>
+              <li><a href="community_news.html">NEWS</a></li>
+              <li><a href="community_events.html">EVENTS</a></li>
+              <li><a href="community_customer.html">고객센터</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="board_title">
-      <h2>고객센터</h2>
       <p>
         COMPOSE COFFEE를 이용하시며 불편하셨던 사항이나 칭찬하고 싶은 경험 등을 올려주세요.<br>
         고객님과 함께하는 공간이 더욱 편안할 수 있도록 최선을 다하겠습니다.
@@ -34,6 +82,7 @@
         </div>
       </dl>
     </div>
+
     <div class="board_wrap">
       <div class="board_list">
         <div class="board_top">
@@ -138,7 +187,24 @@
 <script src="../public/js/jquery-3.7.1.min.js"></script>
 
 <script>
+  // On page load
   $(document).ready(function () {
+    $(".sub_background").css({
+      "background": "url(../public/images/notice/notice_top_bg.jpg)", //배경이미지 바꾸시면 됩니다
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
+    });
+
+    $(".sub_background li").eq(0).addClass("on");
+
+    $(".sub_nav > div").hover(function () {
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function () {
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
+
     $("#header").load("compose_header.html");
 
     $("#footer").load("compose_footer.html");
@@ -146,6 +212,7 @@
     $("#quickmenu").load("quickmenu.html");
   });
 
+  // List Page Click Action
   $(".num").click(function () {
     $(".sub_news_main .news_cont ul").removeClass("on");
     $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
