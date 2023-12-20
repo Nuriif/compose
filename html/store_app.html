@@ -10,28 +10,6 @@
 
   <!-- css -->
   <link rel="stylesheet" href="../public/css/style_nr.css">
-
-  <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $(".sub_app_main .cont2 .box_4").hover(
-        function () {
-          $(this).css("border", "1px solid transparent").css("box-shadow", "0 0 0 3px inset #f0d041");
-        },
-        function () {
-          $(this).css("box-shadow", "none").css("border", "1px solid #ccc");
-        }
-      );
-
-      $("#header").load("compose_header.html");
-
-      $("#footer").load("compose_footer.html");
-
-      $("#quickmenu").load("quickmenu.html");
-    });
-  </script>
 </head>
 
 <body>
@@ -91,6 +69,29 @@
   </main>
 
   <footer id="footer"></footer>
+
 </body>
+
+<!-- jquery -->
+<script src="../public/js/jquery-3.7.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $(".sub_app_main .cont2 .box_4").hover(
+      function () {
+        $(this).css("border", "1px solid transparent").css("box-shadow", "0 0 0 3px inset #f0d041");
+      },
+      function () {
+        $(this).css("box-shadow", "none").css("border", "1px solid #ccc");
+      }
+    );
+
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
 
 </html>
