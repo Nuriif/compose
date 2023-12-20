@@ -1,3 +1,5 @@
+@import url("../css/animate.css");
+
 /* header, footer, 목록 page common combined CSS */
 #main {
   padding-bottom: 10%;
@@ -210,6 +212,7 @@
   height: 100%;
   margin: 0 auto;
   display: flex;
+  line-height: 1;
 }
 
 .sub_nav_home {
@@ -281,10 +284,6 @@
   top: 14px;
 }
 
-
-
-
-
 /* ------------- 반응형 -------------- */
 @media screen and (max-width: 1216px) {
   .sub_nav {
@@ -309,7 +308,7 @@
 }
 
 .quick_main li {
-  padding: 1rem 15px;
+  padding: 15px;
   font-size: 14px;
   background-color: #1d1d1d;
   position: relative;
@@ -395,6 +394,14 @@
   border-radius: 10px;
 }
 
+.xi-call:before {
+  content: "\ebef";
+}
+
+.xi-call:before {
+  content: "\ebee";
+}
+
 .xi-kakaostory:before {
   content: "\ebef";
 }
@@ -403,11 +410,11 @@
   content: "\ebee";
 }
 
-.xi-emoticon:before {
+.xi-hunie:before {
   content: "\ebef";
 }
 
-.xi-emoticon:before {
+.xi-hunie:before {
   content: "\ebee";
 }
 

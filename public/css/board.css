@@ -1,6 +1,10 @@
 @import url("../css/common.css");
 @import url("../css/reset.css");
 
+#main {
+  padding-top: 100px;
+}
+
 #header {
   top: 0;
   z-index: 500;
@@ -10,22 +14,8 @@
   border-bottom: 1px solid #dddddd;
 }
 
-#main {
-  position: relative;
-  margin: auto;
-  padding: 0 5%;
-  margin-top: 110px;
-}
-
-h2 {
-  font-size: 35px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.board_title h2 {
-  margin-top: 20px;
-  text-align: center;
+.board_title {
+  margin-top: 10%;
 }
 
 .board_title p {
@@ -69,8 +59,10 @@ h2 {
 }
 
 .board_wrap {
+  position: relative;
   margin: auto;
-  padding: 0 0 50px;
+  padding: 0 5%;
+  margin-top: 110px;
   text-align: center;
 }
 

@@ -12,20 +12,7 @@ li {
 
 .board_wrap {
   width: 1000px;
-  margin: 20px auto;
-}
-
-.board_title {
-  margin-bottom: 30px;
-}
-
-.board_title strong {
-  font-size: 3rem;
-}
-
-.board_title p {
-  margin-top: 5px;
-  font-size: 1.4rem;
+  margin: 10% auto;
 }
 
 .board_list {
@@ -82,42 +69,6 @@ li {
   width: 10%;
 }
 
-/* Page Button Area */
-.board_page {
-  margin-top: 20px;
-}
-
-.board_page a {
-  text-align: center;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: middle;
-  border: 1px solid #ddd;
-  line-height: 100%;
-}
-
-.board_page a.bt {
-  font-size: 1.2rem;
-  letter-spacing: -1px;
-  width: 30px;
-  height: 30px;
-}
-
-.board_page a.num {
-  padding-top: 9px;
-  font-size: 1.4rem;
-}
-
-.board_page a.num.on {
-  border-color: #ddd;
-  background: #fff;
-  color: #000;
-}
-
-.board_page a:first-child {
-  border-left: 1px solid #ddd;
-}
-
 .board_view {
   width: 100%;
   border-top: 2px solid #000;
@@ -131,8 +82,13 @@ li {
 
 .board_view .info {
   padding: 15px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px dashed #ddd;
   font-size: 0;
+}
+
+.board_view p {
+  margin-top: 5px;
+  font-size: 1.4rem;
 }
 
 .board_view .info dl {
