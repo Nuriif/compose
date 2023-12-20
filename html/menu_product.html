@@ -22,11 +22,10 @@
     $(document).ready(function () {
       // 페이지 로드 시
       $(".sub_menu_main .sub_background").css({
-        background: "url(../public/images/menu/bg/season_bg_3.jpg)",
+        background: "url(../public/images/menu/bg/product_bg.jpg)",
         "background-repeat": "no-repeat",
         "background-position": "center center",
       });
-
       $(".sub_nav > div").hover(function(){
         $(this).find("div").addClass("on");
         $(this).find("ul").addClass("on");
@@ -36,13 +35,7 @@
       });
 
       $(".sub_menu_main .menu_1dpth li a").removeClass("on");
-      $(".sub_menu_main .menu_1dpth li a").eq(0).addClass("on"); // 1dpth underbar
-
-      $(".sub_menu_main .menu_list .season_off li:gt(3)").css("display", "none");
-      $(".more_season_off").click(function () {
-        $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
-        $(this).css("display", "none");
-      });
+      $(".sub_menu_main .menu_1dpth li a").eq(4).addClass("on"); // 1dpth underbar
       
       $("#header").load("compose_header.html");
 
@@ -51,7 +44,8 @@
       $("#quickmenu").load("quickmenu.html");
     });
   </script>
-  <script></script>
+  <script>
+  </script>
 </head>
 
 <body>
@@ -59,12 +53,12 @@
   <div id="quickmenu"></div>
 
   <main class="sub_menu_main">
-    <h2 class="hide">시즌 메뉴</h2>
+    <h2 class="hide">전체 메뉴</h2>
     <div class="sub_background">
       <ul>
         <li>
-          <h3>SEASON MENU</h3>
-          <span>컴포즈 커피의 시즌 메뉴를 소개합니다</span>
+          <h3>MD</h3>
+          <span>컴포즈 커피의 MD 상품을 만나보세요</span>
         </li>
       </ul>
       <div class="sub_nav_wrap">
@@ -93,7 +87,7 @@
           <!--
           <div class="sub_nav_2d">
             <h4 class="sub_nav_dropdown">
-              시즌 메뉴
+              커피
               <span class="material-symbols-rounded">
                 expand_more
               </span>
@@ -117,31 +111,52 @@
       <li><a href="menu_product.html" id="tab_product">MD 상품</a></li>
     </ul>
     <div class="menu_2dpth">
-      <ul class="dpth2_season">
-        <li class="on"><a href="menu_season.html">시즌메뉴</a></li>
+      <ul class="dpth2_product">
+        <li class="on"><a href="menu_product.html">MD 상품</a></li>
       </ul>
     </div>
     <div class="menu_list">
-      <div class="season_list">
+      <div class="MD_list">
+        <h2 class="hide">MD 상품</h2>
         <div class="menu_cont_wrap">
-          <ul id="season">
+          <ul id="product" class="menu_tab_cont">
             <li>
-              <img src="../public/images/menu/nutri_info_1.jpg" alt="2023 겨울 시즌 메뉴 믿을 수 있는 제철 논산 딸기의 향긋한 시그널 논산 딸기">
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="컴포즈 블랙엣지">
+                </div>
+                <p>*컴포즈 블랙엣지</p>
+                <p>Compose Black Edge Coffee</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="컴포즈 드립백 하우스 블렌드">
+                </div>
+                <p>컴포즈 드립백 하우스 블렌드</p>
+                <p>Compose Drip Bag Coffee</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="컴포즈 티백 하우스 블렌드">
+                </div>
+                <p>컴포즈 티백 하우스 블렌드</p>
+                <p>Compose Tea Bag Coffee</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="컴포즈 캡슐 하우스 블렌드">
+                </div>
+                <p>컴포즈 캡슐 하우스 블렌드</p>
+                <p>Compose Capsule Coffee</p>
+              </a>
             </li>
           </ul>
-          <div class="season_off">
-            <h3><span>SEASON OFF</span></h3>
-            <ul>
-              <li><img src="../public/images/menu/KakaoTalk_20231114_150542288.jpg" alt="2022 겨울 시즌 메뉴 Hello Snow"></li>
-              <li><img src="../public/images/menu/22autunm.jpg" alt="2022 가을 시즌 메뉴 오리지널 스위트콘"></li>
-              <li><img src="../public/images/menu/23_spring.jpg" alt="2023 봄 시즌 메뉴 Feel so berry 설향 생딸기 듬뿍!"></li>
-              <li><img src="../public/images/menu/23_spring_special.jpg" alt="2023 봄 시즌 스페셜 메뉴 Nice to meet 슈! 따스한 봄에 만나는 달콤한 슈크림"></li>
-              <li><img src="../public/images/menu/23_summer.jpg" alt="2023 여름 시즌 메뉴 생초콜릿 라떼 is back"></li>
-              <li><img src="../public/images/menu/23_summer_special_2.jpg" alt="2023 여름 시즌 스페셜 메뉴2 생초콜릿 라떼 is back"></li>
-              <li><img src="../public/images/menu/23_summer_special.jpg" alt="2023 여름 시즌 스페셜 메뉴 여름을 쿨하게 부탁해"></li>
-            </ul>
-            <a href="#none" class="more_season_off">▼ 더보기</a>
-          </div>
         </div>
       </div>
     </div>
