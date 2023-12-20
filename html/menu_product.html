@@ -17,35 +17,6 @@
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-  <script>
-    $(document).ready(function () {
-      // 페이지 로드 시
-      $(".sub_menu_main .sub_background").css({
-        background: "url(../public/images/menu/bg/product_bg.jpg)",
-        "background-repeat": "no-repeat",
-        "background-position": "center center",
-      });
-      $(".sub_nav > div").hover(function(){
-        $(this).find("div").addClass("on");
-        $(this).find("ul").addClass("on");
-      }, function(){
-        $(this).find("div").removeClass("on");
-        $(this).find("ul").removeClass("on");
-      });
-
-      $(".sub_menu_main .menu_1dpth li a").removeClass("on");
-      $(".sub_menu_main .menu_1dpth li a").eq(4).addClass("on"); // 1dpth underbar
-      
-      $("#header").load("compose_header.html");
-
-      $("#footer").load("compose_footer.html");
-
-      $("#quickmenu").load("quickmenu.html");
-    });
-  </script>
-  <script>
-  </script>
 </head>
 
 <body>
@@ -164,5 +135,30 @@
 
   <div id="footer"></div>
 </body>
+<script>
+  $(document).ready(function () {
+    // 페이지 로드 시
+    $(".sub_menu_main .sub_background").css({
+      background: "url(../public/images/menu/bg/product_bg.jpg)",
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
+    });
+    $(".sub_nav > div").hover(function(){
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function(){
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
 
+    $(".sub_menu_main .menu_1dpth li a").removeClass("on");
+    $(".sub_menu_main .menu_1dpth li a").eq(4).addClass("on"); // 1dpth underbar
+    
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
 </html>

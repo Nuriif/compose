@@ -12,24 +12,6 @@
 
     <!-- jquery -->
     <script src="../public/js/jquery-3.7.1.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".sub_menu_main .menu_list li").hover(
-          function () {
-            $(this).find(".img_wrap").addClass("on");
-            //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
-          },
-          function () {
-            $(this).find(".img_wrap").removeClass("on");
-            //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
-          }
-        );
-
-        $("#header").load("compose_header.html");
-        $("#footer").load("compose_footer.html");
-
-      });
-    </script>
   </head>
   <body>
     <header id="header"></header>
@@ -121,4 +103,22 @@
     </main>
     <footer id="footer"></footer>
   </body>
+  <script>
+    $(document).ready(function () {
+      $(".sub_menu_main .menu_list li").hover(
+        function () {
+          $(this).find(".img_wrap").addClass("on");
+          //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
+        },
+        function () {
+          $(this).find(".img_wrap").removeClass("on");
+          //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
+        }
+      );
+
+      $("#header").load("compose_header.html");
+      $("#footer").load("compose_footer.html");
+
+    });
+  </script>
 </html>
