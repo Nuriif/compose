@@ -10,14 +10,11 @@
 
   <!-- css -->
   <link rel="stylesheet" href="../public/css/join.css">
-
-  <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
-  <script src="../public/js/join.js"></script>
 </head>
 
 <body>
-  <div id="header"></div>
+  <header id="header"></header>
+
   <main>
     <div class="join_wrap">
       <h2>회원가입</h2>
@@ -86,24 +83,24 @@
           <div class="birth_wrap">
             <label for="birthdate">생년월일</label>
             <div>
-                  <select name="year" class="select_box">
-                    <option value="">년도</option>
-                    <option value="2024">2024</option>
-                    <option value="2023">2023</option>
-                    <option value="2022">2022</option>
-                  </select>
-                  <select name="month" class="select_box">
-                    <option value="">월</option>
-                    <option value="1">1월</option>
-                    <option value="2">2월</option>
-                    <option value="3">3월</option>
-                  </select>
-                  <select name="day" class="select_box">
-                    <option value="">일</option>
-                    <option value="1">1일</option>
-                    <option value="2">2일</option>
-                    <option value="3">3일</option>
-                  </select>
+              <select name="year" class="select_box">
+                <option value="">년도</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+              </select>
+              <select name="month" class="select_box">
+                <option value="">월</option>
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+              </select>
+              <select name="day" class="select_box">
+                <option value="">일</option>
+                <option value="1">1일</option>
+                <option value="2">2일</option>
+                <option value="3">3일</option>
+              </select>
             </div>
             <p>생년월일 등록시 생일 쿠폰 발급 및 맞춤 상품을 추천해 드릴게요.</p>
           </div>
@@ -160,20 +157,27 @@
               문자 수신
             </label>
           </div>
-        </fieldset>       
+        </fieldset>
         <div>
           <input type="submit" value="가입하기" class="btn_submit" id="btn_add">
         </div>
       </form>
     </div>
   </main>
-  <div id="footer"></div>
-  <script>
-    $(document).ready(function () {
-      $("#header").load("compose_header.html");
-      $("#footer").load("compose_footer.html");
-    });
-  </script>
+
+  <footer id="footer"></footer>
+
 </body>
+
+<!-- jquery -->
+<script src="../public/js/jquery-3.7.1.min.js"></script>
+<script src="../public/js/join.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#header").load("compose_header.html");
+    $("#footer").load("compose_footer.html");
+  });
+</script>
 
 </html>

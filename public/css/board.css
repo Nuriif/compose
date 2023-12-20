@@ -105,7 +105,8 @@ h2 {
 .board_content .num,
 .writer,
 .date,
-.count, .answer {
+.count,
+.answer {
   justify-content: center;
 }
 
@@ -133,32 +134,6 @@ h2 {
   width: 15%;
 }
 
-.board_content .answer{
+.board_content .answer {
   font-weight: bold;
-}
-
-.board_page {
-  margin: auto;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
-}
-
-.board_page a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-}
-
-.board_page img {
-  width: 100%;
-}
-
-.board_page .strong {
-  position: relative;
-  font-weight: bold;
-  box-shadow: 0 3px 0 0 #fdd22b;
 }

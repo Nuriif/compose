@@ -11,69 +11,12 @@
   <!-- css -->
   <link rel="stylesheet" href="../public/css/style_nr.css">
 
-  <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
-
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-  <script>
-    $(document).ready(function () {
-      // 페이지 로드 시
-
-      $(".sub_background").css({
-        background: "url(../public/images/news/news_top_bg.jpg)", //배경이미지 바꾸시면 됩니다
-        "background-repeat": "no-repeat",
-        "background-position": "center center",
-      });
-      $(".sub_background li").eq(0).addClass("on");
-
-      $(".sub_nav > div").hover(function(){
-        $(this).find("div").addClass("on");
-        $(this).find("ul").addClass("on");
-      }, function(){
-        $(this).find("div").removeClass("on");
-        $(this).find("ul").removeClass("on");
-      });
-      
-      // $(".sub_nav_bg_01.on").css({height:$(".sub_nav_1d ul").height()});
-      // $(".sub_nav_bg_02.on").css({height:$(".sub_nav_2d ul").height()});
-      //질문 height 가져오기      
-
-
-      $(".num").click(function(){
-        $(".sub_news_main .news_cont ul").removeClass("on");
-        $(".sub_news_main .news_cont ul").eq($(this).index()-1).addClass("on");
-        
-        $(".num").removeClass("on");
-        $(this).addClass("on");
-      });
-
-      $(".bt.first").click(function(){
-        $(".sub_news_main .news_cont ul").removeClass("on");
-        $(".sub_news_main .news_cont ul").eq(0).addClass("on");
-
-        $(".num").removeClass("on");
-        $(".num").eq(0).addClass("on");
-      });
-      $(".bt.last").click(function(){
-        $(".sub_news_main .news_cont ul").removeClass("on");
-        $(".sub_news_main .news_cont ul").eq(2).addClass("on");
-
-        $(".num").removeClass("on");
-        $(".num").eq(2).addClass("on");
-      });
-
-
-      $("#header").load("compose_header.html");
-      $("#footer").load("compose_footer.html");
-      $("#quickmenu").load("quickmenu.html");
-    });
-  </script>
-  <script>
-  </script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -825,7 +768,65 @@
 
   </main>
 
-  <div id="footer"></div>
+  <footer id="footer"></footer>
+
 </body>
+
+<!-- jquery -->
+<script src="../public/js/jquery-3.7.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // 페이지 로드 시
+
+    $(".sub_background").css({
+      background: "url(../public/images/news/news_top_bg.jpg)", //배경이미지 바꾸시면 됩니다
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
+    });
+    $(".sub_background li").eq(0).addClass("on");
+
+    $(".sub_nav > div").hover(function () {
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function () {
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
+
+    // $(".sub_nav_bg_01.on").css({height:$(".sub_nav_1d ul").height()});
+    // $(".sub_nav_bg_02.on").css({height:$(".sub_nav_2d ul").height()});
+    //질문 height 가져오기      
+
+
+    $(".num").click(function () {
+      $(".sub_news_main .news_cont ul").removeClass("on");
+      $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
+
+      $(".num").removeClass("on");
+      $(this).addClass("on");
+    });
+
+    $(".bt.first").click(function () {
+      $(".sub_news_main .news_cont ul").removeClass("on");
+      $(".sub_news_main .news_cont ul").eq(0).addClass("on");
+
+      $(".num").removeClass("on");
+      $(".num").eq(0).addClass("on");
+    });
+    $(".bt.last").click(function () {
+      $(".sub_news_main .news_cont ul").removeClass("on");
+      $(".sub_news_main .news_cont ul").eq(2).addClass("on");
+
+      $(".num").removeClass("on");
+      $(".num").eq(2).addClass("on");
+    });
+
+
+    $("#header").load("compose_header.html");
+    $("#footer").load("compose_footer.html");
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
 
 </html>

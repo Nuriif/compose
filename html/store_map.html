@@ -8,9 +8,6 @@
   <!-- favicon-->
   <link rel="icon" href="../public/images/icon/favicon.ico">
 
-  <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
-
   <!-- CSS -->
   <style>
     #map {
@@ -53,7 +50,7 @@
 </head>
 
 <body>
-  <div id="header"></div>
+  <header id="header"></header>
   <div id="quickmenu"></div>
 
   <main id="main">
@@ -65,18 +62,22 @@
     </div>
   </main>
 
-  <div id="footer"></div>
+  <footer id="footer"></footer>
 
-  <script>
-    $(document).ready(function () {
-      $("#header").load("compose_header.html");
-
-      $("#footer").load("compose_footer.html");
-
-      $("#quickmenu").load("quickmenu.html");
-    });
-  </script>
 </body>
+
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
 
 <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
   integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>

@@ -11,15 +11,12 @@
   <!-- css -->
   <link rel="stylesheet" href="../public/css/board.css">
 
-  <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
-
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-  <div id="header"></div>
+  <header id="header"></header>
   <div id="quickmenu"></div>
 
   <main id="main">
@@ -97,6 +94,8 @@
           <i class="fa-solid fa-caret-left"></i>
         </a>
         <a href="#" class="num on">1</a>
+        <a href="#" class="num">2</a>
+        <a href="#" class="num">3</a>
         <a href="#" class="bt last" alt="마지막 페이지로 이동">
           <i class="fa-solid fa-caret-right"></i>
         </a>
@@ -104,17 +103,44 @@
     </div>
   </main>
 
-  <div id="footer"></div>
+  <footer id="footer"></footer>
 
-  <script>
-    $(document).ready(function () {
-      $("#header").load("compose_header.html");
-
-      $("#footer").load("compose_footer.html");
-
-      $("#quickmenu").load("quickmenu.html");
-    });
-  </script>
 </body>
+
+<!-- jquery -->
+<script src="../public/js/jquery-3.7.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+
+  $(".num").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
+
+    $(".num").removeClass("on");
+    $(this).addClass("on");
+  });
+
+  $(".bt.first").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(0).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(0).addClass("on");
+  });
+  $(".bt.last").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(2).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(2).addClass("on");
+  });
+</script>
 
 </html>

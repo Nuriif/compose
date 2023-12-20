@@ -13,9 +13,6 @@
 
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-  <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
@@ -133,16 +130,44 @@
     </div>
   </main>
 
-  <div id="footer"></div>
-  <script>
-    $(document).ready(function () {
-      $("#header").load("compose_header.html");
+  <footer id="footer"></footer>
 
-      $("#footer").load("compose_footer.html");
-
-      $("#quickmenu").load("quickmenu.html");
-    });
-  </script>
 </body>
+
+<!-- jquery -->
+<script src="../public/js/jquery-3.7.1.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+
+  $(".num").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
+
+    $(".num").removeClass("on");
+    $(this).addClass("on");
+  });
+
+  $(".bt.first").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(0).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(0).addClass("on");
+  });
+  $(".bt.last").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(2).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(2).addClass("on");
+  });
+</script>
 
 </html>
