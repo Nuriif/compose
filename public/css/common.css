@@ -161,6 +161,7 @@
   position: relative;
   height: 333px;
   color: #fff;
+  line-height: 1;
 }
 
 .sub_background>ul li {

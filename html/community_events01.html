@@ -71,6 +71,7 @@
               <li><a href="community_notice.html">공지사항</a></li>
               <li><a href="community_news.html">NEWS</a></li>
               <li><a href="community_events.html">EVENTS</a></li>
+              <li><a href="community_customer.html">고객센터</a></li>
             </ul>
           </div>
         </div>
@@ -79,8 +80,8 @@
     <div class="events_view">
       <div>
         <h4>2023 에어부산 럭키박스 당첨자 안내</h4>
-        <p class="news_date">2023.11.13(18:36:48) | 조회수 651<span>컴포즈커피</span></p>
-        <div class="news_view_cont">
+        <p class="events_date">2023.11.13(18:36:48) | 조회수 651<span>컴포즈커피</span></p>
+        <div class="events_view_cont">
           <p><img src="../public/images/events/events_view01.jpg" alt="에어부산 럭키박스 당첨자 발표"></p>
         </div>
         <div class="bt_wrap">
@@ -332,31 +333,6 @@
         $(this).find("div").removeClass("on");
         $(this).find("ul").removeClass("on");
       });      
-
-
-      $(".num").click(function(){
-        $(".sub_news_main .news_cont ul").removeClass("on");
-        $(".sub_news_main .news_cont ul").eq($(this).index()-1).addClass("on");
-        
-        $(".num").removeClass("on");
-        $(this).addClass("on");
-      });
-
-      $(".bt.first").click(function(){
-        $(".sub_news_main .news_cont ul").removeClass("on");
-        $(".sub_news_main .news_cont ul").eq(0).addClass("on");
-
-        $(".num").removeClass("on");
-        $(".num").eq(0).addClass("on");
-      });
-      $(".bt.last").click(function(){
-        $(".sub_news_main .news_cont ul").removeClass("on");
-        $(".sub_news_main .news_cont ul").eq(2).addClass("on");
-
-        $(".num").removeClass("on");
-        $(".num").eq(2).addClass("on");
-      });
-
 
       $("#header").load("compose_header.html");
       $("#footer").load("compose_footer.html");
