@@ -1,0 +1,751 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>컴포즈커피 - 메뉴</title>
+
+  <!-- favicon-->
+  <link rel="icon" href="../public/images/icon/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/style_nr.css">
+
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="../public/js/menu.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+  <header id="header"></header>
+  <div id="quickmenu"></div>
+
+  <main class="sub_menu_main">
+    <h2 class="hide">전체 메뉴</h2>
+    <div class="sub_background">
+      <ul>
+        <li>
+          <h3>NON COFFEE</h3>
+          <span>컴포즈 커피의 특별한 레시피로 완성된 non coffee 음료</span>
+        </li>
+      </ul>
+      <div class="sub_nav_wrap">
+        <div class="sub_nav">
+          <a href="compose_index.html" class="sub_nav_home">
+            <span class="material-symbols-rounded">
+              house
+            </span>
+          </a>
+
+          <div class="sub_nav_1d">
+            <h4 class="sub_nav_dropdown">
+              MENU
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="brand_company.html">BRAND</a></li>
+              <li><a href="menu_season.html">MENU</a></li>
+              <li><a href="community_notice.html">COMMUNITY</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="franchise.html">FRANCHISE</a></li>
+            </ul>
+          </div>
+          <!--
+          <div class="sub_nav_2d">
+            <h4 class="sub_nav_dropdown">
+              커피
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="menu_season.html">시즌 메뉴</a></li>
+              <li><a href="menu_coffee.html">커피</a></li>
+              <li><a href="menu_noncoffee.html">음료</a></li>
+              <li><a href="menu_dessert.html">디저트</a></li>
+              <li><a href="menu_product.html">MD</a></li>
+            </ul>
+          </div>-->
+        </div>
+      </div>
+    </div>
+    <ul class="menu_1dpth">
+      <li><a href="menu_season.html" id="tab_season">시즌메뉴</a></li>
+      <li><a href="menu_coffee.html" id="tab_coffee">커피</a></li>
+      <li><a href="menu_noncoffee.html" id="tab_noncoffee">음료</a></li>
+      <li><a href="menu_dessert.html" id="tab_dessert">디저트</a></li>
+      <li><a href="menu_product.html" id="tab_product">MD 상품</a></li>
+    </ul>
+    <div class="menu_2dpth">
+      <ul class="dpth2_noncoffee">
+        <li class="on"><a href="#">라떼</a></li>
+        <li><a href="#">주스</a></li>
+        <li><a href="#">스무디</a></li>
+        <li><a href="#">티</a></li>
+        <li><a href="#">에이드</a></li>
+        <li><a href="#">프라페</a></li>
+        <li><a href="#">밀크쉐이크</a></li>
+      </ul>
+    </div>
+    <div class="menu_list">
+      <div class="noncoffee_list">
+        <h2 class="hide">논커피 메뉴</h2>
+        <div class="menu_cont_wrap">
+          <ul id="latte" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="핫 곡물라떼">
+                </div>
+                <p>Hot 곡물라떼</p>
+                <p>Hot Cereal Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 곡물라떼">
+                </div>
+                <p>Iced 곡물라떼</p>
+                <p>Iced Cereal Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 고구마라떼">
+                </div>
+                <p>Hot 고구마라떼</p>
+                <p>Hot Sweet Potato Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 고구마라떼">
+                </div>
+                <p>Iced 고구마라떼</p>
+                <p>Iced Sweet Potato Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="핫 더블초코라떼">
+                </div>
+                <p>Hot 더블초코라떼</p>
+                <p>Hot Double Chocolate Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 더블초코라떼">
+                </div>
+                <p>Iced 더블초코라떼</p>
+                <p>Iced Double Chocolate Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 쿠키초코라떼">
+                </div>
+                <p>Hot 쿠키초코라떼</p>
+                <p>Hot Cookie Chocolate Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 쿠키초코라떼">
+                </div>
+                <p>Iced 쿠키초코라떼</p>
+                <p>Iced Cookie Chocolate Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="핫 그린티라떼">
+                </div>
+                <p>Hot 그린티라떼</p>
+                <p>Hot Greentea Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 그린티라떼">
+                </div>
+                <p>Iced 그린티라떼</p>
+                <p>Iced Greentea Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 민트초코오레오라떼">
+                </div>
+                <p>Hot 민트초코오레오라떼</p>
+                <p>Hot Mint Chocolate Oreo Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 민트초코오레오라떼">
+                </div>
+                <p>Iced 민트초코오레오라떼</p>
+                <p>Iced Mint Chocolate Oreo Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="흑당밀크(우유)">
+                </div>
+                <p>흑당밀크(우유)</p>
+                <p>Black Sugar Milk</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="딸기라떼">
+                </div>
+                <p>딸기라떼</p>
+                <p>Strawberry Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="블루베리라떼">
+                </div>
+                <p>블루베리라떼</p>
+                <p>Blueberry Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="망고라떼">
+                </div>
+                <p>망고라떼</p>
+                <p>Mango Latte</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 밀크티">
+                </div>
+                <p>Hot 밀크티</p>
+                <p>Hot Milktea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 밀크티">
+                </div>
+                <p>Iced 밀크티</p>
+                <p>Iced Milktea</p>
+              </a>
+            </li>
+          </ul>
+          <ul id="juice" class="menu_tab_cont">
+            <li>
+              <a href="menu_juice01.html">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="복숭아주스">
+                </div>
+                <p>*복숭아주스</p>
+                <p>Peach Juice</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="키위주스">
+                </div>
+                <p>키위주스</p>
+                <p>Kiwi Juice</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="오렌지당근주스">
+                </div>
+                <p>오렌지당근주스</p>
+                <p>Orange Carrot Juice</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="샤인파인케일주스">
+                </div>
+                <p>샤인파인케일주스</p>
+                <p>Shine Muscat Pine Kale Juice</p>
+              </a>
+            </li>
+          </ul>
+          <ul id="smoothie" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="딸기스무디">
+                </div>
+                <p>딸기스무디</p>
+                <p>Strawberry Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="망고스무디">
+                </div>
+                <p>망고스무디</p>
+                <p>Mango Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="블루베리스무디">
+                </div>
+                <p>블루베리스무디</p>
+                <p>Blueberry Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="유자스무디">
+                </div>
+                <p>유자스무디</p>
+                <p>Yuja Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="플레인요거트스무디">
+                </div>
+                <p>플레인요거트스무디</p>
+                <p>Plain Yogurt Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="블루베리요거트스무디">
+                </div>
+                <p>블루베리요거트스무디</p>
+                <p>Blueberry Yogurt Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="딸기요거트스무디">
+                </div>
+                <p>딸기요거트스무디</p>
+                <p>Strawberry Yogurt Smoothie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="망고요거트스무디">
+                </div>
+                <p>망고요거트스무디</p>
+                <p>Mango Yogurt Smoothie</p>
+              </a>
+            </li>
+          </ul>
+          <ul id="tea" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="핫 복숭아티">
+                </div>
+                <p>Hot 복숭아티</p>
+                <p>Hot Peach Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 복숭아티">
+                </div>
+                <p>Iced 복숭아티</p>
+                <p>Iced Peach Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 자몽허니블랙티">
+                </div>
+                <p>Hot 자몽허니블랙티</p>
+                <p>Hot Grapefruit Honey Black Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 자몽허니블랙티">
+                </div>
+                <p>Iced 자몽허니블랙티</p>
+                <p>Iced Grapefruit Honey Black Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="핫 페퍼민트">
+                </div>
+                <p>Hot 페퍼민트</p>
+                <p>Hot Peppermint Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 페퍼민트">
+                </div>
+                <p>Iced 페퍼민트</p>
+                <p>Iced Peppermint Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 캐모마일">
+                </div>
+                <p>Hot 캐모마일</p>
+                <p>Hot Chamomile Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 캐모마일">
+                </div>
+                <p>Iced 캐모마일</p>
+                <p>Iced Chamomile Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 로즈마리">
+                </div>
+                <p>Hot 로즈마리</p>
+                <p>Hot Rosemary Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 로즈마리">
+                </div>
+                <p>Iced 로즈마리</p>
+                <p>Iced Rosemary Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 얼그레이">
+                </div>
+                <p>Hot 얼그레이</p>
+                <p>Hot Earl Grey Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 얼그레이">
+                </div>
+                <p>Iced 얼그레이</p>
+                <p>Iced Earl Grey Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 블랙퍼스트">
+                </div>
+                <p>Hot 블랙퍼스트</p>
+                <p>Hot Breakfast Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 블랙퍼스트">
+                </div>
+                <p>Iced 블랙퍼스트</p>
+                <p>Iced Breakfast Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 허니자몽티">
+                </div>
+                <p>Hot 허니자몽티</p>
+                <p>Hot Honey Grapefruit Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 허니자몽티">
+                </div>
+                <p>Iced 허니자몽티</p>
+                <p>Iced Honey Grapefruit Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 허니레몬티">
+                </div>
+                <p>Hot 허니레몬티</p>
+                <p>Hot Honey Lemon Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 허니레몬티">
+                </div>
+                <p>Iced 허니레몬티</p>
+                <p>Iced Honey Lemon Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="핫 허니유자티">
+                </div>
+                <p>Hot 허니유자티</p>
+                <p>Hot Honey Yuja Tea</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="아이스 허니유자티">
+                </div>
+                <p>Iced 허니유자티</p>
+                <p>Iced Honey Yuja Tea</p>
+              </a>
+            </li>
+          </ul>
+          <ul id="ade" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="블루레몬 스페셜에이드">
+                </div>
+                <p>블루레몬 스페셜에이드</p>
+                <p>Blue Lemon Special Ade</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="청포도 스페셜에이드">
+                </div>
+                <p>청포도 스페셜에이드</p>
+                <p>Green Grapes Special Ade</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="패션후르츠 스페셜에이드">
+                </div>
+                <p>패션후르츠 스페셜에이드</p>
+                <p>Passion Fruits Special Ade</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="자몽에이드">
+                </div>
+                <p>자몽에이드</p>
+                <p>Grapefruit Ade</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="레몬에이드">
+                </div>
+                <p>레몬에이드</p>
+                <p>Lemon Ade</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="망고에이드">
+                </div>
+                <p>망고에이드</p>
+                <p>Mango Ade</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="유자에이드">
+                </div>
+                <p>유자에이드</p>
+                <p>Yuja Ade</p>
+              </a>
+            </li>
+          </ul>
+          <ul id="frappe" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="리얼초코자바칩프라페">
+                </div>
+                <p>리얼초코자바칩프라페</p>
+                <p>Real Chocolate JavaChip Frappe</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="쿠키초코프라페">
+                </div>
+                <p>쿠키초코프라페</p>
+                <p>Cookie Chocolate Frappe</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="민트초코오레오프라페">
+                </div>
+                <p>민트초코오레오프라페</p>
+                <p>Mint Chocolate Oreo Frappe</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="그린티프라페">
+                </div>
+                <p>그린티프라페</p>
+                <p>Greentea Frappe</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="모카자바칩프라페">
+                </div>
+                <p>모카자바칩프라페</p>
+                <p>Mocha JavaChip Frappe</p>
+              </a>
+            </li>
+          </ul>
+          <ul id="shake" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="플레인 밀크쉐이크">
+                </div>
+                <p>플레인 밀크쉐이크</p>
+                <p>Plain Milkshake</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="캔디소다 밀크쉐이크">
+                </div>
+                <p>캔디소다 밀크쉐이크</p>
+                <p>Candy Soda Milkshake</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="쿠키 밀크쉐이크">
+                </div>
+                <p>쿠키 밀크쉐이크</p>
+                <p>Cookie Milkshake</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="커피밀크쉐이크">
+                </div>
+                <p>커피밀크쉐이크</p>
+                <p>Coffee Milkshake</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="팥절미 밀크쉐이크">
+                </div>
+                <p>팥절미 밀크쉐이크</p>
+                <p>Redbean Injeolmi Milkshake</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+</body>
+<script>
+  $(document).ready(function () {
+    // 페이지 로드 시
+    $(".sub_menu_main .sub_background").css({
+      background: "url(../public/images/menu/bg/noncoffee_bg_2.jpg)",
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
+    });
+
+    $(".sub_nav > div").hover(function(){
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function(){
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
+
+    $(".sub_menu_main .menu_1dpth li a").removeClass("on");
+    $(".sub_menu_main .menu_1dpth li a").eq(2).addClass("on"); // 1dpth underbar
+    
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
+</html>

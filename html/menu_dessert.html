@@ -1,0 +1,418 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>컴포즈커피 - 메뉴</title>
+
+  <!-- favicon-->
+  <link rel="icon" href="../public/images/icon/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/style_nr.css">
+
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="../public/js/menu.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+<body>
+  <header id="header"></header>
+  <div id="quickmenu"></div>
+
+  <main class="sub_menu_main">
+    <h2 class="hide">전체 메뉴</h2>
+    <div class="sub_background">
+      <ul>
+        <li>
+          <h3>DESSERTS</h3>
+          <span>커피와 함께 즐기는 달콤한 디저트</span>
+        </li>
+      </ul>
+      <div class="sub_nav_wrap">
+        <div class="sub_nav">
+          <a href="compose_index.html" class="sub_nav_home">
+            <span class="material-symbols-rounded">
+              house
+            </span>
+          </a>
+
+          <div class="sub_nav_1d">
+            <h4 class="sub_nav_dropdown">
+              MENU
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="brand_company.html">BRAND</a></li>
+              <li><a href="menu_season.html">MENU</a></li>
+              <li><a href="community_notice.html">COMMUNITY</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="franchise.html">FRANCHISE</a></li>
+            </ul>
+          </div>
+          <!--
+          <div class="sub_nav_2d">
+            <h4 class="sub_nav_dropdown">
+              커피
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="menu_season.html">시즌 메뉴</a></li>
+              <li><a href="menu_coffee.html">커피</a></li>
+              <li><a href="menu_noncoffee.html">음료</a></li>
+              <li><a href="menu_dessert.html">디저트</a></li>
+              <li><a href="menu_product.html">MD</a></li>
+            </ul>
+          </div>-->
+        </div>
+      </div>
+    </div>
+    <ul class="menu_1dpth">
+      <li><a href="menu_season.html" id="tab_season">시즌메뉴</a></li>
+      <li><a href="menu_coffee.html" id="tab_coffee">커피</a></li>
+      <li><a href="menu_noncoffee.html" id="tab_noncoffee">음료</a></li>
+      <li><a href="menu_dessert.html" id="tab_dessert">디저트</a></li>
+      <li><a href="menu_product.html" id="tab_product">MD 상품</a></li>
+    </ul>
+    <div class="menu_2dpth">
+      <ul class="dpth2_dessert">
+        <li class="on"><a href="#">디저트</a></li>
+      </ul>
+    </div>
+    <div class="menu_list">
+      <div class="dessert_list">
+        <h2 class="hide">디저트 메뉴</h2>
+        <div class="menu_cont_wrap">
+          <ul id="dessert_01" class="menu_tab_cont">
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="시나몬 크룽지">
+                </div>
+                <p>시나몬 크룽지</p>
+                <p>Cinnamon Crunchy Croissant</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="메이플 크룽지">
+                </div>
+                <p>메이플 크룽지</p>
+                <p>Maple Crunchy Croissant</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="오트밀 생크림 롤케이크">
+                </div>
+                <p>오트밀 생크림 롤케이크</p>
+                <p>Oatmeal Cream Rollcake</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="초코 생크림 롤케이크">
+                </div>
+                <p>초코 생크림 롤케이크</p>
+                <p>Chocolate Cream Rollcake</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="화이트 생크림 롤케이크">
+                </div>
+                <p>화이트 생크림 롤케이크</p>
+                <p>White Cream Rollcake</p>
+              </a>
+            </li>
+            <li>
+              <a href="menu_dessert01.html">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="팥절미 크루아상와플">
+                </div>
+                <p>*팥절미 크루아상와플</p>
+                <p>Redbean Injeolmi Croissant Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="티라미수 크루아상와플">
+                </div>
+                <p>티라미수 크루아상와플</p>
+                <p>Tiramisu Croissant Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="카라멜쿠키 크루아상와플">
+                </div>
+                <p>카라멜쿠키 크루아상와플</p>
+                <p>Caramel Cookie Croissant Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="크루아상와플">
+                </div>
+                <p>크루아상와플</p>
+                <p>Croissant Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img id="name" src="../public/images/menu/coffee_01.jpg" alt="시나몬카라멜와플">
+                </div>
+                <p>시나몬카라멜와플</p>
+                <p>Cinnamon Caramel Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="오레오생크림와플">
+                </div>
+                <p>오레오생크림와플</p>
+                <p>Oreo Cream Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="사과생크림와플">
+                </div>
+                <p>사과생크림와플</p>
+                <p>Apple Cream Waffle</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="더블샷카라멜팝콘">
+                </div>
+                <p>더블샷카라멜팝콘</p>
+                <p>Double Shot Caramel Popcorn</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="콘소메수프맛팝콘">
+                </div>
+                <p>콘소메수프맛팝콘</p>
+                <p>Consomme Soup Flavor Popcorn</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="트러플체다치즈 팝콘">
+                </div>
+                <p>트러플체다치즈 팝콘</p>
+                <p>Truffle Cheddar Cheese Popcorn</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="브리틀 밀크초콜릿">
+                </div>
+                <p>브리틀 밀크초콜릿</p>
+                <p>Brittle Milk Chocolate</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="달고나 다크초콜릿">
+                </div>
+                <p>달고나 다크초콜릿</p>
+                <p>Dalgona Dark Chocolate</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="달고나 녹차초콜릿">
+                </div>
+                <p>달고나 녹차초콜릿</p>
+                <p>Dalgona Greentea Chocolate</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="까망베르치즈 단백질쿠키">
+                </div>
+                <p>까망베르치즈 단백질쿠키</p>
+                <p>Camembert Cheese Protein Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="체다치즈 단백질쿠키">
+                </div>
+                <p>체다치즈 단백질쿠키</p>
+                <p>Cheddar Cheese Protein Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="바닐라 마카롱">
+                </div>
+                <p>바닐라 마카롱</p>
+                <p>Vanilla Macaron</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="모카 마카롱">
+                </div>
+                <p>모카 마카롱</p>
+                <p>Mocha Macaron</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="산딸기 마카롱">
+                </div>
+                <p>산딸기 마카롱</p>
+                <p>Raspberry Macaron</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="카라멜 마카롱">
+                </div>
+                <p>카라멜 마카롱</p>
+                <p>Caramel Macaron</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="블루베리 마카롱">
+                </div>
+                <p>블루베리 마카롱</p>
+                <p>Blueberry Macaron</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="더블초코칩쿠키">
+                </div>
+                <p>더블초코칩쿠키</p>
+                <p>Double Chocolate Chip Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="다크초코칩쿠키">
+                </div>
+                <p>다크초코칩쿠키</p>
+                <p>Dark Chocolate Chip Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="마시멜로우 코코넛쿠키">
+                </div>
+                <p>마시멜로우 코코넛쿠키</p>
+                <p>Marshmallow Coconut Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="오트 크랜베리쿠키">
+                </div>
+                <p>오트 크랜베리쿠키</p>
+                <p>Oat Cranberry Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="피스타치오 아몬드쿠키">
+                </div>
+                <p>피스타치오 아몬드쿠키</p>
+                <p>Pistachio Almond Cookie</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="티라미수">
+                </div>
+                <p>티라미수</p>
+                <p>Tiramisu</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img_wrap">
+                  <img src="../public/images/menu/coffee_01.jpg" alt="뉴욕치즈케이크">
+                </div>
+                <p>뉴욕치즈케이크</p>
+                <p>Newyork Cheese Cake</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+</body>
+  <script>
+    $(document).ready(function () {
+      // 페이지 로드 시
+      $(".sub_menu_main .sub_background").css({
+        background: "url(../public/images/menu/bg/desserts_bg_2.jpg)",
+        "background-repeat": "no-repeat",
+        "background-position": "center center",
+      });
+
+      $(".sub_nav > div").hover(function(){
+        $(this).find("div").addClass("on");
+        $(this).find("ul").addClass("on");
+      }, function(){
+        $(this).find("div").removeClass("on");
+        $(this).find("ul").removeClass("on");
+      });
+
+      $(".sub_menu_main .menu_1dpth li").removeClass("on");
+      $(".sub_menu_main .menu_1dpth li").eq(3).addClass("on"); // 1dpth underbar
+      
+      $("#header").load("compose_header.html");
+
+      $("#footer").load("compose_footer.html");
+
+      $("#quickmenu").load("quickmenu.html");
+    });
+  </script>
+</html>

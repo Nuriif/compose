@@ -164,13 +164,15 @@
 }
 
 .sub_background>ul li {
-  display: none;
+  display: block;
+  text-align: center;
+  
 }
 
-.sub_background>ul li.on {
+/* .sub_background>ul li.on {
   text-align: center;
   display: block;
-}
+} */
 
 .sub_background li h3 {
   font-size: 50px;
