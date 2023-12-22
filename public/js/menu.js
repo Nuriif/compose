@@ -19,9 +19,8 @@ $(document).ready(function(){
 
     $(".menu_1dpth li").on("click", function () { //1뎁스 클릭
         $(".sub_menu_main .menu_1dpth li a").removeClass("on");
-        $(this).find("a").addClass("on"); //폰트 bolder, 언더바
+        $(this).find("a").addClass("on"); //폰트 bolder, 언더바        
 
-        
         $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on"); //2뎁스 첫번째 li에 on
 
         $(".sub_menu_main .menu_list .menu_cont_wrap").find("ul").removeClass("on");
