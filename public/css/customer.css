@@ -1,0 +1,329 @@
+@import url("../css/common.css");
+@import url("../css/reset.css");
+
+
+ul.tabs {
+    width: 100%;
+    color:#555;
+    margin: 0;
+    padding: 0;
+    height: 30px;    
+    }
+    
+    ul.tabs li {
+    position: relative;
+    float: left;
+    text-align:center;
+    cursor: pointer;
+    width:33.3%;
+    padding: 0;     
+
+    width: 195px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    ul.tabs li:first-child {
+    border-left:1px solid #dedede;
+    }
+    
+    ul.tabs li.active {
+    background-color:#7d7d7d;
+    color:#fff;
+    width: 195px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .tab_container {
+    max-width:900px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    border: 1px solid #dedede;
+    width:100%;
+    }
+    
+    .tab_content {
+    padding:30px;
+    }
+ 
+
+
+
+
+
+
+
+
+
+form {
+    margin: auto;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.join_wrap {
+    width: 500px;
+    margin: auto;
+}
+
+.join_wrap fieldset {
+    border: none;
+}
+
+.join_wrap .title {
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.essencial .title::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    bottom: 15px;
+    width: 7px; 
+    height: 7px;
+    border-radius: 50%;    
+    background-color: #f15757;
+}
+
+.join_wrap .essencial label::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    bottom: 10px;
+    width: 7px; 
+    height: 7px;
+    border-radius: 50%;    
+    background-color: #f15757;
+}
+
+
+.join_wrap>form>fieldset>div {
+    margin-bottom: 25px;
+}
+
+.join_wrap label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.join_wrap input {
+    font-size: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+
+}
+
+::placeholder {
+    color: #bbbbbbd5;
+    font-size: 15px;
+}
+
+#charLimitMessage {
+    font-size: 13px;
+    color: rgb(245, 39, 24);
+    display: none;
+    text-align: left;
+    padding-left: 13px;
+}
+
+.join_wrap .select_box {
+    color: #bbbbbbd5;
+    appearance: none;
+    display: inline-block;
+    padding: 0 55px 0 20px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: url(../images/icon/icon_arrow_down.png) no-repeat right center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.soft_effect {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.join_wrap .select_box option {
+    color: black;
+}
+
+.join_wrap .select_box.valid {
+    color: black;
+}
+
+.gender {
+    width: 32%;
+}
+
+.birth_wrap .select_box {
+    width: 50%;
+}
+
+
+.birth_wrap div {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.birth_wrap p {
+    font-size: 13px;
+    font-weight: lighter;
+    color: #b1b1b1;
+    margin-top: 5px;
+}
+
+.join_wrap .terms_box {
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 0 0 50px;
+}
+
+.terms_box label {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.terms_box input[type="checkbox"].required {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    content: '';
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: none;
+    background: #fff url(../images/icon/icon_check_gray.svg) center/18px no-repeat;
+}
+
+.terms_box input[type="checkbox"].required:checked {
+    background: #fff url(../images/icon/icon_check_yellow.svg) center/18px no-repeat;
+}
+
+.terms_box input[type="checkbox"].all_agree {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    content: '';
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: #fff url(../images/icon/icon_check_gray.svg) center/13px no-repeat;
+}
+
+.terms_box input[type="checkbox"].all_agree:checked {
+    background: #fdd22b url(../images/icon/icon_check_white.svg) center/13px no-repeat;
+    border: none;
+}
+
+.all_agree_line {
+    border: 1px solid #ddd;
+    border-width: 1px 0 0;
+    margin: 20px 0;
+
+}
+
+.terms_box input[type="checkbox"].marketing_agree {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    content: '';
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border: none;
+    background: #fff url(../images/icon/icon_check_gray.svg) center/18px no-repeat;
+}
+
+.terms_box input[type="checkbox"].marketing_agree:checked {
+    background: #fff url(../images/icon/icon_check_yellow.svg) center/18px no-repeat;
+}
+
+.marketing_agree_tip {
+    margin-left: 37px;
+    color: #f15757;
+}
+
+
+
+.terms_box input[type="checkbox"].marketing_choose {
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    content: '';
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    background: #fff url(../images/icon/icon_check_gray.svg) center/13px no-repeat;
+}
+
+.terms_box input[type="checkbox"].marketing_choose:checked {
+    background: #fdd22b url(../images/icon/icon_check_white.svg) center/13px no-repeat;
+    border: none;
+}
+
+.marketing_choose_wrap {
+    display: flex;
+    position: relative;
+    left: 37px;
+    gap: 35px;
+}
+
+.terms_box>label:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.terms_box>label:nth-of-type(3) {
+    margin-bottom: 25px;
+}
+
+.terms_box .marketing_choose_wrap {
+    margin-bottom: 0
+}
+
+
+.join_wrap input[type="submit"] {
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    border: none;     
+    border-radius: 5px ;
+    box-sizing: border-box;
+    margin: 0px 0 100px;
+}
+
