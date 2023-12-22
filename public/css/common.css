@@ -231,6 +231,10 @@
   border-left: 1px solid rgba(221, 221, 221, 0.1);
 }
 
+.sub_menu_main .sub_nav_1d{
+  border-right: 1px solid rgba(221, 221, 221, 0.1);
+}
+
 .sub_nav_1d,
 .sub_nav_2d {
   position: relative;
