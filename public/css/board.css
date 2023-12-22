@@ -1,10 +1,6 @@
 @import url("../css/common.css");
 @import url("../css/reset.css");
 
-#main {
-  padding-top: 100px;
-}
-
 #header {
   top: 0;
   z-index: 500;
