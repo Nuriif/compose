@@ -1,0 +1,311 @@
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고객의 소리</title>
+
+  <!-- favicon-->
+  <link rel="icon" href="../public/i10mages/icon/favicon.ico">
+
+  <!-- jquery -->
+  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="../public/js/customer.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../public/css/customer.css"> 
+  
+</head>
+
+<body>
+  <header id="header"></header>
+  <div id="quickmenu"></div>
+
+  <main id="main">
+    <div class="sub_background">
+      <ul>
+        <li>
+          <h3>고객의 소리</h3>
+        </li>
+      </ul>
+
+      <div class="sub_nav_wrap">
+        <div class="sub_nav">
+          <a href="compose_index.html" class="sub_nav_home">
+            <span class="material-symbols-rounded">
+              house
+            </span>
+          </a>
+
+          <div class="sub_nav_1d">
+            <h4 class="sub_nav_dropdown">
+              COMMUNITY
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="brand_company.html">BRAND</a></li>
+              <li><a href="menu.html">MENU</a></li>
+              <li><a href="community_notice.html">COMMUNITY</a></li>
+              <li><a href="#">STORE</a></li>
+              <li><a href="franchise.html">FRANCHISE</a></li>
+            </ul>
+          </div>
+
+          <div class="sub_nav_2d">
+            <h4 class="sub_nav_dropdown">
+              고객의 소리
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </h4>
+            <ul>
+              <li><a href="community_notice.html">공지사항</a></li>
+              <li><a href="community_news.html">NEWS</a></li>
+              <li><a href="community_events.html">EVENTS</a></li>
+              <li><a href="community_customer.html">고객의 소리</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="tabs">
+      <li class="active" rel="tab1">상담접수</li>
+      <li rel="tab2">접수내역조회</li>     
+    </ul>
+    
+    <div class="tab_container">         
+      <div id="tab1" class="tab_content">
+      
+    <div class="join_wrap">
+      <h2>고객의 소리</h2>
+      <form action="/register" method="post">
+        <fieldset class="essencial">
+          <legend class="title">필수정보</legend>
+          <div>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+          </div>
+          <div>
+            <label for="phone">휴대폰번호</label>
+            <input type="tel" id="phone" name="phone" placeholder="숫자만 입력하세요 (-)제외" required>
+          </div>
+          <div>
+            <label for="username">아이디</label>
+            <input type="text" id="username" name="username" placeholder="6~16자/영문, 숫자 조합" required>
+            <p id="charLimitMessage"></p>
+            <script>
+              const inputField = document.getElementById("username");
+              const charLimitMessage = document.getElementById("charLimitMessage");
+
+              inputField.addEventListener("input", function () {
+                const inputText = this.value;
+                const maxLength = 16;
+                const minLength = 6;
+
+                if (inputText.length < minLength) {
+                  charLimitMessage.textContent = "*최소 6자 이상 입력해주세요.";
+                  charLimitMessage.style.display = "block";
+                } else if (inputText.length > maxLength) {
+                  charLimitMessage.textContent = "*최대 16자까지 입력 가능합니다.";
+                  charLimitMessage.style.display = "block";
+                } else {
+                  charLimitMessage.textContent = "사용할 수 있습니다.";
+                  charLimitMessage.style.display = "none";
+                }
+              });
+            </script>
+          </div>
+          <div>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" placeholder="8~16자/영문, 숫자, 특수문자 조합" required>
+          </div>
+          <div>
+            <label for="confirm_password">비밀번호 재입력</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="비밀번호를 한번 더 입력해 주세요"
+              required>
+          </div>
+          <div>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class="title">선택정보</legend>
+          <div>
+            <label for="gender">성별</label>
+            <select name="gender" class="select_box gender">
+              <option value="">성별</option>
+              <option value="male">남자</option>
+              <option value="female">여자</option>
+              <option value="none">선택안함</option>
+            </select>
+          </div>
+          <div class="birth_wrap">
+            <label for="birthdate">생년월일</label>
+            <div>
+              <select name="year" class="select_box">
+                <option value="">년도</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+              </select>
+              <select name="month" class="select_box">
+                <option value="">월</option>
+                <option value="1">1월</option>
+                <option value="2">2월</option>
+                <option value="3">3월</option>
+              </select>
+              <select name="day" class="select_box">
+                <option value="">일</option>
+                <option value="1">1일</option>
+                <option value="2">2일</option>
+                <option value="3">3일</option>
+              </select>
+            </div>
+            <p>생년월일 등록시 생일 쿠폰 발급 및 맞춤 상품을 추천해 드릴게요.</p>
+          </div>
+          <script>
+            const selectBoxes = document.querySelectorAll('.select_box');
+            selectBoxes.forEach(selectBox => {
+              selectBox.addEventListener('change', function () {
+                if (selectBox.value !== '') {
+                  selectBox.classList.add('valid');
+                } else {
+                  selectBox.classList.remove('valid');
+                }
+              });
+            });
+          </script>
+        </fieldset>
+        <fieldset class="terms_box">
+          <legend class="hide">약관 동의</legend>
+
+          <!-- 전체 동의 -->
+          <label>
+            <input type="checkbox" class="all_agree" id="all_agree">
+            약관 전체 동의
+          </label>
+          <hr class="all_agree_line">
+
+          <!-- 필수 약관 동의 -->
+          <label>
+            <input type="checkbox" class="required ab" id="terms_agree">
+            (필수) 이용약관 동의
+          </label>
+
+          <label>
+            <input type="checkbox" class="required" id="privacy_agree">
+            (필수) 개인정보 수집 및 이용 동의
+          </label>
+
+          <!-- 선택적 약관 동의 -->
+          <label>
+            <input type="checkbox" class="marketing_agree">
+            (선택) 마케팅 수신 동의
+          </label>
+          <p class="marketing_agree_tip">다양한 혜택을 가장 먼저 전달 드릴게요.</p>
+
+          <!-- 선택적 수신 수단 -->
+          <div class="marketing_choose_wrap">
+            <label>
+              <input type="checkbox" class="marketing_choose">
+              이메일 수신
+            </label>
+
+            <label>
+              <input type="checkbox" class="marketing_choose">
+              문자 수신
+            </label>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="가입하기" class="btn_submit" id="btn_add">
+        </div>
+      </form>
+    </div>
+      </div>                
+      <div id="tab2" class="tab_content">
+      탭2내용
+      </div>        
+    </div>
+  
+
+
+
+
+
+
+
+  </main>
+
+  <footer id="footer"></footer>
+
+</body>
+
+
+
+
+
+
+
+
+
+<!-- jquery -->
+<script src="../public/js/jquery-3.7.1.min.js"></script>
+
+<script>
+  // On page load
+  $(document).ready(function () {
+    $(".sub_background").css({
+      "background": "url(../public/images/notice/notice_top_bg.jpg)", //배경이미지 바꾸시면 됩니다
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
+    });
+
+    $(".sub_background li").eq(0).addClass("on");
+
+    $(".sub_nav > div").hover(function () {
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function () {
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
+
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+
+  // List Page Click Action
+  $(".num").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
+
+    $(".num").removeClass("on");
+    $(this).addClass("on");
+  });
+
+  $(".bt.first").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(0).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(0).addClass("on");
+  });
+  $(".bt.last").click(function () {
+    $(".sub_news_main .news_cont ul").removeClass("on");
+    $(".sub_news_main .news_cont ul").eq(2).addClass("on");
+
+    $(".num").removeClass("on");
+    $(".num").eq(2).addClass("on");
+  });
+</script>
+
+
+</html>
