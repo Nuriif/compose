@@ -25,7 +25,7 @@
   <header id="header"></header>
   <div id="quickmenu"></div>
 
-  <main class="sub_bitter_main">
+  <main id="main" class="sub_bitter_main">
     <section class="bitter_cont1">
       <div>
         <h2>
@@ -168,11 +168,17 @@
   $(document).ready(function () {
     // 페이지 로드 시
 
+    
+    setTimeout(function(){
+      $(".bitter_cont1").addClass("active");
+    }, 1000);
+    
+
     $(window).scroll(function(){
       var scroll = $(document).scrollTop();
 
-      if(scroll >= 100){
-        $(".bitter_cont1").addClass("active");
+      if(scroll >= 10){
+        
       }
 
     });
