@@ -345,84 +345,13 @@
 
 </body>
 
+<!-- KaKao Map API -->
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=개인 KEY 발급 부분 주의 요망!"></script>
 
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<script>
-  // On page load
-  $(document).ready(function () {
-    $(".sub_background").css({
-      "background": "url(../public/images/map/map_top_bg.jpg)",
-      "background-repeat": "no-repeat",
-      "background-position": "center center",
-    });
-
-    $(".sub_background li").eq(0).addClass("on");
-
-    $(".sub_nav > div").hover(function () {
-      $(this).find("div").addClass("on");
-      $(this).find("ul").addClass("on");
-    }, function () {
-      $(this).find("div").removeClass("on");
-      $(this).find("ul").removeClass("on");
-    });
-
-    $("#header").load("compose_header.html");
-
-    $("#footer").load("compose_footer.html");
-
-    $("#quickmenu").load("quickmenu.html");
-  });
-</script>
-
-<!-- KaKao Map API -->
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=개인 보안 KEY 입력 부분 / 주의 요망!"></script>
-
 <!-- JavaScript -->
 <script src="../public/js/kakaoMapInit.js"></script>
-
-<script>
-  var table = $('.tr'),
-    link = table.find('.item');
-  link.on('click', function (event) {
-    if (
-      $(this).next('.con').css('display') === 'none') {
-      table.find('.con').slideUp(300);
-      $(this).next('.con').slideDown(300);
-      link.attr('class', 'item');
-      $(this).addClass('selected');
-    } else {
-      $(this).next('.con').slideUp(300);
-      $(this).removeClass('selected');
-    }
-  });
-</script>
-
-<script>
-  // List Page Click Action
-  $(".num").click(function () {
-    $(".sub_news_main .news_cont ul").removeClass("on");
-    $(".sub_news_main .news_cont ul").eq($(this).index() - 1).addClass("on");
-
-    $(".num").removeClass("on");
-    $(this).addClass("on");
-  });
-
-  $(".bt.first").click(function () {
-    $(".sub_news_main .news_cont ul").removeClass("on");
-    $(".sub_news_main .news_cont ul").eq(0).addClass("on");
-
-    $(".num").removeClass("on");
-    $(".num").eq(0).addClass("on");
-  });
-  $(".bt.last").click(function () {
-    $(".sub_news_main .news_cont ul").removeClass("on");
-    $(".sub_news_main .news_cont ul").eq(2).addClass("on");
-
-    $(".num").removeClass("on");
-    $(".num").eq(2).addClass("on");
-  });
-</script>
 
 </html>

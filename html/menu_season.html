@@ -12,12 +12,8 @@
   <link rel="stylesheet" href="../public/css/style_nr.css">
 
   <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../public/js/menu.js"></script>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-
 </head>
 
 <body>
@@ -101,9 +97,11 @@
               <li><img src="../public/images/menu/KakaoTalk_20231114_150542288.jpg" alt="2022 겨울 시즌 메뉴 Hello Snow"></li>
               <li><img src="../public/images/menu/22autunm.jpg" alt="2022 가을 시즌 메뉴 오리지널 스위트콘"></li>
               <li><img src="../public/images/menu/23_spring.jpg" alt="2023 봄 시즌 메뉴 Feel so berry 설향 생딸기 듬뿍!"></li>
-              <li><img src="../public/images/menu/23_spring_special.jpg" alt="2023 봄 시즌 스페셜 메뉴 Nice to meet 슈! 따스한 봄에 만나는 달콤한 슈크림"></li>
+              <li><img src="../public/images/menu/23_spring_special.jpg"
+                  alt="2023 봄 시즌 스페셜 메뉴 Nice to meet 슈! 따스한 봄에 만나는 달콤한 슈크림"></li>
               <li><img src="../public/images/menu/23_summer.jpg" alt="2023 여름 시즌 메뉴 생초콜릿 라떼 is back"></li>
-              <li><img src="../public/images/menu/23_summer_special_2.jpg" alt="2023 여름 시즌 스페셜 메뉴2 생초콜릿 라떼 is back"></li>
+              <li><img src="../public/images/menu/23_summer_special_2.jpg" alt="2023 여름 시즌 스페셜 메뉴2 생초콜릿 라떼 is back">
+              </li>
               <li><img src="../public/images/menu/23_summer_special.jpg" alt="2023 여름 시즌 스페셜 메뉴 여름을 쿨하게 부탁해"></li>
             </ul>
             <a href="#none" class="more_season_off">▼ 더보기</a>
@@ -124,10 +122,10 @@
       "background-position": "center center",
     });
 
-    $(".sub_nav > div").hover(function(){
+    $(".sub_nav > div").hover(function () {
       $(this).find("div").addClass("on");
       $(this).find("ul").addClass("on");
-    }, function(){
+    }, function () {
       $(this).find("div").removeClass("on");
       $(this).find("ul").removeClass("on");
     });
@@ -140,7 +138,7 @@
       $(".sub_menu_main .season_off li:gt(3)").css("display", "block");
       $(this).css("display", "none");
     });
-    
+
     $("#header").load("compose_header.html");
 
     $("#footer").load("compose_footer.html");
@@ -148,4 +146,5 @@
     $("#quickmenu").load("quickmenu.html");
   });
 </script>
+
 </html>

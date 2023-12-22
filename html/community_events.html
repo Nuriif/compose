@@ -12,13 +12,10 @@
   <link rel="stylesheet" href="../public/css/style_nr.css">
 
   <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-
 </head>
 
 <body>
@@ -276,7 +273,7 @@
           </a>
         </li>
       </ul>
-      
+
       <div class="board_page">
         <a href="#" class="bt first" alt="첫 페이지로 이동">
           <i class="fa-solid fa-caret-left"></i>
@@ -292,35 +289,35 @@
 
   <div id="footer"></div>
 </body>
-  <!-- jQuery -->
-  <script>
-    $(document).ready(function () {
-      // 페이지 로드 시
+<!-- jQuery -->
+<script>
+  $(document).ready(function () {
+    // 페이지 로드 시
 
-      $(".sub_background").css({
-        background: "url(../public/images/events/event_bg.jpg)", //배경이미지 바꾸시면 됩니다
-        "background-repeat": "no-repeat",
-        "background-position": "center center",
-      });
-      $(".sub_background li").eq(0).addClass("on");
-
-      $(".sub_nav > div").hover(function(){
-        $(this).find("div").addClass("on");
-        $(this).find("ul").addClass("on");
-      }, function(){
-        $(this).find("div").removeClass("on");
-        $(this).find("ul").removeClass("on");
-      });
-      
-      // $(".sub_nav_bg_01.on").css({height:$(".sub_nav_1d ul").height()});
-      // $(".sub_nav_bg_02.on").css({height:$(".sub_nav_2d ul").height()});
-      //질문 height 가져오기      
-
-
-      $("#header").load("compose_header.html");
-      $("#footer").load("compose_footer.html");
-      $("#quickmenu").load("quickmenu.html");
+    $(".sub_background").css({
+      background: "url(../public/images/events/event_bg.jpg)", //배경이미지 바꾸시면 됩니다
+      "background-repeat": "no-repeat",
+      "background-position": "center center",
     });
-  </script>
+    $(".sub_background li").eq(0).addClass("on");
+
+    $(".sub_nav > div").hover(function () {
+      $(this).find("div").addClass("on");
+      $(this).find("ul").addClass("on");
+    }, function () {
+      $(this).find("div").removeClass("on");
+      $(this).find("ul").removeClass("on");
+    });
+
+    // $(".sub_nav_bg_01.on").css({height:$(".sub_nav_1d ul").height()});
+    // $(".sub_nav_bg_02.on").css({height:$(".sub_nav_2d ul").height()});
+    //질문 height 가져오기      
+
+
+    $("#header").load("compose_header.html");
+    $("#footer").load("compose_footer.html");
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
 
 </html>
