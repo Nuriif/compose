@@ -2,7 +2,7 @@
 
 /* header, footer, 목록 page common combined CSS */
 #main {
-  padding: 150px 0 10%;
+  padding: 100px 0 10%;
 }
 
 /* header */
@@ -121,7 +121,7 @@
 
 
 /* franchise button */
-.franchise {  
+.franchise {
   white-space: nowrap;
 }
 
@@ -231,6 +231,10 @@
   border-left: 1px solid rgba(221, 221, 221, 0.1);
 }
 
+.sub_menu_main .sub_nav_1d{
+  border-right: 1px solid rgba(221, 221, 221, 0.1);
+}
+
 .sub_nav_1d,
 .sub_nav_2d {
   position: relative;
@@ -314,6 +318,7 @@
   .quick_main {
     display: none;
   }
+
   #main {
     max-width: 767px;
 
@@ -322,19 +327,20 @@
   }
 
   /* header */
-  #header{
+  #header {
     max-width: 767px;
     margin: auto;
   }
 
 
     .header_wrap {        
+      display: none;/*1222임시점검 잠시 지우기*/
       width: 100%;
     height: 100%;
-    flex-direction: column;  
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0;    
+    padding: 0;
 
 
     background: #fff;
@@ -355,30 +361,30 @@
 
   .header_wrap nav {
     width: 100%;
-    
+
   }
 
-  .header_wrap nav .gnb {        
+  .header_wrap nav .gnb {
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
 
-  .header_wrap nav .gnb h3 {    
+  .header_wrap nav .gnb h3 {
     font-size: 17px;
-    padding: 15px 0;    
+    padding: 15px 0;
   }
 
-  .header_wrap nav .gnb>li {    
+  .header_wrap nav .gnb>li {
     text-align: left;
     height: 75px;
     border-bottom: none;
     display: flex;
-    align-items: center;        
+    align-items: center;
   }
 
 
 
-  
+
 
   .header_wrap nav .gnb>li:not(#franchise_li):hover {
     border-bottom: none
@@ -448,20 +454,20 @@
 
 
   /* franchise button */
-  .franchise {   
+  .franchise {
     white-space: nowrap;
   }
 
-  .franchise a {     
+  .franchise a {
     font-size: 17px;
-    font-weight: normal;  
+    font-weight: normal;
     padding: 3px 13px;
   }
 
   .franchise img {
     padding: 7px 0 0;
     box-sizing: border-box;
-    width: 20px;        
+    width: 20px;
   }
 
   .gnb_bg {

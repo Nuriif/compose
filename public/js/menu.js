@@ -4,16 +4,18 @@ $(document).ready(function(){
     
     $(".sub_menu_main .sub_background li a").addClass("on");
 
-    $(".sub_menu_main .menu_list li").hover(
+    $(".sub_menu_main .menu_list .img_hover li").hover(
         function () {
             $(this).find(".img_wrap").addClass("on");
+            $(this).find("img").stop().animate({height:234, left:0, top:-10}, 250);
             //$(this).find("img").stop().animate({width:240, left: -20, top: -40}, 500);
         },
         function () {
             $(this).find(".img_wrap").removeClass("on");
+            $(this).find("img").stop().animate({height:214, left:0, top:0}, 250);
             //$(this).find("img").stop().animate({width:200, left: 0, top: 0}, 500);
         }
-    ); //이미지 호버 border
+    ); //이미지 호버 border, scale
 
     $(".menu_1dpth li").on("click", function () { //1뎁스 클릭
         $(".sub_menu_main .menu_1dpth li a").removeClass("on");
@@ -22,7 +24,6 @@ $(document).ready(function(){
         
         $(".menu_2dpth ul").eq($(this).index()).find("li").eq(0).addClass("on"); //2뎁스 첫번째 li에 on
 
-        
         $(".sub_menu_main .menu_list .menu_cont_wrap").find("ul").removeClass("on");
         $(".sub_menu_main .menu_list .menu_cont_wrap").find("ul").eq(0).addClass("on");
         

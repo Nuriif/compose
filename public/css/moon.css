@@ -401,18 +401,11 @@
 }
 
 .franchise_interview {
-  background-color: #fffdf4;
+  /* background-color: #fffdf4; */
   padding: 5% 15%;
-}
-
-.interview_bg {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: url(../images/franchise/yellow_bg-03.svg);
-  opacity: 0.05;
-  height: 48%;
+  background: url(../images/franchise/bg/bg_compose_pettern.svg);
+  background-size: 50% cover;
+  background-attachment: fixed;  
   z-index: -3;
 }
 
@@ -464,8 +457,10 @@
   left: 0;
   bottom: 0;
   width: 180px;
+  height: 180px;
   overflow: hidden;
   border-radius: 110px;
+  z-index: -1;
 }
 
 .interview_l .store img {
@@ -515,8 +510,10 @@
   right: 0;
   bottom: 0;
   width: 180px;
+  height: 180px;
   border-radius: 20px;
   overflow: hidden;
+  z-index: -1;
 }
 
 .interview_r .store img {
@@ -1136,7 +1133,7 @@
     bottom: 0;
     width: 180px;
     overflow: hidden;
-    border-radius: 110px;
+    border-radius: 110px;   
   }
 
   .interview_l .store img {
@@ -1186,8 +1183,10 @@
     right: 0;
     bottom: 0;
     width: 180px;
+    height: 180px;
     border-radius: 20px;
     overflow: hidden;
+    z-index: -1;
   }
 
   .interview_r .store img {
