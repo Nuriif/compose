@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="../public/css/style_nr.css">
 
   <!-- jquery -->
-  <script src="../public/js/jquery-3.7.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script>
-    window.addEventListener('scroll', ()=>{
+    window.addEventListener('scroll', () => {
       console.log(window.scrollY);
     });
   </script>
@@ -30,19 +30,22 @@
       <div>
         <h2>
           <span>컴포즈 커피 스페셜티 블렌딩</span><br>
-          비터홀릭</h2>
+          비터홀릭
+        </h2>
         <p>
           브라질, 콜롬비아를 베이스로 커피의 토스티하고<br>
           고소한 맛을 중심으로 에티오피아 커피를 배합해<br>
           커피 특유의 쓴 맛을 초콜릿티하게 표현한 블렌딩
         </p>
         <div class="blending_graph">
-          
+
           <div class="cir01">
             <div class="circle_line">
               <svg width="185" height="185" viewBox="0 0 185 185">
-                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
-                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
+                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2">
+                </circle>
+                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8">
+                </circle>
               </svg>
               <p class="circle">50<span>%</span></p>
             </div>
@@ -51,8 +54,10 @@
           <div class="cir02">
             <div class="circle_line">
               <svg width="185" height="185" viewBox="0 0 185 185">
-                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
-                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
+                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2">
+                </circle>
+                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8">
+                </circle>
               </svg>
               <p class="circle">30<span>%</span></p>
             </div>
@@ -61,8 +66,10 @@
           <div class="cir03">
             <div class="circle_line">
               <svg width="185" height="185" viewBox="0 0 185 185">
-                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
-                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
+                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2">
+                </circle>
+                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8">
+                </circle>
               </svg>
               <p class="circle">20<span>%</span></p>
             </div>
@@ -159,7 +166,7 @@
         <img src="../public/images/bitterholic/bitterholic5.png" alt="">
       </div>
     </section>
-    
+
   </main>
 
   <div id="footer"></div>
@@ -168,17 +175,17 @@
   $(document).ready(function () {
     // 페이지 로드 시
 
-    
-    setTimeout(function(){
+
+    setTimeout(function () {
       $(".bitter_cont1").addClass("active");
     }, 1000);
-    
 
-    $(window).scroll(function(){
+
+    $(window).scroll(function () {
       var scroll = $(document).scrollTop();
 
-      if(scroll >= 10){
-        
+      if (scroll >= 10) {
+
       }
 
     });
