@@ -15,6 +15,12 @@ body{
     /* margin: 0 auto; */
 }
 
+.main_title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .main_link_wrap {
     width: 100%;
     margin: auto;
@@ -23,11 +29,15 @@ body{
     justify-content: center;
     gap: 3%;
     line-height: 1.8;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .main_link_wrap h2 {
     font-size: 1.8rem;
     font-weight: 800;
+    word-break: keep-all;
 }
 
 .main_link_wrap ul {
@@ -36,8 +46,9 @@ body{
     column-gap: 0.5em;
 }
 
-.main_link_wrap>div {
+.main_link_wrap > div {
     width: 48%;
+    height: 250px;
     border-radius: 4.3em;
     padding: 1.8em 2.1em;
     box-sizing: border-box;
@@ -45,16 +56,25 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-
-.app_store {
-    width: 480px;
-    height: 250px;
+.main_link_wrap > div:first-child {
     background-color: #fdd22b;
     border-top-right-radius: 0;
+    color: #333;
+}
+.main_link_wrap > div:last-child {
+    background-color: #704616;
+    border-top-left-radius: 0;
+    color: #fff;
 }
 
-.app_store>div {
-    text-shadow: 0.5px 0.5px 0.5px #ccc;
+.app_store.on {
+    animation-duration: 0.65s;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+}
+
+.app_store>div, .compose_map>div {
+    /* text-shadow: 0.5px 0.5px 0.5px #ccc; */
     display: flex;
     flex-direction: column;
     row-gap: 0.6em;
@@ -71,6 +91,7 @@ body{
 
 #goto_appstore {
     background-color: #444;
+    color: #fff;
     width: fit-content;
     padding: 0.3em 1.2em;
     border-radius: 35px;
@@ -78,14 +99,42 @@ body{
     text-shadow: none;
 }
 
-.compose_map {
-    width: 480px;
-    background-color: #704616;
-    border-top-left-radius: 0;
+.compose_map.on {
+    animation-name: fadeInDown;
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+}
+.compose_map h2, .compose_map li, .compose_map label {
+    color: #fff;
+}
+.compose_map fieldset {
+    border: none;
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.compose_map input {
+    border: none;
+}
+.compose_map button {
+    /* all: unset; */
+    border: 0;
+    outline: 0;
+    background: none;
+    cursor: pointer;
 }
 
 .compose_map>img {
     width: 220px;
+}
+#goto_map {
+    background-color: #444;
+    color: #fff;
+    width: fit-content;
+    padding: 0.3em 1.2em;
+    border-radius: 35px;
+    text-align: center;
+    text-shadow: none;
 }
 
 /* main - bestmenu */
@@ -103,6 +152,18 @@ body{
 .menu_list ul {
     display: flex;
     font-size: 20px;
+    gap: 5%;
+}
+.menu_list ul li {
+    background: none;
+    border-radius: 20px;
+}
+.menu_list ul li a{
+    padding: 20px;
+}
+.menu_list ul li.on {
+    background: #444;
+    color: #fff;
 }
 
 /* .menu_img_wrap > ul:active{
@@ -125,6 +186,36 @@ body{
 .bestmenu_dessert {
     display: none;
 }
+
+.slick_center_items{
+    height: 200px;
+}
+.slick_center_items img{
+    height: 100%;
+}
+.slick-initialized .slick-slide{
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+.slick-initialized .slick-slide:hover{
+    transform: scale(1.2);
+}
+
+.center .slick-prev{
+    height: 15%;
+    left: 0;
+}
+.center .slick-next{
+    height: 15%;
+    right: 0;
+}
+/* .main_bestmenu_wrap .center{
+    display: none;
+}
+.main_bestmenu_wrap .center.on{
+    display: block;
+} */
 
 .link_on {
     background: #444;
@@ -149,6 +240,11 @@ body{
     z-index: 9999;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
 
 /* subpage */
 
@@ -928,7 +1024,8 @@ body{
 .blending_graph svg{
     /* width: 100%; */
     /* height: 100%; */
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
+    /* transform: scaleX(-1); */
     transform-origin: center;
 }
 .circle_wrap.cir01 {
