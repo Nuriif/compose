@@ -332,6 +332,7 @@
     padding: 150px 0 10%;
   }
 
+  
   /* header */
   #header {
     max-width: 767px;
@@ -339,20 +340,21 @@
   }
 
 
-    .header_wrap {        
-      display: none;/*1222임시점검 잠시 지우기*/
-      width: 100%;
+  .header_wrap {
+    display: none; /*임시숨김*/
+    width: 100%;
     height: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0;
+    padding: 20px;
+    box-sizing: border-box;
 
 
     background: #fff;
-    position: fixed;
+    position:relative;
     z-index: 20;
-    border-bottom: 1px solid #dddddd96;
+    border-bottom: none
   }
 
   .header_wrap .logo {
@@ -370,26 +372,45 @@
 
   }
 
-  .header_wrap nav .gnb {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
 
   .header_wrap nav .gnb h3 {
     font-size: 17px;
     padding: 15px 0;
+    width: 100%;
+    height: 55px;
   }
 
   .header_wrap nav .gnb>li {
     text-align: left;
-    height: 75px;
+    /* height: 75px; */
     border-bottom: none;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
+  }
+
+  .gnb_width {
+    width: 100%;   
+  }
+
+  .gnb_width li{
+    padding: 5px 0;    
   }
 
 
+  .header_menu_a {
+    display: inline-block;
+    width: 100%;
 
+  }
+
+  .header_wrap nav .gnb {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+  
 
 
   .header_wrap nav .gnb>li:not(#franchise_li):hover {
@@ -397,26 +418,31 @@
   }
 
   .header_wrap nav .gnb>li a:not(#franchise_a):hover {
-    color: #fdd22b;
+    color: inherit;
   }
 
   .header_wrap nav .gnb>li>ul {
-    display: none;
-    position: absolute;
+    /* position: absolute;
+    top: 50px;
+    left: 20px; */
+    width: 100%;
+    height: auto;   
+    overflow: hidden;
+    padding: 0 0 10px 10px;
+
+
+    /* 
     top: 110px;
     width: 100%;
-    height: 230px;
-    padding-top: 15px;
+    height: 190px;
+  
+    box-sizing: border-box;
+    
+    
+    display: none;
+    position: absolute;*/
   }
 
-  #franchise_li {
-    position: absolute;
-    right: 0;
-
-
-    display: flex;
-    align-items: center;
-  }
 
 
 
@@ -465,28 +491,36 @@
   }
 
   .franchise a {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: normal;
-    padding: 3px 13px;
+    padding: 2px 13px;
   }
 
   .franchise img {
     padding: 7px 0 0;
     box-sizing: border-box;
-    width: 20px;
+    width: 15px;
   }
 
   .gnb_bg {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    height: 260px;
-    background: #fffffff1;
-    border-top: 1px solid rgba(221, 221, 221, 0.5);
-    border-bottom: 1px solid rgba(221, 221, 221, 0.5);
+    display: none;    
   }
+
+  #franchise_li {
+    position: absolute;
+    right: 45px;
+    top: -60px;
+    min-width: 0;
+
+
+
+  }
+
+
+
+
+
+
 }
 
 .quick_main li {
