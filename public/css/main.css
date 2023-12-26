@@ -297,13 +297,13 @@ body{
     margin-right: 20px;
 }
 .main_bestmenu_wrap .slick-list.draggable{
-    height: 30%;
+    height: 40%;
     overflow: hidden;
 }
 .main_bestmenu_wrap > div:first-child{
     display: flex;
     align-items: center;
-    gap: 5%;
+    gap: 2%;
 }
 /* .main_bestmenu_wrap .center{
     display: none;
@@ -775,6 +775,10 @@ body{
 
     .main_link_wrap>div img {
         /* max-width: 25%; */
+    }
+
+    .compose_map fieldset{
+        max-width: 230px;
     }
 
 }

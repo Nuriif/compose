@@ -244,6 +244,7 @@ body{
 
 .sub_menu_main .menu_list .season_off ul {
     display: flex;
+    column-gap: 2%;
 }
 
 .sub_menu_main .menu_list .season_off li {
@@ -691,7 +692,8 @@ body{
     font-weight: bolder;
 }
 
-/* bitterholic */
+/* -------------- bitterholic ------------- */
+
 .sub_bitter_main{
     line-height: 1 !important;    
 }
@@ -719,10 +721,12 @@ body{
     font-weight: 500;
     margin-bottom: 10px;
 }
-.sub_bitter_main .bitter_cont1 p{
+.sub_bitter_main .bitter_cont1 > div > p{
     font-size: 25px;
     font-weight: 300;
     line-height: 1.5em;
+    margin-bottom: 100px;
+
 }
 .sub_bitter_main .bitter_cont1 img{
     width: 30%;
@@ -753,6 +757,7 @@ body{
 .sub_bitter_main .bitter_cont1 .circle_title{
     font-size: 17px;
     font-weight: 500;
+    color: #333;
 }
 .cir01, .cir02, .cir03{
     text-align: center;
@@ -762,6 +767,8 @@ body{
 }
 .bitter_cont1.active .cir01 .outer{
     stroke-dashoffset: 277px;
+    transform-origin :center;
+    transform: rotate(-90deg);
 }
 .bitter_cont1.active .cir02 .outer{
     stroke-dashoffset: 388px;
@@ -772,6 +779,19 @@ body{
 .outer{
     stroke-dasharray: 555px;
     transition: 2s stroke-dashoffset;
+}
+@keyframes ani {
+    0% {
+        stroke-dashoffset: 500;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -500;
+    }
 }
 .circle_wrap{
     width: 100%;
@@ -789,9 +809,87 @@ body{
     /* transform: scaleX(-1); */
     transform-origin: center;
 }
-.circle_wrap.cir01 {
+.blending_graph .box1{
+    transform: rotate(0deg);
+    transform-origin: center;
+}
+
+.bitter_cont2{
+    padding: 170px 20px;
+    background-color: #fff;
 
 }
+.bitter_cont2 div{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.bitter_cont2 > div > div:first-child{
+    text-align: center;
+}
+.bitter_cont2 h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative;
+}
+/*
+.bitter_cont2 h3::after{
+    content: "";
+    position: absolute;
+    margin: 15px autto;
+    bottom: 0;
+    width: 70px;
+    height: 1px;
+    background-color: #333;
+    text-align: center;
+}*/
+.bitter_cont2 .roasting_point_underline{
+    width: 70px;
+    height: 1px;
+    margin: 15px auto; 
+    background-color: #333;
+}
+.bitter_cont2 > div > div:first-of-type > p{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+.bitter_cont2 > div > div:nth-child(2) > p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+}
+.bitter_cont2 .roasting_point_light{
+    display: flex;
+}
+.grp{
+    width: 100%;
+}
+.grp_up{
+    display: flex;
+}
+.grp_low{
+    display: flex;
+}
+
+
+
+.bitter_cont3{
+    padding: 175px 30px;
+    background: url(../images/bitterholic/bitterholic3.jpg) center no-repeat;
+    background-size: cover;
+}
+.bitter_cont3 > div{
+    display: flex;
+}
+.bitter_cont3_box{
+    width: 50%;
+    display: flex;
+    padding: 0 15px;
+}
+
+
 
 
 
@@ -882,8 +980,12 @@ body{
         margin-bottom: 60px;
     }
     .sub_menu_main .menu_list ul {
-        gap: 10%;
+        gap: 3%;
         max-width: 635px;
+    }
+
+    .sub_menu_main .menu_list .season_off ul {
+        column-gap: 3%;
     }
 
     .sub_menu_main .menu_2dpth ul {
@@ -909,10 +1011,10 @@ body{
     .sub_menu_main .menu_list .season_off li {
         width: 40%;
     }
-
+    /*
     .sub_menu_main .menu_list .season_off ul {
         gap: 10%;
-    }
+    }*/
 
     .sub_menu_main .menu_1dpth a {
         padding: 0;
