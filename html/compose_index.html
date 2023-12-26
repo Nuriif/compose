@@ -16,6 +16,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../public/js/slick.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 
   <script>
     window.addEventListener('scroll', ()=>{
@@ -55,10 +57,12 @@
                 <form action="">
                     <fieldset>
                         <label class="hide" for="map_search">매장 검색</label>
-                        <input type="text" name="" id="map_search" placeholder="위치를 입력하세요">
-                        <button type="submit">
-                            <i class="xi-search"></i>
-                        </button>
+                        <div>
+                          <input type="text" name="" id="map_search" placeholder="위치를 입력하세요">
+                          <button type="submit" onclick="location.href='store_map.html'">
+                              <i class="xi-search"></i>
+                          </button>
+                        </div>
                     </fieldset>
                 </form>
                 <ul>
@@ -74,8 +78,9 @@
     <section class="main_bestmenu_wrap" id="max_width">
       <div>
         <h2 class="main_title">
-          <img src="../public/images/logo/c_logo.png" alt="">
+          
           베스트 메뉴
+          <img src="../public/images/logo/c_logo.png" alt="">
         </h2>
         <div class="menu_list">
           <ul>
@@ -94,31 +99,31 @@
         </div>
         <div class="slick_center_items">
           <a href="#none">
-            <img src="../public/images/menu/bg_removed/coffee_18.png" alt="흑당카페라떼">
+            <img src="../public/images/menu/bg_removed/coffee_18_edit.png" alt="흑당카페라떼">
             <h3>흑당카페라떼</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
-            <img src="../public/images/menu/bg_removed/coffee_06.png" alt="아이스 카페라떼">
+            <img src="../public/images/menu/bg_removed/coffee_06_edit.png" alt="아이스 카페라떼">
             <h3>Iced 카페라떼</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
-            <img src="../public/images/menu/bg_removed/coffee_17.png" alt="아이스 돌체라떼">
+            <img src="../public/images/menu/bg_removed/coffee_17_edit.png" alt="아이스 돌체라떼">
             <h3>Iced 돌체라떼</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
-            <img src="../public/images/menu/bg_removed/coffee_20.png" alt="아인슈페너라떼">
+            <img src="../public/images/menu/bg_removed/coffee_20_edit.png" alt="아인슈페너라떼">
             <h3>아인슈페너라떼</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="../html/menu_coffee01.html">
-            <img src="../public/images/menu/bg_removed/coffee_15.png" alt="아이스 카페모카">
+            <img src="../public/images/menu/bg_removed/coffee_15_edit.png" alt="아이스 카페모카">
             <h3>Iced 카페모카</h3>
           </a>
         </div>
@@ -127,36 +132,43 @@
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/latte_06.png" alt="아이스 더블초코라떼">
+            <h3>Iced 더블초코라떼</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
-            <img src="../public/images/menu/bg_removed/latte_14.png" alt="딸기라떼">
+            <img src="../public/images/menu/bg_removed/latte_14_edit.png" alt="딸기라떼">
+            <h3>딸기라떼</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/smoothie_03.png" alt="블루베리 스무디">
+            <h3>블루베리 스무디</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/tea_04.png" alt="아이스 자몽허니블랙티">
+            <h3>Iced 자몽허니블랙티</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/frappe_05.png" alt="모카자바칩 프라페">
+            <h3>모카자바칩 프라페</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/shake_05.png" alt="팥절미 밀크쉐이크">
+            <h3>팥절미 밀크쉐이크</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
-            <img src="../public/images/menu/bg_removed/frappe_04.png" alt="그린티 프라페">
+            <img src="../public/images/menu/bg_removed/frappe_04_edit.png" alt="그린티 프라페">
+            <h3>그린티 프라페</h3>
           </a>
         </div>
       </div>
@@ -164,31 +176,37 @@
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/dessert_01.png" alt="시나몬 크룽지">
+            <h3>시나몬 크룽지</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/dessert_07.png" alt="티라미수 크루아상 와플">
+            <h3>티라미수 크루아상 와플</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/dessert_10.png" alt="시나몬 카라멜 와플">
+            <h3>시나몬 카라멜 와플</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/dessert_27.png" alt="더블 초코칩 쿠키">
+            <h3>더블 초코칩 쿠키</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/dessert_05.png" alt="화이트 생크림 롤케이크">
+            <h3>화이트 생크림 롤케이크</h3>
           </a>
         </div>
         <div class="slick_center_items">
           <a href="#none">
             <img src="../public/images/menu/bg_removed/dessert_06.png" alt="팥절미 크루아상 와플">
+            <h3>팥절미 크루아상 와플</h3>
           </a>
         </div>
       </div>
@@ -273,11 +291,10 @@
     $('.center').slick({
       centerMode: true,
       centerPadding: '60px',
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 2000,
       infinite: true,
       slidesToShow: 5,
-      variableWidth : true,
       responsive: [
         {
           breakpoint: 1023,
@@ -289,7 +306,7 @@
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 576,
           settings: {
             arrows: true,
             centerMode: true,
@@ -301,11 +318,25 @@
     });
 
     $(".main_bestmenu_wrap .menu_list ul li").click(function(){
+      $('.slick-slider').slick('refresh');
+
       $(".menu_list ul li").removeClass("on");
       $(this).addClass("on");
 
       $(".main_bestmenu_wrap div.center").hide();
       $(".main_bestmenu_wrap div.center").eq($(this).index()).show();
+    });
+
+    $(".slick-initialized .slick-slide").hover(function(){
+
+    }, function(){
+
+    });
+
+    $(".slick-initialized .slick-slide").hover(function(){
+      // $(this).find("h3").addClass("on");
+    }, function(){
+      // $(this).find("h3").removeClass("on");
     });
 
     

@@ -21,6 +21,7 @@ body{
     font-size: 35px;
     font-weight: bold;
     display: inline-block;
+    width: 25%;
 }
 .main_title img{
     width: 40px;
@@ -120,6 +121,10 @@ body{
     padding: 5px 15px;
     border-radius: 20px;
 }
+.compose_map fieldset > div {
+    display: flex;
+    justify-content: space-between;
+}
 .compose_map input {
     border: none;
 }
@@ -157,14 +162,14 @@ body{
 }
 .menu_list{
     display: inline-block;
-    width: 30%;
+    width: 70%;
     box-sizing: border-box;
 }
 
 .menu_list ul {
     display: flex;
     font-size: 17px;
-    gap: 5%;
+    gap: 2%;
 }
 .menu_list ul li {
     background: none;
@@ -206,17 +211,75 @@ body{
 .slick_center_items img{
     height: 100%;
 }
+
+.main_bestmenu_wrap{
+    padding: 0 10px;
+}
 .main_bestmenu_wrap .slick-initialized .slick-slide{
     display: flex;
     justify-content: center;
     transition: transform 0.3s;
+    position: relative;
 }
 .main_bestmenu_wrap .slick-initialized .slick-slide:hover{
     transform: scale(1.2);
 }
+
+.main_bestmenu_wrap .slick-initialized .slick-slide::after{
+    opacity: 0;
+    content:"";
+    /* padding: 0 9px; */
+    /* content:"\f002"; */
+    /* font-family: "Font Awesome 5 Free"; */
+    /* font-size: 25px; */
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    width: 120px;
+    height: 50px;
+    background-color: rgba(252, 223, 117, 0.9);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+    z-index: -1;
+}
+/* {
+    opacity: 0;
+    content:"";
+    padding: 0 9px;
+    content:"\f002";
+    font-family: "Font Awesome 5 Free";
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(252, 223, 117, 0.9);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    z-index: -1;
+} */
+
+.main_bestmenu_wrap .slick-initialized .slick-slide:hover::after{
+    opacity: 1;
+}
 .slick_center_items h3{
     text-align: center;
     font-size: 16px;
+}
+.slick_center_items h3.on{
+    color: #fdd22b;
 }
 
 .center .slick-prev{
@@ -235,6 +298,7 @@ body{
 }
 .main_bestmenu_wrap .slick-list.draggable{
     height: 30%;
+    overflow: hidden;
 }
 .main_bestmenu_wrap > div:first-child{
     display: flex;
@@ -686,9 +750,17 @@ body{
 
     /* ---- main ---- */
 
+    .compose_sns h2{
+        font-size: 30px;
+    }
+    .main_title{
+        font-size: 30px;
+    }
+
     .main_link_wrap {
         flex-direction: column;
-        row-gap: 1.8em;
+        row-gap: 1em;
+        padding: 10px;
     }
 
     .main_link_wrap>div {
@@ -708,13 +780,19 @@ body{
 }
 
 @media screen and (max-width: 767px) {
+    .main_title{
+        font-size: 25px;
+    }
+   
+    
+    
     .compose_sns {
         max-width: 767px;
     }
 
     /* h2 - compose coffee SNS */
     .compose_sns h2 {
-        font-size: 35px;
+        font-size: 25px;
         font-weight: bold;
         margin-bottom: 20px;
         padding-left: 10%;
