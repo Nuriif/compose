@@ -1,0 +1,174 @@
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컴포즈 커피</title>
+    <script src="../public/js/jquery-3.7.1.min.js"></script>
+    <script src="../public/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../public/css/swiper-bundle.min.css">
+    <!-- <script src="js/slick.css"></script>
+    <link rel="stylesheet" href="js/slick.css"> -->
+    <link rel="stylesheet" href="../public/css/style_nr.css">
+    <link rel="stylesheet" href="../public/css/reset_nr.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <script>
+        $(document).ready(function(){
+            // $('.div_slick').slick({
+            //     centerMode: true,
+            //     centerPadding: '60px',
+            //     slidesToShow: 3,
+            //     responsive: [
+            //         {
+            //         breakpoint: 768,
+            //         settings: {
+            //             arrows: false,
+            //             centerMode: true,
+            //             centerPadding: '40px',
+            //             slidesToShow: 3
+            //         }
+            //         },
+            //         {
+            //         breakpoint: 480,
+            //         settings: {
+            //             arrows: false,
+            //             centerMode: true,
+            //             centerPadding: '40px',
+            //             slidesToShow: 1
+            //         }
+            //         }
+            //     ]
+            // });
+
+            // $(window).scroll(function(){
+            //     if($(this).scrollTop() > 250){
+            //         $(".topBtn").fadeIn();
+            //     }else{
+            //         $(".topBtn").fadeOut();
+            //     }
+            // });
+            // $(".topBtn").click(function(){
+            //     $('html, body').animate({scrollTop:0}, 400);
+            //     return false;
+            // });
+
+            new Swiper('.swiper', {
+                direction: 'horizontal',
+                autoplay:{delay:3000, },
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 10, 
+                centeredSlides: true,
+                autoHeight:true,
+                pagination: {
+                    el: '.promotion .swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    prevEl: '.swiper-prev',
+                    nextEl: '.swiper-next',
+                },
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+    <header id="header">
+
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="main_link_wrap">
+                <div class="app_store">
+                    <div>
+                        <h2>컴포즈 앱으로 더욱 풍성하게</h2>
+                        <ul>
+                            <li>#미리주문</li>
+                            <li>#이벤트</li>
+                            <li>#혜택쿠폰</li>
+                            <li>#앱다운로드</li>
+                            <li>#앱주문</li>
+                        </ul>
+                        <a href="../html/appstore.html" id="goto_appstore">앱으로 주문</a>
+                    </div>
+                    <img src="../public/images/appstore/unnamed.png" alt="앱으로 주문">
+                </div>
+                <div class="compose_map">
+                    <div>
+                        <h2>컴포즈 매장 찾기</h2>
+                        <form action="">
+                            <fieldset>
+                                <label for="map_search">매장 검색</label>
+                                <input type="text" name="" id="map_search" placeholder="위치를 입력하세요">
+                                <button type="submit">
+                                    <i class="xi-search"></i>
+                                </button>
+                            </fieldset>
+                        </form>
+                        <ul>
+                            <li>#컴포즈</li>
+                            <li>컴포즈_매장찾기</li>
+                        </ul>
+                    </div>
+                    <img src="../public/images/main/branch_.png" alt="컴포즈 매장 찾기">
+                </div>
+            </div>
+        </div>
+        
+        <div class="main_bestmenu">
+            <h2 class="main_title">Best Menu</h2>
+            <div class="menu_list">
+                <ul>
+                    <li><a href="#">커피</a></li>
+                    <li><a href="#">논커피</a></li>
+                    <li><a href="#">디저트</a></li>
+                </ul>
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../public/images/menu/bg_removed/coffee_20-removebg-preview.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../public/images/menu/bg_removed/coffee_20-removebg-preview.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../public/images/menu/bg_removed/coffee_20-removebg-preview.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../public/images/menu/bg_removed/coffee_20-removebg-preview.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../public/images/menu/bg_removed/coffee_20-removebg-preview.png" alt=""></div>
+                </div>
+            </div>
+            <div class="menu_img_wrap">
+                
+                
+                <ul class="bestmenu_coffee">
+                    <li><a href="#"><img src="../images/bestmenu/1_01.png" alt="아이스 아메리카노"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/1_02.png" alt="빅포즈 아메리카노"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/1_03.png" alt="아이스 카페라떼"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/1_04.png" alt="돌체라떼"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/1_05.png" alt="아인슈페너"></a></li>
+                </ul>
+                <ul class="bestmenu_noncoffee">
+                    <li><a href="#"><img src="../images/bestmenu/2_01.png" alt="더블초코라떼"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/2_02.png" alt="딸기라떼"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/2_03.png" alt="블루베리 스무디"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/2_04.png" alt="자몽허니블랙티"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/2_05.png" alt="모카자바칩 프라페"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/2_06.png" alt="팥절미 밀크쉐이크"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/2_07.png" alt="그린티 프라페"></a></li>
+                </ul>
+                <ul class="bestmenu_dessert">
+                    <li><a href="#"><img src="../images/bestmenu/3_01.png" alt="시나몬 크룽지"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/3_02.png" alt="티라미수 크루아상 와플"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/3_03.png" alt="시나몬 카라멜 와플"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/3_04.png" alt="더블 초코칩 쿠키"></a></li>
+                    <li><a href="#"><img src="../images/bestmenu/3_05.png" alt="딸기 생크림 카스테라"></a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <a class="topBtn" href="#">TOP</a>
+    </footer>
+</body>
+</html>
