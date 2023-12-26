@@ -13,6 +13,9 @@
 
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- XEICON CSS를 가져옴 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 
 <body>
@@ -71,6 +74,25 @@
 
     <div id="max_width">
       <div class="board_wrap">
+        <div class="board-search">
+          <div class="board-search-info">
+            <div>전체 <span class="count">6</span> 건</div>
+            <div>현재 페이지 <span class="count">1/1</span></div>
+          </div>
+          <div class="board_search">
+            <select name="search_target">
+              <option value="title_content">제목+내용</option>
+              <option value="title">제목</option>
+              <option value="content">내용</option>
+            </select>
+            <div class="search_input">
+              <input type="text" name="search_keyword" value="" title="검색" class="iText">
+              <button type="button" class="btn search">
+                <i class="xi-magnifier"></i>
+              </button>
+            </div>
+          </div>
+        </div>
         <div class="board_list">
           <div class="board_top">
             <div class="num">No</div>
@@ -112,7 +134,7 @@
               <a href="community_notice03.html">컴포즈커피 상하목장 아이스크림 취급점(전국) 안내</a>
             </div>
             <div class="writer">컴포즈커피</div>
-            <div class="date">2021.01.15</div>
+            <div class="date">2022.08.04</div>
             <div class="count">58576</div>
           </div>
           <div class="board_content">
@@ -140,8 +162,6 @@
             <i class="fa-solid fa-caret-left"></i>
           </a>
           <a class="num on">1</a>
-          <a class="num">2</a>
-          <a class="num">3</a>
           <a class="bt last" alt="마지막 페이지로 이동">
             <i class="fa-solid fa-caret-right"></i>
           </a>
