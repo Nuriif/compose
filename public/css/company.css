@@ -22,7 +22,7 @@
   z-index: 1;
   max-width: 523px;
   width: 100%;
-  margin: 0 auto 200px;
+  margin: 0 auto 160px;
   text-align: center;
 }
 
@@ -68,7 +68,7 @@
 .sub01_tt>h2>p {
   overflow: hidden;
   margin: 0;
-  font-size: 90px;
+  font-size: 80px;
   font-weight: 500;
   color: #333;
   letter-spacing: 0em;
@@ -87,7 +87,7 @@
 .sub01_tt>h2>strong {
   overflow: hidden;
   margin: 0;
-  font-size: 85px;
+  font-size: 77px;
   font-weight: 300;
   color: #333;
   line-height: 1.2em;
@@ -107,11 +107,11 @@
 .sub01_tt2 {
   text-align: center;
   word-break: keep-all;
-  margin-bottom: 150px;
+  margin-bottom: 140px;
 }
 
 .sub01_tt2>p {
-  font-size: 17px;
+  font-size: 30px;
   font-weight: 300;
   color: #555;
   margin-bottom: 10px;
@@ -124,7 +124,7 @@
 }
 
 .sub01_his {
-  margin: 0 -20px 80px;
+  margin: 0 -20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

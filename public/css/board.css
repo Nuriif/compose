@@ -10,50 +10,6 @@
   border-bottom: 1px solid #dddddd;
 }
 
-.board_title {
-  margin-top: 10%;
-}
-
-.board_title p {
-  text-align: center;
-}
-
-.board_title dl {
-  width: 510px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  align-items: baseline;
-}
-
-.board_title dt {
-  font-weight: bold;
-}
-
-.board_title img {
-  padding-bottom: 4px;
-  vertical-align: middle;
-}
-
-.board_title dd {
-  font-size: 13px;
-}
-
-.board_title dd:before {
-  content: "";
-  display: block;
-  clear: both;
-  position: relative;
-  left: -15px;
-  top: 15px;
-  width: 4px;
-  height: 4px;
-  background: #bbbbbb;
-  border-radius: 2px;
-}
-
 .board_wrap {
   position: relative;
   margin: auto;
@@ -104,6 +60,13 @@
 
 .board_list .title {
   width: 45%;
+}
+
+.board_list .title>a {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .board_list .writer {
