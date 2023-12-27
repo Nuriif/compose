@@ -49,7 +49,7 @@
                 <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
                 <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8" transform="scale(1, -1)"></circle>
               </svg>
-              <p class="circle">50<span>%</span></p>
+              <p class="circle nums" data-count="50">50<span>%</span></p>
             </div>
             <p class="circle_title">BRAZIL</p>
           </div>
@@ -59,7 +59,7 @@
                 <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
                 <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
               </svg>
-              <p class="circle">30<span>%</span></p>
+              <p class="circle nums" data-count="30">30<span>%</span></p>
             </div>
             <p class="circle_title">COLOMBIA</p>
           </div>
@@ -69,7 +69,7 @@
                 <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
                 <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
               </svg>
-              <p class="circle">20<span>%</span></p>
+              <p class="circle nums" data-count="20">20<span>%</span></p>
             </div>
             <p class="circle_title">ETHIOPIA</p>
           </div>
@@ -206,7 +206,7 @@
     
     setTimeout(function(){
       $(".bitter_cont1").addClass("active");
-    }, 800);
+    }, 500);
     
 
     $(window).scroll(function(){
@@ -217,6 +217,28 @@
       }
 
     });
+
+    //숫자 카운트 애니메이션
+    $('.nums').each(function () {
+      const $this = $(this),
+        countTo = $this.attr('data-count');
+
+      $({
+        countNum: $this.text()
+      }).animate({
+        countNum: countTo
+      }, {
+        duration: 2000,
+        easing: 'linear',
+        step: function () {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+          $this.text(this.countNum);
+        }
+      });
+    });
+    
 
     $("#header").load("compose_header.html");
     $("#footer").load("compose_footer.html");
