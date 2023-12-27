@@ -11,8 +11,7 @@ li {
 }
 
 .board_wrap {
-  width: 1000px;
-  margin: 10% auto;
+  margin-top: 10%;
 }
 
 .board_list {
