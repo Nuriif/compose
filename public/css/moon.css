@@ -187,7 +187,8 @@
 }
 
 .franchise_step_card dd {
-  font-size: 13px;
+  font-size: 14px;
+  line-height: 20px;
   padding-left: 10%;
   text-align: left;
 }
@@ -197,8 +198,8 @@
   display: block;
   clear: both;
   position: relative;
-  left: -15px;
-  top: 15px;
+  left: -12px;
+  top: 11px;
   width: 4px;
   height: 4px;
   background: #bbbbbb;
@@ -248,7 +249,7 @@
 }
 
 .franchise_condition p {
-  font-size: 13px;
+  font-size: 14px;
   margin-top: 20px;
 }
 
