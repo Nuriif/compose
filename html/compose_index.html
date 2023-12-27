@@ -78,9 +78,9 @@
     <section class="main_bestmenu_wrap" id="max_width">
       <div>
         <h2 class="main_title">
-          
-          베스트 메뉴
           <img src="../public/images/logo/c_logo.png" alt="">
+          베스트 메뉴
+          
         </h2>
         <div class="menu_list">
           <ul>
@@ -214,7 +214,11 @@
     
     <!-- 문희_메인(sns) -->
     <section class="compose_sns" id="max_width">
-      <h2>컴포즈커피 SNS</h2>
+      
+      <h2>
+        <img src="../public/images/logo/c_logo.png" alt="">
+        컴포즈커피 SNS
+      </h2>
       <div class="slider">
         <div>
           <a href="https://www.instagram.com/compose_coffee/p/C1BF9Eyi2-L/?img_index=1">
@@ -286,6 +290,26 @@
       autoplaySpeed: 1000,
       slidesToShow: 4,
       slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1223,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 822,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
     });
 
     $('.center').slick({

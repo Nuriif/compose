@@ -693,7 +693,9 @@ body{
 }
 
 /* -------------- bitterholic ------------- */
-
+.sub_bitter_main#main{
+    padding: 100px 0 0;
+}
 .sub_bitter_main{
     line-height: 1 !important;    
 }
