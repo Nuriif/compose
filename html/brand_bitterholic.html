@@ -14,9 +14,11 @@
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
   <script>
-    window.addEventListener('scroll', () => {
-      console.log(window.scrollY);
+    window.addEventListener('scroll', ()=>{
+      //console.log(window.scrollY);
     });
   </script>
 </head>
@@ -26,26 +28,26 @@
   <div id="quickmenu"></div>
 
   <main id="main" class="sub_bitter_main">
+    <div>
+      
+    </div>
     <section class="bitter_cont1">
-      <div>
+      <div id="max_width">
         <h2>
           <span>컴포즈 커피 스페셜티 블렌딩</span><br>
-          비터홀릭
-        </h2>
+          비터홀릭</h2>
         <p>
           브라질, 콜롬비아를 베이스로 커피의 토스티하고<br>
           고소한 맛을 중심으로 에티오피아 커피를 배합해<br>
           커피 특유의 쓴 맛을 초콜릿티하게 표현한 블렌딩
         </p>
         <div class="blending_graph">
-
+          
           <div class="cir01">
             <div class="circle_line">
-              <svg width="185" height="185" viewBox="0 0 185 185">
-                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2">
-                </circle>
-                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8">
-                </circle>
+              <svg width="185" height="185" viewBox="0 0 185 185" class="box1">
+                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
+                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8" transform="scale(1, -1)"></circle>
               </svg>
               <p class="circle">50<span>%</span></p>
             </div>
@@ -54,10 +56,8 @@
           <div class="cir02">
             <div class="circle_line">
               <svg width="185" height="185" viewBox="0 0 185 185">
-                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2">
-                </circle>
-                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8">
-                </circle>
+                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
+                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
               </svg>
               <p class="circle">30<span>%</span></p>
             </div>
@@ -66,10 +66,8 @@
           <div class="cir03">
             <div class="circle_line">
               <svg width="185" height="185" viewBox="0 0 185 185">
-                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2">
-                </circle>
-                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8">
-                </circle>
+                <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
+                <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
               </svg>
               <p class="circle">20<span>%</span></p>
             </div>
@@ -80,19 +78,43 @@
       <!-- <img src="../public/images/bitterholic/bitterholic1.png" alt=""> -->
     </section>
     <section class="bitter_cont2">
-      <h3>Roasting Point</h3>
-      <p>
-        본사 R&D부서의 수석 로스터가 수많은 시행착오를 거쳐<br>
-        원두 본연의 장점을 고루 살려낸 최상의 배전포인트와 배합비율을 찾아내었습니다.<br>
-        또한 비터홀릭은 일정한 로스팅 프로세스를 통해 <br>
-        흐트러짐 없는 맛과 변함없는 풍미를 여러분께 선사합니다.
-      </p>
       <div>
-        <p>ROASTING POINT</p>
         <div>
-          <ul></ul>
+          <h3>Roasting Point</h3>
+          <p class="roasting_point_underline"></p>
+          <p>
+            본사 R&D부서의 수석 로스터가 수많은 시행착오를 거쳐<br>
+            원두 본연의 장점을 고루 살려낸 최상의 배전포인트와 배합비율을 찾아내었습니다.<br><br>
+            또한 비터홀릭은 일정한 로스팅 프로세스를 통해 <br>
+            흐트러짐 없는 맛과 변함없는 풍미를 여러분께 선사합니다.
+          </p>
         </div>
-      </div>
+        <div class="roasting_point_light">
+          <div>
+            <span class="material-symbols-outlined">
+              coffee_maker
+            </span>
+            <p>
+              ROASTING<br>
+              POINT
+            </p>
+          </div>
+          <div class="grp">
+            <ul class="grp_up">
+              <li>Light</li>
+              <li>Medium</li>
+              <li>Dark</li>
+            </ul>
+            <ul class="grp_low">
+              <li>Medium</li>
+              <li>High</li>
+              <li>City</li>
+              <li>Full City</li>
+              <li>French</li>
+              <li>Italian</li>
+            </ul>
+          </div>
+        </div>
       <div>
         <ul>
           <li>
@@ -139,34 +161,40 @@
       </div>
     </section>
     <section class="bitter_cont3">
-      <div>
-        <h3>
-          <span>SPECIALTY BLENDING</span>
-          스페셜티 커피란?
-        </h3>
-        <p>
-          지리·기후·생산지 등의 특별한 환경에서 자란 커피 중<br>
-          '미국 스페셜티 커피 협회(SCAA)의 평가를 거쳐<br>
-          기준점수 80점 이상을 받은 우수한 등급의 커피를 말합니다.'
-        </p>
-        <img src="../public/images/bitterholic/bitterholic4.png" alt="">
-      </div>
-      <div>
-        <h3>
-          <span>FAZENDA RANCHO GRANDE</span>
-          컴포즈커피 ‘올해의 산지’
-        </h3>
-        <p>Region : Sul de minas</p>
-        <p>Quality : Specialty</p>
-        <p>Altitude : 930-1000m</p>
-        <p>Crop : 2022/23</p>
-        <p>Variety : Yellow Bourbon</p>
-        <p>Process : Natural</p>
-        <p>Score : 84.5</p>
-        <img src="../public/images/bitterholic/bitterholic5.png" alt="">
+      <div id="max_width">
+        <div class="bitter_cont3_box_wrap">
+          <div class="bitter_cont3_box">
+            <h3>
+              <span>SPECIALTY BLENDING</span>
+              스페셜티 커피란?
+            </h3>
+            <p>
+              지리·기후·생산지 등의 특별한 환경에서 자란 커피 중<br>
+              '미국 스페셜티 커피 협회(SCAA)의 평가를 거쳐<br>
+              기준점수 80점 이상을 받은 우수한 등급의 커피를 말합니다.'
+            </p>
+            <img src="../public/images/bitterholic/bitterholic4.png" alt="">
+          </div>
+        </div>
+        <div class="bitter_cont3_box_wrap">
+          <div class="bitter_cont3_box">
+            <h3>
+              <span>FAZENDA RANCHO GRANDE</span>
+              컴포즈커피 ‘올해의 산지’
+            </h3>
+            <p>Region : Sul de minas</p>
+            <p>Quality : Specialty</p>
+            <p>Altitude : 930-1000m</p>
+            <p>Crop : 2022/23</p>
+            <p>Variety : Yellow Bourbon</p>
+            <p>Process : Natural</p>
+            <p>Score : 84.5</p>
+            <img src="../public/images/bitterholic/bitterholic5.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
-
+    
   </main>
 
   <div id="footer"></div>
@@ -175,17 +203,17 @@
   $(document).ready(function () {
     // 페이지 로드 시
 
-
-    setTimeout(function () {
+    
+    setTimeout(function(){
       $(".bitter_cont1").addClass("active");
     }, 800);
+    
 
-
-    $(window).scroll(function () {
+    $(window).scroll(function(){
       var scroll = $(document).scrollTop();
 
-      if (scroll >= 10) {
-
+      if(scroll >= 10){
+        
       }
 
     });
