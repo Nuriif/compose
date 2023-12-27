@@ -1,8 +1,11 @@
 @import url("../css/common.css");
 @import url("../css/reset.css");
 
-.customer_title h2, p{
-    text-align: center;    
+.customer_title p{
+    width: 565px;
+    margin: auto; 
+    text-align: center;
+
   }
 
   .customer_title{
@@ -10,13 +13,14 @@
   }
 
   .customer_title dl{    
-    width: 565px;
+    width: 535px;
     display: flex;    
     justify-content: space-between;        
     margin: auto;
     margin-top: 30px;
     margin-bottom: 40px;
     align-items: baseline;
+    font-size: 14px;
   }
   .customer_title dt{    
    font-weight: bold;
