@@ -9,27 +9,22 @@
   <link rel="icon" href="../public/images/icon/favicon.ico">
 
   <!-- css -->
-  <link rel="stylesheet" href="../public/css/moon.css">
+  <link rel="stylesheet" href="../public/css/main.css">
 
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="../public/js/slick.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
   <script>
-    $(document).ready(function () {
-      $(".slider").slick({
-        //   autoplay: true,
-        autoplaySpeed: 1000,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-      });
-
-      $("#header").load("compose_header.html");
-
-      $("#footer").load("compose_footer.html");
-
-      $("#quickmenu").load("quickmenu.html");
+    window.addEventListener('scroll', ()=>{
+      if(window.innerHeight > 100){
+        document.querySelector(".app_store").classList.add("on");  
+        document.querySelector(".compose_map").classList.add("on");  
+      }
     });
   </script>
 </head>
@@ -39,6 +34,184 @@
   <div id="quickmenu"></div>
 
   <main id="main">
+    
+    <section class="main_link_" id="max_width">
+      <div class="main_link_wrap">
+        <div class="app_store">
+            <div>
+                <h2>컴포즈 앱으로 더욱 풍성하게!</h2>
+                <ul>
+                    <li>#미리주문</li>
+                    <li>#이벤트</li>
+                    <li>#혜택쿠폰</li>
+                    <li>#앱다운로드</li>
+                    <li>#앱주문</li>
+                </ul>
+                <a href="../html/appstore.html" id="goto_appstore">앱으로 주문</a>
+            </div>
+            <img src="../public/images/appstore/unnamed.png" alt="앱으로 주문">
+        </div>
+        <div class="compose_map">
+            <div>
+                <h2>가까운 컴포즈 매장 찾기!</h2>
+                <form action="">
+                    <fieldset>
+                        <label class="hide" for="map_search">매장 검색</label>
+                        <div>
+                          <input type="text" name="" id="map_search" placeholder="위치를 입력하세요 예) 역삼동">
+                          <button type="submit" onclick="location.href='store_map.html'">
+                              <i class="xi-search" onclick="location.href='store_map.html'"></i>
+                          </button>
+                        </div>
+                    </fieldset>
+                </form>
+                <ul>
+                    <li>#컴포즈</li>
+                    <li>#컴포즈_매장찾기</li>
+                </ul>
+                <!-- <a href="../html/store_map.html" id="goto_map">매장 찾으러 가기</a> -->
+            </div>
+            <img src="../public/images/main/branch_.png" alt="컴포즈 매장 찾기">
+        </div>
+      </div>
+    </section>
+    <section class="main_bestmenu_wrap" id="max_width">
+      <div>
+        <h2 class="main_title">
+          
+          베스트 메뉴
+          <img src="../public/images/logo/c_logo.png" alt="">
+        </h2>
+        <div class="menu_list">
+          <ul>
+              <li><a href="#none">커피</a></li>
+              <li><a href="#none">논커피</a></li>
+              <li><a href="#none">디저트</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="center no1">
+        <div class="slick_center_items">
+          <a href="../html/menu_coffee01.html">
+            <img src="../public/images/menu/bg_removed/coffee_04_edit.png" alt="아이스 아메리카노">
+            <h3>Iced 아메리카노</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/coffee_18_edit.png" alt="흑당카페라떼">
+            <h3>흑당카페라떼</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/coffee_06_edit.png" alt="아이스 카페라떼">
+            <h3>Iced 카페라떼</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/coffee_17_edit.png" alt="아이스 돌체라떼">
+            <h3>Iced 돌체라떼</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/coffee_20_edit.png" alt="아인슈페너라떼">
+            <h3>아인슈페너라떼</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="../html/menu_coffee01.html">
+            <img src="../public/images/menu/bg_removed/coffee_15_edit.png" alt="아이스 카페모카">
+            <h3>Iced 카페모카</h3>
+          </a>
+        </div>
+      </div>
+      <div class="center no2">
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/latte_06.png" alt="아이스 더블초코라떼">
+            <h3>Iced 더블초코라떼</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/latte_14_edit.png" alt="딸기라떼">
+            <h3>딸기라떼</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/smoothie_03.png" alt="블루베리 스무디">
+            <h3>블루베리 스무디</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/tea_04.png" alt="아이스 자몽허니블랙티">
+            <h3>Iced 자몽허니블랙티</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/frappe_05.png" alt="모카자바칩 프라페">
+            <h3>모카자바칩 프라페</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/shake_05.png" alt="팥절미 밀크쉐이크">
+            <h3>팥절미 밀크쉐이크</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/frappe_04_edit.png" alt="그린티 프라페">
+            <h3>그린티 프라페</h3>
+          </a>
+        </div>
+      </div>
+      <div class="center no3">
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/dessert_01.png" alt="시나몬 크룽지">
+            <h3>시나몬 크룽지</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/dessert_07.png" alt="티라미수 크루아상 와플">
+            <h3>티라미수 크루아상 와플</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/dessert_10.png" alt="시나몬 카라멜 와플">
+            <h3>시나몬 카라멜 와플</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/dessert_27.png" alt="더블 초코칩 쿠키">
+            <h3>더블 초코칩 쿠키</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/dessert_05.png" alt="화이트 생크림 롤케이크">
+            <h3>화이트 생크림 롤케이크</h3>
+          </a>
+        </div>
+        <div class="slick_center_items">
+          <a href="#none">
+            <img src="../public/images/menu/bg_removed/dessert_06.png" alt="팥절미 크루아상 와플">
+            <h3>팥절미 크루아상 와플</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+    
     <!-- 문희_메인(sns) -->
     <section class="compose_sns" id="max_width">
       <h2>컴포즈커피 SNS</h2>
@@ -99,5 +272,80 @@
 
   <footer id="footer"></footer>
 </body>
+<script>
+  $(document).ready(function () {
+    // 페이지 로드 시
+    $(".main_bestmenu_wrap div.center").eq(0).show();
+    $(".main_bestmenu_wrap div.center").eq(1).hide();
+    $(".main_bestmenu_wrap div.center").eq(2).hide();
+    $(".menu_list ul li").eq(0).addClass("on");
+
+
+    $(".slider").slick({
+      //   autoplay: true,
+      autoplaySpeed: 1000,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+    });
+
+    $('.center').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: true,
+      slidesToShow: 5,
+      responsive: [
+        {
+          breakpoint: 1023,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 576,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    $(".main_bestmenu_wrap .menu_list ul li").click(function(){
+      $('.slick-slider').slick('refresh');
+
+      $(".menu_list ul li").removeClass("on");
+      $(this).addClass("on");
+
+      $(".main_bestmenu_wrap div.center").hide();
+      $(".main_bestmenu_wrap div.center").eq($(this).index()).show();
+    });
+
+    $(".slick-initialized .slick-slide").hover(function(){
+
+    }, function(){
+
+    });
+
+    $(".slick-initialized .slick-slide").hover(function(){
+      // $(this).find("h3").addClass("on");
+    }, function(){
+      // $(this).find("h3").removeClass("on");
+    });
+
+    
+    $("#header").load("compose_header.html");
+
+    $("#footer").load("compose_footer.html");
+
+    $("#quickmenu").load("quickmenu.html");
+  });
+</script>
 
 </html>
