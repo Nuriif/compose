@@ -17,15 +17,15 @@
   width: 100%;
   border-bottom: 1px solid #dddddd96;
   z-index: 20;
-  background: #fff;
+  background: #fff;  
 }
 
-.header_wrap {
+.header_wrap {  
   max-width: 1300px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  
+  align-items: center;  
 }
 
 .header_wrap .logo {
@@ -36,6 +36,10 @@
 .header_wrap .logo a {
   width: 100%;
   height: 100%;
+}
+.m_logo{
+  width: 40px;
+  display: none;
 }
 
 .header_wrap nav {
@@ -86,6 +90,8 @@
   align-items: center;
 }
 
+
+
 /* util */
 .util_menu {
   width: 15%;
@@ -123,6 +129,8 @@
   padding-bottom: 5px;
 }
 
+
+
 /* franchise button */
 .franchise {
   white-space: nowrap;
@@ -158,6 +166,16 @@
   border-top: 1px solid rgba(221, 221, 221, 0.5);
   border-bottom: 1px solid rgba(221, 221, 221, 0.5);
 }
+
+.nav_bar_hamburger{
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: none;
+}
+
 
 /* quick */
 .quick_main {
@@ -440,30 +458,49 @@
 
   
   /* header */
+
+
   #header {
-    max-width: 767px;
+    display: none; /* 1227임시숨김 */
     margin: auto;
+    position: fixed;
+      width: 100vw;
+    height: 60px;
+    border-bottom: 1px solid #dddddd96;
+    z-index: 20;
+    background: #fff;  
   }
 
   .header_wrap {
-    display: block; /* 1227임시숨김 */
-    width: 100%;
-    height: 100vh;
+    display: none; /* 1227임시숨김 */
+    width: 100vw;
+    height: 60px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
     box-sizing: border-box;
+    margin: 0;
+
+
     background: #fff;
-    position:relative;
+    position:fixed;
     z-index: 20;
     border-bottom: none
   }
 
   .header_wrap .logo {
-    width: 130px;
+    width: 135px;
     height: 74px;
   }
+
+  .m_logo{
+    width: 40px;
+    display: block;
+    position: relative;
+    top: -7px;
+  }
+  
 
   .header_wrap .logo a {
     width: 100%;
@@ -472,13 +509,18 @@
 
   .header_wrap nav {
     width: 100%;
+
   }
+
+
 
   .header_wrap nav .gnb h3 {
     font-size: 20px;
     padding: 15px 0;
     width: 100%;
     height: 60px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .header_wrap nav .gnb>li {
@@ -491,9 +533,23 @@
     width: 100%;   
   }
 
+  .gnb_width h3 a::after{    
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon/icon_arrow_down.png)no-repeat center 100%;    
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+  }
+
+  
+
   .gnb_width li{
     padding: 0 0 10px;    
   }
+
 
   .header_menu_a {
     display: inline-block;
@@ -508,6 +564,8 @@
     z-index: 2;
   }
   
+
+
   .header_wrap nav .gnb>li:not(#franchise_li):hover {
     border-bottom: none
   }
@@ -516,7 +574,7 @@
     color: inherit;
   }
 
-  .header_wrap nav .gnb>li>ul {
+  .header_wrap nav .gnb>li>ul {    
     font-size: 16px;
     position: relative;
     top: 0;
@@ -524,25 +582,20 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    padding: 0 0 10px 10px;
-
-    /* 
-    top: 110px;
-    width: 100%;
-    height: 190px;
-    box-sizing: border-box;
-    display: none;
-    position: absolute;
-    */
+    padding: 3px 0 10px 10px;
   }
+
+
+
 
   /* util */
   .util_menu {
-    width: 85px;
-    position: absolute;
+    width: 75px;
+    position: inherit;
     bottom: 0;
     right: 0;
-    padding: 20px;
+    padding: 25px;
+    z-index: 2;
   }
 
   .util_menu ul {
@@ -560,7 +613,7 @@
   }
 
   .util_icon {
-    width: 33px;
+    width: 28px;
     height: auto;
     
 
@@ -581,6 +634,8 @@
     display: none;
   }
 
+
+
   /* franchise button */
   .franchise {
     white-space: nowrap;
@@ -600,13 +655,27 @@
   }
 
   .gnb_bg {
-    display: none;    
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    border-top: 1px solid rgba(221, 221, 221, 0.5);
+    border-bottom:  none
   }
 
   #franchise_li {
     position: fixed;
     bottom: 20;
   }
+
+  .nav_bar_hamburger{    
+    display: block;
+  }
+  
 
 
 
