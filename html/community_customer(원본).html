@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고객의 소리</title>
+  <title>컴포즈커피 - 고객센터</title>
 
   <!-- favicon-->
-  <link rel="icon" href="../public/i10mages/icon/favicon.ico">
+  <link rel="icon" href="../public/images/icon/favicon.ico">
 
   <!-- css -->
-  <link rel="stylesheet" href="../public/css/customer.css">
-  
+  <link rel="stylesheet" href="../public/css/board.css">
+
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -53,7 +53,7 @@
 
           <div class="sub_nav_2d">
             <h4 class="sub_nav_dropdown">
-              고객의 소리
+              고객센터
               <span class="material-symbols-rounded">
                 expand_more
               </span>
@@ -62,102 +62,126 @@
               <li><a href="community_notice.html">공지사항</a></li>
               <li><a href="community_news.html">NEWS</a></li>
               <li><a href="community_events.html">EVENTS</a></li>
-              <li><a href="community_customer.html">고객의 소리</a></li>
+              <li><a href="community_customer.html">고객센터</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="customer_title">
+    <div class="board_title">
       <p>
         COMPOSE COFFEE를 이용하시며 불편하셨던 사항이나 칭찬하고 싶은 경험 등을 올려주세요.<br>
         고객님과 함께하는 공간이 더욱 편안할 수 있도록 최선을 다하겠습니다.
       </p>
       <dl>
         <dt><img src="../public/images/icon/notice.png" alt=""> 참고사항</dt>
-        <div class="customer_notice">
-          <dd>답변완료 시, 휴대폰 또는 이메일로 안내해드립니다.</dd>
+        <div>
+          <dd>답변완료 시, 앱 PUSH로 안내해드립니다.</dd>
           <dd>전화상담(1899-8829) - 9:00~12:00 | 13:00~17:30, 주말 및 공휴일 휴무</dd>
         </div>
       </dl>
     </div>
-    <div class="join_wrap">
-     
-      <form action="/register" method="post">
-        <fieldset class="essencial">
-          
-          <div>
-            <label for="name">이름 <span class="red_text">(필수)</span></label>
-            <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요." required>
-          </div>
-          <div>
-            <label for="phone">휴대폰번호 <span class="red_text">(필수)</span></label>
-            <input type="tel" id="phone" name="phone" placeholder="숫자만 입력해 주세요. (-)제외" required>
-          </div>
-          <div>
-            <label for="email">이메일 <span class="gray_text">(선택)</span></label>
-            <input type="email" id="email" name="email" placeholder="이메일을 입력해 주세요.">
-          </div>  
-           <div>
-            <label for="feedback_type">상담 유형 <span class="red_text">(필수)</span></label>
-          <div class="radio_box">
-           <div class="radio">
-            <input type="radio" name="type" value="good" id="good">
-            <label for="good" role="radio">칭찬</label>
-           </div>
-           <div class="radio">
-            <input type="radio" name="type" value="bad" id="bad">
-            <label for="bad" role="radio">불만</label>
-           </div>
-           <div class="radio">
-            <input type="radio" name="type" value="etc" id="etc">
-            <label for="etc" role="radio">기타문의</label>
-           </div>
-          </div>        
-          </div>           
-         
-          <div>
-            <label for="text">글 내용 입력 <span class="red_text">(필수)</span></label>
-            <textarea class="textarea" name="text" placeholder="내용을 입력해 주세요.(이름, 연락처, 주소, 이메일, 주민등록번호 등 개인정보는 입력하지 않도록 주의하세요.)" required></textarea>
-          </div>
 
-          <div>
-            <label for="password">글 비밀번호 <span class="red_text">(필수)</span></label>
-            <input type="password" id="password" name="password" placeholder="4~10자리 숫자만 입력해 주세요." required>
-            <div class="password_ment">
-              <img src="../public/images/icon/notice.png" alt="">
-              <span>비밀번호는 추후 접수내역 조회 시에 활용되오니, 꼭 기억해 주세요.</span>
-            </div>
-          </div>
-        
-        
-        </fieldset>
-
-        <fieldset class="terms_box">
-          <legend class="hide">약관 동의</legend>
-
-          <!-- 전체 동의 -->
-          
-     
-
-          <label id="all_agree">
-            <input type="checkbox" class="all_agree" required>
-          개인정보 수집 및 이용 동의 <span class="red_text_r">(필수)</span>
-          </label>
-
-        </fieldset>
-        <div>
-          <input type="submit" value="등록" class="btn_submit" id="btn_add">
+    <div class="board_wrap">
+      <div class="board_list">
+        <div class="board_top">
+          <div class="num">No</div>
+          <div class="title">제목</div>
+          <div class="writer">글쓴이</div>
+          <div class="date">작성일</div>
+          <div class="answer">답변여부</div>
         </div>
-      </form>
+        <div class="board_content">
+          <div class="num">10</div>
+          <div class="title">아아 주세여</div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="board_content">
+          <div class="num">9</div>
+          <div class="title"><a>아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="board_content">
+          <div class="num">8</div>
+          <div class="title"><a>아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="board_content">
+          <div class="num">7</div>
+          <div class="title"><a>아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="board_content">
+          <div class="num">6</div>
+          <div class="title"><a>아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="board_content">
+          <div class="num">5</div>
+          <div class="title"><a>아아 주세여</a></div>
+          <div class="writer">희희</div>
+          <div class="date">2023.12.07</div>
+          <div class="answer">X</div>
+        </div>
+        <div class="board_content">
+          <div class="num">4</div>
+          <div class="title"><a>뜨아 주세여</a></div>
+          <div class="writer">리리</div>
+          <div class="date">2023.12.08</div>
+          <div class="answer">O</div>
+        </div>
+        <div class="board_content">
+          <div class="num">3</div>
+          <div class="title"><a>아바라 주세여</a></div>
+          <div class="writer">정정이</div>
+          <div class="date">2023.12.09</div>
+          <div class="answer">O</div>
+        </div>
+        <div class="board_content">
+          <div class="num">2</div>
+          <div class="title"><a>후추라떼 주세여</a></div>
+          <div class="writer">현현이</div>
+          <div class="date">2023.12.24</div>
+          <div class="answer">O</div>
+        </div>
+        <div class="board_content">
+          <div class="num">1</div>
+          <div class="title"><a>핫쵸코 주세여</a></div>
+          <div class="writer">진진이</div>
+          <div class="date">2023.12.25</div>
+          <div class="answer">O</div>
+        </div>
+      </div>
+
+      <div class="board_page">
+        <a class="bt first" alt="첫 페이지로 이동">
+          <i class="fa-solid fa-caret-left"></i>
+        </a>
+        <a class="num on">1</a>
+        <a class="num">2</a>
+        <a class="num">3</a>
+        <a class="bt last" alt="마지막 페이지로 이동">
+          <i class="fa-solid fa-caret-right"></i>
+        </a>
+      </div>
+      <button class="btn_submit" type="button">상담예약</button>
     </div>
   </main>
 
   <footer id="footer"></footer>
 
 </body>
-
 
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
