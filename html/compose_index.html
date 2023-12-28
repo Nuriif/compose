@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <!-- Slick JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script>
     window.addEventListener('scroll', () => {
@@ -34,11 +36,26 @@
   <div id="quickmenu"></div>
 
   <main id="main">
-    <section class="" id="max_width">
-      <div>
-
+    <section class="main_banner" id="max_width">
+      <div class="single-item">
+        <div>
+          <img src="../public/images\main\main_visual/3.jpg" alt="컴포즈 VIP 멤버십">
+        </div>
+        <div>
+          <img src="../public/images\main\main_visual/4.jpg" alt="간식은 타이밍">
+        </div>
+        <div>
+          <img src="../public/images\main\main_visual/5.jpg" alt="논산 딸기">
+        </div>
+        <div>
+          <img src="../public/images\main\main_visual/7.jpg" alt="생초콜릿 라떼">
+        </div>
+        <div>
+          <img src="../public/images\main\main_visual/6.jpg" alt="컴포즈가 제안하는 세상 쉬운 홈카페">
+        </div>
       </div>
     </section>
+
     <section class="main_link_" id="max_width">
       <div class="main_link_wrap">
         <div class="app_store">
@@ -367,6 +384,12 @@
       // $(this).find("h3").removeClass("on");
     });
 
+    $('.single-item').slick({
+      autoplay: true,
+      autoplaySpeed: 2500,
+      dots: true,
+      arrows: false
+    });
 
     $("#header").load("compose_header.html");
 
