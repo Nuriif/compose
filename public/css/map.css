@@ -283,6 +283,8 @@
 
   .store_table .col_tit p.tit_b {
     padding-left: 20px;
+    color: #fdd22b;
+    font-weight: bold;
   }
 
   .store_table .con .wrap {
