@@ -201,6 +201,10 @@
   margin-top: 10px;
 }
 
+._mc {
+  color: rgb(255, 91, 40);
+}
+
 @media screen and (max-width: 1200px) {
   .store_table .service li {
     width: 50%;
@@ -283,8 +287,6 @@
 
   .store_table .col_tit p.tit_b {
     padding-left: 20px;
-    color: #fdd22b;
-    font-weight: bold;
   }
 
   .store_table .con .wrap {
