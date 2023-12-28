@@ -20,10 +20,10 @@
 
 
   <script>
-    window.addEventListener('scroll', ()=>{
-      if(window.innerHeight > 100){
-        document.querySelector(".app_store").classList.add("on");  
-        document.querySelector(".compose_map").classList.add("on");  
+    window.addEventListener('scroll', () => {
+      if (window.innerHeight > 100) {
+        document.querySelector(".app_store").classList.add("on");
+        document.querySelector(".compose_map").classList.add("on");
       }
     });
   </script>
@@ -34,44 +34,44 @@
   <div id="quickmenu"></div>
 
   <main id="main">
-    
+
     <section class="main_link_" id="max_width">
       <div class="main_link_wrap">
         <div class="app_store">
-            <div>
-                <h2>컴포즈 앱으로 더욱 풍성하게!</h2>
-                <ul>
-                    <li>#미리주문</li>
-                    <li>#이벤트</li>
-                    <li>#혜택쿠폰</li>
-                    <li>#앱다운로드</li>
-                    <li>#앱주문</li>
-                </ul>
-                <a href="../html/appstore.html" id="goto_appstore">앱으로 주문</a>
-            </div>
-            <img src="../public/images/appstore/unnamed.png" alt="앱으로 주문">
+          <div>
+            <h2>컴포즈 앱으로 더욱 풍성하게!</h2>
+            <ul>
+              <li>#미리주문</li>
+              <li>#이벤트</li>
+              <li>#혜택쿠폰</li>
+              <li>#앱다운로드</li>
+              <li>#앱주문</li>
+            </ul>
+            <a href="store_app.html" id="goto_appstore">앱으로 주문</a>
+          </div>
+          <img src="../public/images/appstore/unnamed.png" alt="앱으로 주문">
         </div>
         <div class="compose_map">
-            <div>
-                <h2>가까운 컴포즈 매장 찾기!</h2>
-                <form action="">
-                    <fieldset>
-                        <label class="hide" for="map_search">매장 검색</label>
-                        <div>
-                          <input type="text" name="" id="map_search" placeholder="위치를 입력하세요 예) 역삼동">
-                          <button type="submit" onclick="location.href='store_map.html'">
-                              <i class="xi-search" onclick="location.href='store_map.html'"></i>
-                          </button>
-                        </div>
-                    </fieldset>
-                </form>
-                <ul>
-                    <li>#컴포즈</li>
-                    <li>#컴포즈_매장찾기</li>
-                </ul>
-                <!-- <a href="../html/store_map.html" id="goto_map">매장 찾으러 가기</a> -->
-            </div>
-            <img src="../public/images/main/branch_.png" alt="컴포즈 매장 찾기">
+          <div>
+            <h2>가까운 컴포즈 매장 찾기!</h2>
+            <form action="">
+              <fieldset>
+                <label class="hide" for="map_search">매장 검색</label>
+                <div>
+                  <input type="text" name="" id="map_search" placeholder="위치를 입력하세요 예) 역삼동">
+                  <button type="submit" onclick="location.href='store_map.html'">
+                    <i class="xi-search" onclick="location.href='store_map.html'"></i>
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+            <ul>
+              <li>#컴포즈</li>
+              <li>#컴포즈_매장찾기</li>
+            </ul>
+            <!-- <a href="../html/store_map.html" id="goto_map">매장 찾으러 가기</a> -->
+          </div>
+          <img src="../public/images/main/branch_.png" alt="컴포즈 매장 찾기">
         </div>
       </div>
     </section>
@@ -80,13 +80,13 @@
         <h2 class="main_title">
           <!-- <img src="../public/images/logo/c_logo.png" alt=""> -->
           베스트 메뉴
-          
+
         </h2>
         <div class="menu_list">
           <ul>
-              <li><a href="#none">커피</a></li>
-              <li><a href="#none">논커피</a></li>
-              <li><a href="#none">디저트</a></li>
+            <li><a href="#none">커피</a></li>
+            <li><a href="#none">논커피</a></li>
+            <li><a href="#none">디저트</a></li>
           </ul>
         </div>
       </div>
@@ -211,10 +211,10 @@
         </div>
       </div>
     </section>
-    
+
     <!-- 문희_메인(sns) -->
     <section class="compose_sns" id="max_width">
-      
+
       <h2>
         <!-- <img src="../public/images/logo/c_logo.png" alt=""> -->
         컴포즈커피 SNS
@@ -341,7 +341,7 @@
       ]
     });
 
-    $(".main_bestmenu_wrap .menu_list ul li").click(function(){
+    $(".main_bestmenu_wrap .menu_list ul li").click(function () {
       $('.slick-slider').slick('refresh');
 
       $(".menu_list ul li").removeClass("on");
@@ -351,19 +351,19 @@
       $(".main_bestmenu_wrap div.center").eq($(this).index()).show();
     });
 
-    $(".slick-initialized .slick-slide").hover(function(){
+    $(".slick-initialized .slick-slide").hover(function () {
 
-    }, function(){
+    }, function () {
 
     });
 
-    $(".slick-initialized .slick-slide").hover(function(){
+    $(".slick-initialized .slick-slide").hover(function () {
       // $(this).find("h3").addClass("on");
-    }, function(){
+    }, function () {
       // $(this).find("h3").removeClass("on");
     });
 
-    
+
     $("#header").load("compose_header.html");
 
     $("#footer").load("compose_footer.html");
