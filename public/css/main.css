@@ -21,12 +21,12 @@ body{
     font-size: 35px;
     font-weight: bold;
     display: inline-block;
-    width: 25%;
+    /* width: 25%; */
 }
 .main_title img{
-    width: 40px;
-    height: 40px;
-    margin: 12px 7px 12px 0;
+    width: 25px;
+    height: 25px;
+    margin: 19px 0;
 }
 
 .main_link_wrap {
@@ -43,7 +43,7 @@ body{
 }
 
 .main_link_wrap h2 {
-    font-size: 1.8rem;
+    font-size: 25px;
     font-weight: 800;
     word-break: keep-all;
 }
@@ -235,12 +235,12 @@ body{
     font-weight: 700;
     text-align: center;
     color: #fff;
-    width: 120px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     background-color: rgba(252, 223, 117, 0.9);
-    border-radius: 5px;
+    border-radius: 50px;
     position: absolute;
-    bottom: 50px;
+    bottom: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,7 +303,7 @@ body{
 .main_bestmenu_wrap > div:first-child{
     display: flex;
     align-items: center;
-    gap: 2%;
+    gap: 5%;
 }
 /* .main_bestmenu_wrap .center{
     display: none;
@@ -340,9 +340,28 @@ body{
 
 /* moonh */
 
+/* nuri 수정 */
+.compose_sns .slick-prev{
+    left: 0;
+    z-index: 1;
+}
+.compose_sns .slick-next{
+    right: 0;
+    width: 26px;
+}
+.compose_sns .slick-list.draggable{
+    width: 1240px;
+    margin: 0 auto;
+}
+.compose_sns h2 img{
+    width: 25px;
+    height: 25px;
+    margin: 19px 0;
+}
+
 /* h2 - compose coffee SNS */
 .compose_sns{
-
+    padding: 0 10px;
 }
 .compose_sns h2 {
   font-size: 35px;
@@ -374,7 +393,7 @@ body{
   width: 95%;
   border-radius: 7%;
   position: relative;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* SNS Instagram Button */
@@ -742,11 +761,59 @@ body{
 
 
 /* ------ 반응형 ------ */
+@media screen and (max-width: 1300px) {
+    .compose_sns .slick-list.draggable{
+        max-width:1100px;
+    }
+    .compose_sns .slick-prev{
+        left: 30px;
+    }
+    .compose_sns .slick-next{
+        right: 30px;
+    }
+}
+@media screen and (max-width: 1223px) {
+    .compose_sns .slick-list.draggable{
+        max-width:900px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .compose_sns .slick-list.draggable{
+        max-width:600px;
+        height: 50%;
+    }
+    .compose_sns .slick-track{
+        height: 100%;
+    }
+    .compose_sns .slick-slide{
+        height: 100%;
+        width: 300px !important;
+    }
+    .compose_sns .slick-prev{
+        width: 26px;
+    }
+    .compose_sns .slick-next{
+        width: 30px;
+    }
+    .compose_sns .slider div img{
+        /* width: auto;
+        height: 100%; */
+    }
+    .compose_sns .slider div img:last-child{
+        width: 10%;
+        height: auto;
+    }
+}
 
 @media screen and (max-width: 1023px) {
     body {
         font-size: 14px;
     }
+
+    .compose_sns .slick-list.draggable{
+        max-width:700px;
+    }
+    
 
     /* ---- main ---- */
 
@@ -763,13 +830,13 @@ body{
         padding: 10px;
     }
 
-    .main_link_wrap>div {
+    .main_link_wrap > div {
         width: 100%;
         border-radius: 3em;
         min-height: 150px;
     }
 
-    .main_link_wrap>div h2 {
+    .main_link_wrap > div h2 {
         font-size: 1.3rem;
     }
 

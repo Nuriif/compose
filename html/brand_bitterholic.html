@@ -32,7 +32,7 @@
       
     </div>
     <section class="bitter_cont1">
-      <div id="max_width">
+      <div class="ani">
         <h2>
           <span>컴포즈 커피 스페셜티 블렌딩</span><br>
           비터홀릭</h2>
@@ -49,7 +49,7 @@
                 <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
                 <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8" transform="scale(1, -1)"></circle>
               </svg>
-              <p class="circle">50<span>%</span></p>
+              <p class="circle nums" data-count="50">50 <span>%</span></p>
             </div>
             <p class="circle_title">BRAZIL</p>
           </div>
@@ -59,7 +59,7 @@
                 <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
                 <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
               </svg>
-              <p class="circle">30<span>%</span></p>
+              <p class="circle nums" data-count="30">30<span>%</span></p>
             </div>
             <p class="circle_title">COLOMBIA</p>
           </div>
@@ -69,7 +69,7 @@
                 <circle class="inner" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#fff" stroke-width="2"></circle>
                 <circle class="outer" cx="92.5" cy="92.5" r="88.5" fill="transparent" stroke="#401d0f" stroke-width="8"></circle>
               </svg>
-              <p class="circle">20<span>%</span></p>
+              <p class="circle nums" data-count="20">20<span>%</span></p>
             </div>
             <p class="circle_title">ETHIOPIA</p>
           </div>
@@ -79,7 +79,7 @@
     </section>
     <section class="bitter_cont2">
       <div>
-        <div>
+        <div class="bitter_cont2_txt">
           <h3>Roasting Point</h3>
           <p class="roasting_point_underline"></p>
           <p>
@@ -90,7 +90,7 @@
           </p>
         </div>
         <div class="roasting_point_light">
-          <div>
+          <div class="up_txt">
             <span class="material-symbols-outlined">
               coffee_maker
             </span>
@@ -109,17 +109,17 @@
               <li>Medium</li>
               <li>High</li>
               <li>City</li>
-              <li>Full City</li>
-              <li>French</li>
+              <li class="act">Full City</li>
+              <li class="act">French</li>
               <li>Italian</li>
             </ul>
           </div>
         </div>
-      <div>
+      <div class="roasting_balance">
         <ul>
           <li>
             <h4>밸런스</h4>
-            <ul>
+            <ul class="lev03">
               <li></li>
               <li></li>
               <li></li>
@@ -129,7 +129,7 @@
           </li>
           <li>
             <h4>단맛</h4>
-            <ul>
+            <ul class="lev03">
               <li></li>
               <li></li>
               <li></li>
@@ -139,7 +139,7 @@
           </li>
           <li>
             <h4>쓴맛</h4>
-            <ul>
+            <ul class="lev04">
               <li></li>
               <li></li>
               <li></li>
@@ -149,7 +149,7 @@
           </li>
           <li>
             <h4>신맛</h4>
-            <ul>
+            <ul class="lev02">
               <li></li>
               <li></li>
               <li></li>
@@ -161,35 +161,37 @@
       </div>
     </section>
     <section class="bitter_cont3">
-      <div id="max_width">
-        <div class="bitter_cont3_box_wrap">
-          <div class="bitter_cont3_box">
-            <h3>
-              <span>SPECIALTY BLENDING</span>
-              스페셜티 커피란?
-            </h3>
-            <p>
-              지리·기후·생산지 등의 특별한 환경에서 자란 커피 중<br>
-              '미국 스페셜티 커피 협회(SCAA)의 평가를 거쳐<br>
-              기준점수 80점 이상을 받은 우수한 등급의 커피를 말합니다.'
-            </p>
-            <img src="../public/images/bitterholic/bitterholic4.png" alt="">
+      <div class="sub_con">
+        <div class="bitter_cont3_pt_wrap">
+          <div class="bitter_cont3_pt pt_lf">
+            <div class="bitter_cont3_box">
+                <h3>
+                  <span>SPECIALTY BLENDING</span>
+                  스페셜티 커피란?
+                </h3>
+                <p>
+                  지리·기후·생산지 등의 특별한 환경에서 자란 커피 중<br>
+                  '미국 스페셜티 커피 협회(SCAA)의 평가를 거쳐<br>
+                  기준점수 80점 이상을 받은 우수한 등급의 커피를 말합니다.'
+                </p>
+                <img src="../public/images/bitterholic/bitterholic4.png" alt="">
+            </div>
           </div>
-        </div>
-        <div class="bitter_cont3_box_wrap">
-          <div class="bitter_cont3_box">
-            <h3>
-              <span>FAZENDA RANCHO GRANDE</span>
-              컴포즈커피 ‘올해의 산지’
-            </h3>
-            <p>Region : Sul de minas</p>
-            <p>Quality : Specialty</p>
-            <p>Altitude : 930-1000m</p>
-            <p>Crop : 2022/23</p>
-            <p>Variety : Yellow Bourbon</p>
-            <p>Process : Natural</p>
-            <p>Score : 84.5</p>
-            <img src="../public/images/bitterholic/bitterholic5.png" alt="">
+          <div class="bitter_cont3_pt pt_rt">
+            <div class="bitter_cont3_box">
+              <h3>
+                <span>FAZENDA RANCHO GRANDE</span>
+                컴포즈커피 ‘올해의 산지’
+              </h3>
+              <p>Region : Sul de minas</p>
+              <p>Quality : Specialty</p>
+              <p>Altitude : 930-1000m</p>
+              <p>Crop : 2022/23</p>
+              <p>Variety : Yellow Bourbon</p>
+              <p>Process : Natural</p>
+              <p>Score : 84.5</p>
+              <img src="../public/images/bitterholic/bitterholic5.png" alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -205,18 +207,48 @@
 
     
     setTimeout(function(){
-      $(".bitter_cont1").addClass("active");
-    }, 800);
+      $(".bitter_cont1 > div").addClass("act");
+    }, 500);
     
 
     $(window).scroll(function(){
       var scroll = $(document).scrollTop();
+      // console.log(scroll);
 
-      if(scroll >= 10){
-        
+      if(scroll >= 380){
+        $(".bitter_cont2_txt").addClass("act");
+      }
+      if(scroll >= 800){
+        $(".roasting_point_light").addClass("act");
+        $(".roasting_balance").addClass("act");
+      }
+      if(scroll >= 1300){
+        $(".bitter_cont3_pt.pt_lf, .bitter_cont3_pt.pt_rt").addClass("act");
       }
 
     });
+
+    //숫자 카운트 애니메이션
+    $('.nums').each(function () {
+      const $this = $(this),
+        countTo = $this.attr('data-count');
+
+      $({
+        countNum: $this.text()
+      }).animate({
+        countNum: countTo
+      }, {
+        duration: 2000,
+        easing: 'linear',
+        step: function () {
+          $this.text(Math.floor(this.countNum));
+        },
+        complete: function () {
+          $this.text(this.countNum);
+        }
+      });
+    });
+    
 
     $("#header").load("compose_header.html");
     $("#footer").load("compose_footer.html");
