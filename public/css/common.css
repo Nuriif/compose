@@ -17,15 +17,15 @@
   width: 100%;
   border-bottom: 1px solid #dddddd96;
   z-index: 20;
-  background: #fff;
+  background: #fff;  
 }
 
-.header_wrap {
+.header_wrap {  
   max-width: 1300px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  
+  align-items: center;  
 }
 
 .header_wrap .logo {
@@ -36,6 +36,10 @@
 .header_wrap .logo a {
   width: 100%;
   height: 100%;
+}
+.m_logo{
+  width: 40px;
+  display: none;
 }
 
 .header_wrap nav {
@@ -86,6 +90,8 @@
   align-items: center;
 }
 
+
+
 /* util */
 .util_menu {
   width: 15%;
@@ -123,6 +129,8 @@
   padding-bottom: 5px;
 }
 
+
+
 /* franchise button */
 .franchise {
   white-space: nowrap;
@@ -132,7 +140,7 @@
   display: block;
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   border-radius: 50px;
   padding: 8px 13px;
@@ -158,6 +166,16 @@
   border-top: 1px solid rgba(221, 221, 221, 0.5);
   border-bottom: 1px solid rgba(221, 221, 221, 0.5);
 }
+
+.nav_bar_hamburger{
+  width: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  display: none;
+}
+
 
 /* quick */
 .quick_main {
@@ -439,31 +457,50 @@
   }
 
   
-  /* header */
+  /* header 반응형 전체 주석처리(1228)*/
+/* 
+
   #header {
-    max-width: 767px;
+    display: none;
     margin: auto;
+    position: fixed;
+      width: 100vw;
+    height: 60px;
+    border-bottom: 1px solid #dddddd96;
+    z-index: 20;
+    background: #fff;  
   }
 
   .header_wrap {
-    display: none; /*임시숨김*/
-    width: 100%;
-    height: 100%;
+    display: none;
+    width: 100vw;
+    height: 60px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
     box-sizing: border-box;
+    margin: 0;
+
+
     background: #fff;
-    position:relative;
+    position:fixed;
     z-index: 20;
     border-bottom: none
   }
 
   .header_wrap .logo {
-    width: 130px;
-    height: 60px;
+    width: 135px;
+    height: 74px;
   }
+
+  .m_logo{
+    width: 40px;
+    display: block;
+    position: relative;
+    top: -7px;
+  }
+  
 
   .header_wrap .logo a {
     width: 100%;
@@ -472,30 +509,47 @@
 
   .header_wrap nav {
     width: 100%;
+
   }
 
+
+
   .header_wrap nav .gnb h3 {
-    font-size: 17px;
+    font-size: 20px;
     padding: 15px 0;
     width: 100%;
-    height: 55px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .header_wrap nav .gnb>li {
     text-align: left;
-    /* height: 75px; */
-    border-bottom: none;
-    /* display: flex;
-    align-items: center; */
+    height: auto;
+    border-bottom: none;   
   }
 
   .gnb_width {
     width: 100%;   
   }
 
-  .gnb_width li{
-    padding: 5px 0;    
+  .gnb_width h3 a::after{    
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/icon/icon_arrow_down.png)no-repeat center 100%;    
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
   }
+
+  
+
+  .gnb_width li{
+    padding: 0 0 10px;    
+  }
+
 
   .header_menu_a {
     display: inline-block;
@@ -510,6 +564,8 @@
     z-index: 2;
   }
   
+
+
   .header_wrap nav .gnb>li:not(#franchise_li):hover {
     border-bottom: none
   }
@@ -518,34 +574,34 @@
     color: inherit;
   }
 
-  .header_wrap nav .gnb>li>ul {
-    /* position: absolute;
-    top: 50px;
-    left: 20px; */
+  .header_wrap nav .gnb>li>ul {    
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;   
+    height: auto;
     overflow: hidden;
-    padding: 0 0 10px 10px;
+    padding: 3px 0 10px 10px;
+  } */
 
-    /* 
-    top: 110px;
-    width: 100%;
-    height: 190px;
-    box-sizing: border-box;
-    display: none;
-    position: absolute;
-    */
-  }
+
+
 
   /* util */
-  .util_menu {
-    width: 15%;
+  /* .util_menu {
+    width: 75px;
+    position: inherit;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    z-index: 2;
   }
 
   .util_menu ul {
     display: flex;
     font-size: 13px;
-    justify-content: flex-end;
+    justify-content: space-between;
 
   }
 
@@ -557,53 +613,69 @@
   }
 
   .util_icon {
-    width: 50px;
-    height: 50px;
+    width: 28px;
+    height: auto;
+    
 
   }
 
   .login_icon {
-    width: 45%;
-    padding-bottom: 5px;
+    width: 100%;
+    padding-bottom: 0;
   }
 
   .join_icon {
-    width: 45%;
+    width: 100%;
     position: relative;
-    right: -1px;
-    padding-bottom: 5px;
+    right: 0;
+    padding-bottom: 0;
   }
+  .util_text{
+    display: none;
+  } */
+
+
 
   /* franchise button */
-  .franchise {
+  /* .franchise {
     white-space: nowrap;
   }
 
   .franchise a {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: normal;
     padding: 2px 13px;
+    box-sizing: border-box;
   }
 
   .franchise img {
     padding: 7px 0 0;
     box-sizing: border-box;
-    width: 15px;
+    width: 18px;
   }
 
   .gnb_bg {
-    display: none;    
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    border-top: 1px solid rgba(221, 221, 221, 0.5);
+    border-bottom:  none
   }
 
   #franchise_li {
-    position: absolute;
-    right: 45px;
-    top: -60px;
-    min-width: 0;
-
-
-
+    position: fixed;
+    bottom: 20;
   }
+
+  .nav_bar_hamburger{    
+    display: block;
+  } */
+  
 
 
 
