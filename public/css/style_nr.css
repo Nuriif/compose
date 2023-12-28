@@ -2,7 +2,7 @@
 @import url("../css/reset.css");
 @import url("../css/animate.css");
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -129,7 +129,9 @@ body{
     line-height: 1 !important;
 }
 
-.sub_menu_main .menu_1dpth, .sub_menu_main .menu_2dpth ul, .sub_menu_main .menu_list ul  {
+.sub_menu_main .menu_1dpth,
+.sub_menu_main .menu_2dpth ul,
+.sub_menu_main .menu_list ul {
     display: flex;
     justify-content: center;
 }
@@ -149,7 +151,7 @@ body{
 /* .sub_menu_main .menu_1dpth li {
     border-bottom: 3px solid transparent;
 } */
-.sub_menu_main .menu_1dpth li a{
+.sub_menu_main .menu_1dpth li a {
     display: block;
     padding: 20px 10px;
     border-bottom: 3px solid transparent;
@@ -255,8 +257,11 @@ body{
     width: 100%;
 }
 
-.more_season_off{
-    display: block;
+.more_season_off {
+    display: flex;
+    flex-wrap: nowrap;
+    place-content: space-around space-evenly;
+    align-items: center;
     font-weight: bold;
     font-size: 15px;
     padding: 15px;
@@ -340,20 +345,23 @@ body{
 
 
 /* ----------- 메뉴 상세 페이지 ------------*/
-.sub_menuinfo_main #footer{
+.sub_menuinfo_main #footer {
     margin-top: 0 !important;
 }
+
 .sub_menuinfo_main {
     width: 100%;
     position: relative;
     line-height: 1 !important;
     background: #f5f0e9;
 }
+
 .sub_menuinfo_main ul {
     display: flex;
     justify-content: center;
 }
-.sub_menuinfo_main .info_cont_wrap{
+
+.sub_menuinfo_main .info_cont_wrap {
     margin: 0 auto;
     padding: 30px 0;
     display: flex;
@@ -362,19 +370,22 @@ body{
     align-items: center;
     gap: 5%;
 }
-.sub_menuinfo_main .info_cont_wrap h3{
+
+.sub_menuinfo_main .info_cont_wrap h3 {
     font-size: 35px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-bottom: 50px;
 }
-.sub_menuinfo_main .info_cont_wrap h3 span{
+
+.sub_menuinfo_main .info_cont_wrap h3 span {
     font-size: 17px;
     font-weight: lighter;
     color: #987346;
 }
-.sub_menuinfo_main .info_cont_wrap .img_wrap{
+
+.sub_menuinfo_main .info_cont_wrap .img_wrap {
     width: 400px;
     height: 400px;
     background-color: #fff;
@@ -382,56 +393,68 @@ body{
     overflow: hidden;
     text-align: center;
 }
-.sub_menuinfo_main .info_cont_wrap .img_wrap img{
+
+.sub_menuinfo_main .info_cont_wrap .img_wrap img {
     height: 100%;
     transform: scale(1, 1);
     transition: 0.3s transform;
 }
-.sub_menuinfo_main .info_cont_wrap .img_wrap img.on{
+
+.sub_menuinfo_main .info_cont_wrap .img_wrap img.on {
     height: 110%;
     width: 110%;
     transform: scale(1.1, 1.1);
 }
-.sub_menuinfo_main .info_cont_wrap > div{
+
+.sub_menuinfo_main .info_cont_wrap>div {
     width: 50%;
     /* text-align: right; */
 }
-.sub_menuinfo_main .info_cont_wrap > div:first-of-type{
+
+.sub_menuinfo_main .info_cont_wrap>div:first-of-type {
     padding-top: 20px;
 }
-.ingredients .nutri_wrap{
+
+.ingredients .nutri_wrap {
     display: flex;
     justify-content: space-between;
     background: url(../images/menu/dot.png) center 0 repeat-y;
 }
-.ingredients > div:first-of-type{
+
+.ingredients>div:first-of-type {
     margin-bottom: 30px;
 }
-.ingredients dl{
+
+.ingredients dl {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
-.ingredients ul{
+
+.ingredients ul {
     width: 45%;
     flex-direction: column;
 }
-.ingredients li{
+
+.ingredients li {
     margin-bottom: 15px;
     line-height: 1.6;
 }
-.ingredients .venti{
+
+.ingredients .venti {
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
 }
-.ingredients .venti > dt{
+
+.ingredients .venti>dt {
     background: #fff;
     padding: 3%;
     box-sizing: border-box;
     border-radius: 25px;
 }
-.ingredients .allergy{
+
+.ingredients .allergy {
     /* display: flex; */
     background: #fff;
     border-radius: 5px;
@@ -439,12 +462,14 @@ body{
     line-height: 1.3;
     /* background: url(../images/menu/dot.png) center 0 repeat-y; */
 }
-.ingredients .allergy > div:first-of-type{
+
+.ingredients .allergy>div:first-of-type {
     padding-bottom: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
-.ingredients .allergy h4{
+
+.ingredients .allergy h4 {
     display: inline-block;
     background: #fff;
     padding: 3%;
@@ -452,31 +477,38 @@ body{
     border-radius: 25px;
     margin-bottom: 15px;
 }
-.ingredients .allergy dl{
+
+.ingredients .allergy dl {
     align-items: flex-start;
     word-break: keep-all;
 }
-.ingredients .allergy dt{
+
+.ingredients .allergy dt {
     width: 30%;
 }
-.ingredients .allergy dd{
+
+.ingredients .allergy dd {
     width: 60%;
 }
 
-.ingredients li dl{
+.ingredients li dl {
     width: 100%;
 }
-.ingredients li dt{
+
+.ingredients li dt {
     width: 50%;
 }
-.ingredients li dd{
+
+.ingredients li dd {
     text-align: right;
     width: 50%;
 }
-.ingredients li:first-of-type dt{
+
+.ingredients li:first-of-type dt {
     width: 30%;
 }
-.ingredients li:first-of-type dd{
+
+.ingredients li:first-of-type dd {
     width: 70%;
 }
 
@@ -487,19 +519,23 @@ body{
     position: relative;
     line-height: 1 !important;
 }
-.sub_news_main .news_cont{
+
+.sub_news_main .news_cont {
     max-width: 1200px;
     margin: 30px auto 60px;
 }
-.sub_news_main .news_cont ul{
+
+.sub_news_main .news_cont ul {
     display: none;
 }
-.sub_news_main .news_cont ul.on{
+
+.sub_news_main .news_cont ul.on {
     display: flex;
     flex-wrap: wrap;
     gap: 2%;
 }
-.sub_news_main .news_cont ul li{
+
+.sub_news_main .news_cont ul li {
     width: 282px;
     height: 380px;
     border: 1px solid #ddd;
@@ -508,7 +544,8 @@ body{
     box-sizing: border-box;
     position: relative;
 }
-.sub_news_main .news_cont ul li a{
+
+.sub_news_main .news_cont ul li a {
     display: block;
     max-width: 260px;
     position: absolute;
@@ -516,74 +553,88 @@ body{
     top: 0;
     left: 0;
 }
-.sub_news_main .news_cont ul li .img_wrap{
+
+.sub_news_main .news_cont ul li .img_wrap {
     overflow: hidden;
     margin-bottom: 15px;
     width: 260px;
     height: 260px;
 }
-.sub_news_main .news_cont ul li img{
+
+.sub_news_main .news_cont ul li img {
     /* max-width: 260px; */
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ;
+    transition: transform 0.3s;
 }
-.sub_news_main .news_cont ul li img:hover{
+
+.sub_news_main .news_cont ul li img:hover {
     transform: scale(1.1);
 }
-.sub_news_main .news_cont dl dt{
+
+.sub_news_main .news_cont dl dt {
     font-size: 17px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 30px;
 }
-.sub_news_main .news_cont dl dd{
+
+.sub_news_main .news_cont dl dd {
     font-size: 13px;
 }
-.sub_news_main .news_cont dl dd p:first-of-type{
+
+.sub_news_main .news_cont dl dd p:first-of-type {
     margin-bottom: 7px;
 }
-.sub_news_main .news_cont dl dd p:last-of-type{
+
+.sub_news_main .news_cont dl dd p:last-of-type {
     display: flex;
     justify-content: space-between;
 }
 
 
 /* news 상세페이지 */
-.news_view{
+.news_view {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 60px 5% 0;
 }
-.news_view h4{
+
+.news_view h4 {
     font-size: 22px;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
-.news_view .news_date{
+
+.news_view .news_date {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-.news_view .news_view_src{
+
+.news_view .news_view_src {
     margin: 5px 0 50px;
 }
-.news_view .news_view_art{
+
+.news_view .news_view_art {
     width: 100%;
     margin: 0 auto;
     line-height: 160%;
     font-size: 16px;
 }
-.news_view_cont{
+
+.news_view_cont {
     padding: 50px 0 30px;
 }
-.news_view img{
+
+.news_view img {
     max-width: 100%;
 }
-.news_view .bt_wrap{
+
+.news_view .bt_wrap {
     line-height: 2;
 }
 
@@ -593,20 +644,24 @@ body{
     position: relative;
     line-height: 1 !important;
 }
-.sub_events_main .events_cont{
+
+.sub_events_main .events_cont {
     max-width: 1200px;
     margin: 30px auto 60px;
 }
-.sub_events_main .events_cont ul{
+
+.sub_events_main .events_cont ul {
     display: none;
 }
-.sub_events_main .events_cont ul.on{
+
+.sub_events_main .events_cont ul.on {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2%;
 }
-.sub_events_main .events_cont ul li{
+
+.sub_events_main .events_cont ul li {
     width: 282px;
     height: 380px;
     border: 1px solid #ddd;
@@ -615,7 +670,8 @@ body{
     box-sizing: border-box;
     position: relative;
 }
-.sub_events_main .events_cont ul li a{
+
+.sub_events_main .events_cont ul li a {
     display: block;
     max-width: 260px;
     position: absolute;
@@ -623,100 +679,120 @@ body{
     top: 0;
     left: 0;
 }
-.sub_events_main .events_cont ul li .img_wrap{
+
+.sub_events_main .events_cont ul li .img_wrap {
     overflow: hidden;
     margin-bottom: 15px;
     width: 260px;
     height: 260px;
 }
-.sub_events_main .events_cont ul li img{
+
+.sub_events_main .events_cont ul li img {
     /* max-width: 260px; */
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ;
+    transition: transform 0.3s;
 }
-.sub_events_main .events_cont ul li img:hover{
+
+.sub_events_main .events_cont ul li img:hover {
     transform: scale(1.1);
 }
-.sub_events_main .events_cont dl dt{
+
+.sub_events_main .events_cont dl dt {
     font-size: 17px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 30px;
 }
-.sub_events_main .events_cont dl dd{
+
+.sub_events_main .events_cont dl dd {
     font-size: 13px;
 }
-.sub_events_main .events_cont dl dd p:first-of-type{
+
+.sub_events_main .events_cont dl dd p:first-of-type {
     margin-bottom: 7px;
 }
-.sub_events_main .events_cont dl dd p:last-of-type{
+
+.sub_events_main .events_cont dl dd p:last-of-type {
     display: flex;
     justify-content: space-between;
 }
 
 /* events 상세페이지 */
-.events_view{
+.events_view {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
     padding: 60px 5% 0;
 }
-.events_view h4{
+
+.events_view h4 {
     font-size: 22px;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
 }
-.events_view .events_date{
+
+.events_view .events_date {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
 }
-.events_view .events_view_src{
+
+.events_view .events_view_src {
     margin: 5px 0 50px;
 }
-.events_view .events_view_art{
+
+.events_view .events_view_art {
     width: 100%;
     margin: 0 auto;
     line-height: 160%;
     font-size: 16px;
 }
-.events_view .events_view_art.title_blue{
+
+.events_view .events_view_art.title_blue {
     color: #003399;
     font-size: 20px;
     font-weight: bolder;
     padding-top: 50px;
 }
-.events_view_cont{
+
+.events_view_cont {
     padding: 50px 0 30px;
 }
-.events_view img{
+
+.events_view img {
     max-width: 100%;
 }
-.events_view .bt_wrap{
+
+.events_view .bt_wrap {
     line-height: 2;
 }
-.events_art_underline{
+
+.events_art_underline {
     font-weight: bolder;
     text-decoration: underline;
 }
-.bolder{
+
+.bolder {
     font-weight: bolder;
 }
 
 /* -------------- bitterholic ------------- */
-.sub_bitter_main#main{
+.sub_bitter_main#main {
     padding: 100px 0 0;
 }
-.sub_bitter_main{
-    line-height: 1 !important;    
+
+.sub_bitter_main {
+    line-height: 1 !important;
 }
-.sub_bitter_main *{
+
+.sub_bitter_main * {
     box-sizing: border-box;
 }
-.sub_bitter_main .bitter_cont1{
+
+.sub_bitter_main .bitter_cont1 {
     background: #fdd22b;
     display: flex;
     padding: 100px 200px;
@@ -726,32 +802,38 @@ body{
     background-repeat: no-repeat;
     background-size: 480px;
 }
-.sub_bitter_main .bitter_cont1 h2{
+
+.sub_bitter_main .bitter_cont1 h2 {
     font-size: 110px;
     font-weight: 500;
     margin-bottom: 20px;
     color: #444;
 }
-.sub_bitter_main .bitter_cont1 h2 span{
+
+.sub_bitter_main .bitter_cont1 h2 span {
     font-size: 32px;
     font-weight: 500;
     line-height: 1.8;
 }
-.sub_bitter_main .bitter_cont1 > div > p{
+
+.sub_bitter_main .bitter_cont1>div>p {
     font-size: 25px;
     font-weight: 300;
     line-height: 1.5em;
     margin-bottom: 100px;
 
 }
-.sub_bitter_main .bitter_cont1 img{
+
+.sub_bitter_main .bitter_cont1 img {
     width: 30%;
 }
-.sub_bitter_main .bitter_cont1 .blending_graph{
+
+.sub_bitter_main .bitter_cont1 .blending_graph {
     display: flex;
     gap: 2%;
 }
-.sub_bitter_main .bitter_cont1 .circle{
+
+.sub_bitter_main .bitter_cont1 .circle {
     font-size: 35px;
     font-weight: 500;
     color: #333;
@@ -766,92 +848,110 @@ body{
     justify-content: center;
     align-items: center;
 }
-.sub_bitter_main .bitter_cont1 .circle::after{
+
+.sub_bitter_main .bitter_cont1 .circle::after {
     content: "%";
     font-size: 20px;
     margin-left: 3px;
 }
-.sub_bitter_main .bitter_cont1 .circle span{
+
+.sub_bitter_main .bitter_cont1 .circle span {
     font-size: 0.4em;
-    
+
 }
-.sub_bitter_main .bitter_cont1 .circle_title{
+
+.sub_bitter_main .bitter_cont1 .circle_title {
     font-size: 17px;
     font-weight: 500;
     color: #333;
 }
-.cir01, .cir02, .cir03{
+
+.cir01,
+.cir02,
+.cir03 {
     text-align: center;
     max-width: 205px;
     width: 33%;
     padding: 0 10px;
 }
-.bitter_cont1 > div.act .cir01 .outer{
+
+.bitter_cont1>div.act .cir01 .outer {
     stroke-dashoffset: 277.5817565917969px;
-    transform-origin :center;
+    transform-origin: center;
     transform: rotate(-90deg);
 }
-.bitter_cont1 > div.act .cir02 .outer{
+
+.bitter_cont1>div.act .cir02 .outer {
     stroke-dashoffset: 388px;
 }
-.bitter_cont1 > div.act .cir03 .outer{
+
+.bitter_cont1>div.act .cir03 .outer {
     stroke-dashoffset: 444px;
 }
-.outer{
+
+.outer {
     stroke-dasharray: 555.1635131835938px;
     stroke-dashoffset: 555.1635131835938px;
     /* 시작 위치 지정 꼭 해주기 */
     transition: 2s stroke-dashoffset;
 }
 
-.circle_wrap{
+.circle_wrap {
     width: 100%;
 }
-.circle_line{
+
+.circle_line {
     max-width: 185px;
     margin: 0 auto 10px;
     position: relative;
     z-index: 1;
 
 }
-.blending_graph svg{
+
+.blending_graph svg {
     /* width: 100%; */
     /* height: 100%; */
     transform: rotate(-90deg);
     transform-origin: center;
 }
-.blending_graph .box1{
+
+.blending_graph .box1 {
     transform: rotate(0deg);
     transform-origin: center;
 }
 
-.bitter_cont2{
+.bitter_cont2 {
     padding: 170px 20px;
     background-color: #fff;
 
 }
-.bitter_cont2 > div{
+
+.bitter_cont2>div {
     max-width: 1300px;
     margin: 0 auto;
 }
-.bitter_cont2 .bitter_cont2_txt{
+
+.bitter_cont2 .bitter_cont2_txt {
     text-align: center;
     word-break: keep-all;
     opacity: 0;
     transform: translate(0, -50px);
     transition: 0.7s transform, 0.7s opacity;
 }
-.bitter_cont2 .bitter_cont2_txt.act{
+
+.bitter_cont2 .bitter_cont2_txt.act {
     opacity: 1;
     transform: translate(0, 0);
 }
-.bitter_cont2 h3{
+
+.bitter_cont2 h3 {
     font-size: 40px;
     font-weight: 700;
     color: #333;
     margin-bottom: 20px;
     position: relative;
 }
+
 /*
 .bitter_cont2 h3::after{
     content: "";
@@ -863,55 +963,64 @@ body{
     background-color: #333;
     text-align: center;
 }*/
-.bitter_cont2 .roasting_point_underline{
+.bitter_cont2 .roasting_point_underline {
     width: 70px;
     height: 1px;
-    margin: 15px auto; 
+    margin: 15px auto;
     background-color: #333;
 }
-.bitter_cont2 > div > div:first-of-type > p{
+
+.bitter_cont2>div>div:first-of-type>p {
     font-size: 19px;
     font-weight: 300;
     line-height: 1.6em;
     word-break: keep-all;
 }
-.bitter_cont2 > div > div:nth-child(2) > p{
+
+.bitter_cont2>div>div:nth-child(2)>p {
     font-size: 30px;
     font-weight: 500;
     color: #333;
 }
-.bitter_cont2 .roasting_point_light{
+
+.bitter_cont2 .roasting_point_light {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2%;
-    margin: 70px 0; 
+    margin: 70px 0;
 }
-.bitter_cont2 .material-symbols-outlined{
+
+.bitter_cont2 .material-symbols-outlined {
     font-size: 60px;
 }
-.roasting_point_light .grp{
+
+.roasting_point_light .grp {
     width: 100%;
     transform: translate(50px, 0);
     opacity: 0;
     transition: 0.7s transform, 0.7s opacity;
 }
-.roasting_point_light.act .grp{
+
+.roasting_point_light.act .grp {
     transform: translate(0, 0);
     opacity: 1;
 }
-.grp_up{
+
+.grp_up {
     display: flex;
     justify-content: space-between;
 }
-.grp_up > li{
+
+.grp_up>li {
     font-style: italic;
     font-weight: 500;
     font-size: 20px;
     text-align: center;
     color: #ccc;
 }
-.grp_low{
+
+.grp_low {
     display: flex;
     margin: 10px 0 0;
     justify-content: space-between;
@@ -920,7 +1029,8 @@ body{
     flex-direction: row;
     position: relative;
 }
-.grp_low::before{
+
+.grp_low::before {
     content: "";
     position: absolute;
     top: 0;
@@ -930,7 +1040,8 @@ body{
     right: 29.5px;
     height: 1px;
 }
-.grp_low::after{
+
+.grp_low::after {
     content: "";
     position: absolute;
     top: 0;
@@ -940,7 +1051,8 @@ body{
     width: 20%;
     height: 1px;
 }
-.grp_low > li{
+
+.grp_low>li {
     position: relative;
     z-index: 1;
     text-align: center;
@@ -948,7 +1060,8 @@ body{
     font-weight: 300;
     color: #333;
 }
-.grp_low > li:after{
+
+.grp_low>li:after {
     content: "";
     position: absolute;
     z-index: 1;
@@ -960,10 +1073,13 @@ body{
     background: #333;
     border-radius: 100%;
 }
-.grp_low > li.act:after, .grp_low > li.end:after{
+
+.grp_low>li.act:after,
+.grp_low>li.end:after {
     background: #e94c49;
 }
-.roasting_point_light .up_txt{
+
+.roasting_point_light .up_txt {
     transform: translate(-50px, 0);
     opacity: 0;
     transition: 0.7s transform, 0.7s opacity;
@@ -971,44 +1087,53 @@ body{
     display: flex;
     flex-direction: row;
 }
-.roasting_point_light.act .up_txt{
+
+.roasting_point_light.act .up_txt {
     transform: translate(0, 0);
     opacity: 1;
 }
-.bitter_cont2 .up_txt > p{
+
+.bitter_cont2 .up_txt>p {
     font-size: 30px;
     font-weight: 500;
     color: #555;
 }
-.grp_low > li.act{
+
+.grp_low>li.act {
     color: #e94c49;
     font-weight: 700;
 }
-.roasting_balance > ul > li{
+
+.roasting_balance>ul>li {
     margin-top: 20px;
     display: flex;
     align-items: center;
     transform: translate(-50px, 0);
     opacity: 0;
 }
-.roasting_balance.act > ul > li{
+
+.roasting_balance.act>ul>li {
     transform: translate(0, 0);
     opacity: 1;
 }
-.roasting_balance > ul > li:nth-child(1){
+
+.roasting_balance>ul>li:nth-child(1) {
     transition: 0.7s transform 0s, 0.7s opacity 0s;
 }
-.roasting_balance > ul > li:nth-child(2){
+
+.roasting_balance>ul>li:nth-child(2) {
     transition: 0.7s transform 0.2s, 0.7s opacity 0.2s;
 }
-.roasting_balance > ul > li:nth-child(3){
+
+.roasting_balance>ul>li:nth-child(3) {
     transition: 0.7s transform 0.4s, 0.7s opacity 0.4s;
 }
-.roasting_balance > ul > li:nth-child(4){
+
+.roasting_balance>ul>li:nth-child(4) {
     transition: 0.7s transform 0.6s, 0.7s opacity 0.6s;
 }
 
-.roasting_balance > ul > li > h4{
+.roasting_balance>ul>li>h4 {
     min-width: 80px;
     white-space: nowrap;
     padding-right: 10px;
@@ -1017,52 +1142,60 @@ body{
     color: #333;
 }
 
-.roasting_balance > ul > li > ul{
+.roasting_balance>ul>li>ul {
     width: 100%;
     overflow: hidden;
 }
-.roasting_balance ul ul li{
+
+.roasting_balance ul ul li {
     float: left;
     width: 19%;
     margin-right: 1%;
     height: 15px;
     background: #ddd;
 }
-.roasting_balance ul .lev03 li:nth-child(-n + 3){
+
+.roasting_balance ul .lev03 li:nth-child(-n + 3) {
     background-color: #ffe133;
 }
-.roasting_balance ul .lev04 li:nth-child(-n + 4){
+
+.roasting_balance ul .lev04 li:nth-child(-n + 4) {
     background-color: #ffe133;
 }
-.roasting_balance ul .lev02 li:nth-child(-n + 2){
+
+.roasting_balance ul .lev02 li:nth-child(-n + 2) {
     background-color: #ffe133;
 }
 
 
 
-.bitter_cont3{
+.bitter_cont3 {
     padding: 175px 30px;
     background: url(../images/bitterholic/bitterholic3.jpg) center no-repeat;
     background-size: cover;
 }
-.bitter_cont3 .sub_con{
+
+.bitter_cont3 .sub_con {
     width: 100%;
     max-width: 1160px;
     margin: 0 auto;
 }
-.bitter_cont3_pt_wrap{
+
+.bitter_cont3_pt_wrap {
     margin: 0 -15px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.bitter_cont3_pt{
+
+.bitter_cont3_pt {
     width: 45%;
     display: flex;
     padding: 0 15px;
 }
-.bitter_cont3_box{
+
+.bitter_cont3_box {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.85);
     border-radius: 5px;
@@ -1075,54 +1208,62 @@ body{
     text-align: center;
     word-break: keep-all;
 }
-.bitter_cont3_pt.pt_lf > .bitter_cont3_box{
+
+.bitter_cont3_pt.pt_lf>.bitter_cont3_box {
     opacity: 0;
     transform: perspective(5000px) rotateY(90deg);
     transition: 1s transform, 0.7s opacity;
 }
-.bitter_cont3_pt.pt_lf.act > .bitter_cont3_box{
-    opacity: 1;
-    transform: perspective(2500px) rotateY(0deg);
-}
-.bitter_cont3_pt.pt_rt > .bitter_cont3_box{
-    opacity: 0;
-    transform: perspective(5000px) rotateY(-90deg);
-    transition: 1s transform, 0.7s opacity;
-}
-.bitter_cont3_pt.pt_rt.act > .bitter_cont3_box{
+
+.bitter_cont3_pt.pt_lf.act>.bitter_cont3_box {
     opacity: 1;
     transform: perspective(2500px) rotateY(0deg);
 }
 
-.bitter_cont3_box > h3{
+.bitter_cont3_pt.pt_rt>.bitter_cont3_box {
+    opacity: 0;
+    transform: perspective(5000px) rotateY(-90deg);
+    transition: 1s transform, 0.7s opacity;
+}
+
+.bitter_cont3_pt.pt_rt.act>.bitter_cont3_box {
+    opacity: 1;
+    transform: perspective(2500px) rotateY(0deg);
+}
+
+.bitter_cont3_box>h3 {
     margin: 0 0 15px;
     font-size: 37px;
     font-weight: 600;
     color: #333;
 }
-.bitter_cont3_box > h3 > span{
+
+.bitter_cont3_box>h3>span {
     display: block;
     margin: 0 0 10px;
     font-size: 20px;
     font-weight: 500;
     color: #555;
 }
-.bitter_cont3_pt.pt_lf .bitter_cont3_box > p{
+
+.bitter_cont3_pt.pt_lf .bitter_cont3_box>p {
     margin: 0 0 80px;
     font-size: 17px;
     font-weight: 300;
     color: #666;
     line-height: 1.6em;
 }
-.bitter_cont3_box img{
+
+.bitter_cont3_box img {
     margin: 0 auto;
     display: block;
     max-width: 478px;
     width: 100%;
     height: auto;
-    
+
 }
-.bitter_cont3_pt.pt_rt .bitter_cont3_box > p{
+
+.bitter_cont3_pt.pt_rt .bitter_cont3_box>p {
     font-size: 17px;
     font-weight: 300;
     color: #666;
@@ -1138,12 +1279,12 @@ body{
 
 /* 반응형 */
 @media screen and (max-width: 1500px) {
-    .sub_bitter_main .bitter_cont1{
+    .sub_bitter_main .bitter_cont1 {
         padding: 100px 80px;
     }
 }
 
-@media screen and (max-width: 1380px){
+@media screen and (max-width: 1380px) {
     .sub_bitter_main .bitter_cont1 {
         background-position: 100% 175px;
         background-size: 35%;
@@ -1152,75 +1293,86 @@ body{
 }
 
 @media (min-width:899px) and (max-width: 1216px) {
-    .sub_news_main .news_cont{
+    .sub_news_main .news_cont {
         max-width: 900px;
     }
 
-    .sub_news_main .news_cont ul{
+    .sub_news_main .news_cont ul {
         justify-content: center;
     }
 
-    .news_view{
+    .news_view {
         max-width: 900px;
     }
 
-    .sub_events_main .events_cont{
+    .sub_events_main .events_cont {
         max-width: 900px;
     }
 
-    .sub_events_main .events_cont ul{
+    .sub_events_main .events_cont ul {
         justify-content: center;
     }
 
-    .events_view{
+    .events_view {
         max-width: 900px;
     }
 }
+
 @media screen and (max-width: 807px) {
-    .sub_news_main .news_cont{
+    .sub_news_main .news_cont {
         max-width: 100%;
     }
-    .sub_news_main .news_cont ul{
+
+    .sub_news_main .news_cont ul {
         justify-content: center;
     }
-    .news_view{
+
+    .news_view {
         max-width: 100%;
     }
-    .sub_events_main .events_cont{
+
+    .sub_events_main .events_cont {
         max-width: 100%;
     }
-    .sub_events_main .events_cont ul{
+
+    .sub_events_main .events_cont ul {
         justify-content: center;
     }
-    .events_view{
+
+    .events_view {
         max-width: 100%;
     }
-    .bitter_cont2 .up_txt{
+
+    .bitter_cont2 .up_txt {
         width: 100%;
         text-align: center;
-        padding-bottom:40px;
+        padding-bottom: 40px;
         flex-direction: column;
     }
-    .bitter_cont2 .roasting_point_light{
+
+    .bitter_cont2 .roasting_point_light {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .grp_low::after{
+
+    .grp_low::after {
         left: 58.5%;
     }
 
-    .bitter_cont3{
+    .bitter_cont3 {
         padding: 130px 20px;
     }
-    .bitter_cont3_pt{
+
+    .bitter_cont3_pt {
         width: 100%;
         margin-bottom: 40px;
     }
-    .bitter_cont3_pt.pt_rt .bitter_cont3_box > p{
+
+    .bitter_cont3_pt.pt_rt .bitter_cont3_box>p {
         margin-bottom: 10px;
     }
-    
+
 
 }
 
@@ -1254,9 +1406,10 @@ body{
     }
 
     /* ---- sub - menu ---- */
-    .sub_menu_main .menu_list{
+    .sub_menu_main .menu_list {
         margin-bottom: 60px;
     }
+
     .sub_menu_main .menu_list ul {
         gap: 3%;
         max-width: 635px;
@@ -1289,6 +1442,7 @@ body{
     .sub_menu_main .menu_list .season_off li {
         width: 40%;
     }
+
     /*
     .sub_menu_main .menu_list .season_off ul {
         gap: 10%;
@@ -1299,78 +1453,91 @@ body{
     }
 
     /* 메뉴 상세페이지 */
-    main.sub_menuinfo_main.juice01, main.sub_menuinfo_main.dessert01 {
+    main.sub_menuinfo_main.juice01,
+    main.sub_menuinfo_main.dessert01 {
         height: 1262px;
     }
-    main.sub_menuinfo_main.coffee01{
+
+    main.sub_menuinfo_main.coffee01 {
         height: 1000px;
     }
-    .sub_menuinfo_main .info_cont_wrap{
+
+    .sub_menuinfo_main .info_cont_wrap {
         flex-direction: column;
     }
-    .ingredients{
+
+    .ingredients {
         position: absolute;
         top: 720px;
         left: 50%;
         transform: translate(-50%, 0);
         width: 40%;
     }
-    .sub_menuinfo_main .info_cont_wrap > div:first-of-type{
+
+    .sub_menuinfo_main .info_cont_wrap>div:first-of-type {
         width: 100%;
     }
-    .sub_menuinfo_main .info_cont_wrap h3{
+
+    .sub_menuinfo_main .info_cont_wrap h3 {
         align-items: center;
     }
-    .ingredients .nutri_wrap{
+
+    .ingredients .nutri_wrap {
         flex-direction: column;
-        background:none;
+        background: none;
         width: 100%;
     }
-    .ingredients ul{
+
+    .ingredients ul {
         width: 100%;
     }
 
 
 
     /* news */
-    .sub_news_main .news_cont ul{
+    .sub_news_main .news_cont ul {
         justify-content: center;
     }
 
     /* 뉴스 상세페이지 */
-    .news_view{
+    .news_view {
         max-width: 900px;
     }
-    .news_view img{
+
+    .news_view img {
         height: auto;
         width: 100%;
     }
 
     /* events */
-    .sub_events_main .events_cont ul{
+    .sub_events_main .events_cont ul {
         justify-content: center;
     }
 
     /* 이벤트 상세페이지 */
-    .events_view{
+    .events_view {
         max-width: 900px;
     }
-    .events_view img{
+
+    .events_view img {
         height: auto;
         width: 100%;
     }
 
     /* bitterholic */
-    .sub_bitter_main .bitter_cont1 h2{
+    .sub_bitter_main .bitter_cont1 h2 {
         font-size: 85px;
     }
-    .sub_bitter_main .bitter_cont1{
+
+    .sub_bitter_main .bitter_cont1 {
         flex-direction: column-reverse;
     }
-    .sub_bitter_main .bitter_cont1 img{
+
+    .sub_bitter_main .bitter_cont1 img {
         width: 50%;
     }
-    .sub_bitter_main .bitter_cont1 p{
+
+    .sub_bitter_main .bitter_cont1 p {
         font-size: 18px;
     }
 
@@ -1389,24 +1556,29 @@ body{
 
 
     /* 메뉴 상세페이지 */
-    .ingredients{
+    .ingredients {
         width: 60%;
     }
-    .ingredients .venti{
+
+    .ingredients .venti {
         flex-direction: column;
         align-items: flex-start;
     }
-    .ingredients .venti > dt{
+
+    .ingredients .venti>dt {
         margin-bottom: 15px;
     }
-    .sub_bitter_main .bitter_cont1 h2 span{
+
+    .sub_bitter_main .bitter_cont1 h2 span {
         font-size: 27px;
     }
-    .sub_bitter_main .bitter_cont1 h2{
+
+    .sub_bitter_main .bitter_cont1 h2 {
         font-size: 70px;
         text-align: center;
     }
-    .sub_bitter_main .bitter_cont1 > div > p{
+
+    .sub_bitter_main .bitter_cont1>div>p {
         font-size: 18px;
         text-align: center;
         margin-bottom: 70px;
@@ -1417,10 +1589,12 @@ body{
         background-position: 290px 80px;
         background-size: 270px;
     }
-    .bitter_cont1 > div{
+
+    .bitter_cont1>div {
         width: 100%;
     }
-    .sub_bitter_main .bitter_cont1 .blending_graph{
+
+    .sub_bitter_main .bitter_cont1 .blending_graph {
         justify-content: space-between;
     }
 
