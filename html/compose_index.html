@@ -34,11 +34,36 @@
   <div id="quickmenu"></div>
 
   <main id="main">
-    <section class="" id="max_width">
-      <div>
-
+    <section class="main_banner" id="max_width">
+      <div class="single-item">
+        <div>
+          <a href="#none">
+            <img src="../public/images\main\main_visual/3.jpg" alt="컴포즈 VIP 멤버십">
+          </a>
+        </div>
+        <div>
+          <a href="#none">
+            <img src="../public/images\main\main_visual/4.jpg" alt="간식은 타이밍">
+          </a>
+        </div>
+        <div>
+          <a href="#none">
+            <img src="../public/images\main\main_visual/5.jpg" alt="논산 딸기">
+          </a>
+        </div>
+        <div>
+          <a href="#none">
+            <img src="../public/images\main\main_visual/7.jpg" alt="생초콜릿 라떼">
+          </a>
+        </div>
+        <div>
+          <a href="#none">
+            <img src="../public/images\main\main_visual/6.jpg" alt="컴포즈가 제안하는 세상 쉬운 홈카페">
+          </a>
+        </div>
       </div>
     </section>
+
     <section class="main_link_" id="max_width">
       <div class="main_link_wrap">
         <div class="app_store">
@@ -367,6 +392,7 @@
       // $(this).find("h3").removeClass("on");
     });
 
+    $('.single-item').slick();
 
     $("#header").load("compose_header.html");
 
