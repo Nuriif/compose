@@ -8,12 +8,12 @@ body {
 
 .single-item div {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .single-item img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 /* nuri */

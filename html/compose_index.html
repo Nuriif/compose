@@ -18,6 +18,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+  <!-- Slick JS -->
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script>
     window.addEventListener('scroll', () => {
@@ -37,29 +39,19 @@
     <section class="main_banner" id="max_width">
       <div class="single-item">
         <div>
-          <a href="#none">
-            <img src="../public/images\main\main_visual/3.jpg" alt="컴포즈 VIP 멤버십">
-          </a>
+          <img src="../public/images\main\main_visual/3.jpg" alt="컴포즈 VIP 멤버십">
         </div>
         <div>
-          <a href="#none">
-            <img src="../public/images\main\main_visual/4.jpg" alt="간식은 타이밍">
-          </a>
+          <img src="../public/images\main\main_visual/4.jpg" alt="간식은 타이밍">
         </div>
         <div>
-          <a href="#none">
-            <img src="../public/images\main\main_visual/5.jpg" alt="논산 딸기">
-          </a>
+          <img src="../public/images\main\main_visual/5.jpg" alt="논산 딸기">
         </div>
         <div>
-          <a href="#none">
-            <img src="../public/images\main\main_visual/7.jpg" alt="생초콜릿 라떼">
-          </a>
+          <img src="../public/images\main\main_visual/7.jpg" alt="생초콜릿 라떼">
         </div>
         <div>
-          <a href="#none">
-            <img src="../public/images\main\main_visual/6.jpg" alt="컴포즈가 제안하는 세상 쉬운 홈카페">
-          </a>
+          <img src="../public/images\main\main_visual/6.jpg" alt="컴포즈가 제안하는 세상 쉬운 홈카페">
         </div>
       </div>
     </section>
@@ -392,7 +384,12 @@
       // $(this).find("h3").removeClass("on");
     });
 
-    $('.single-item').slick();
+    $('.single-item').slick({
+      autoplay: true,
+      autoplaySpeed: 2500,
+      dots: true,
+      arrows: false
+    });
 
     $("#header").load("compose_header.html");
 
