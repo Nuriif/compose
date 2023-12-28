@@ -6,6 +6,7 @@ body {
     overflow-x: hidden;
 }
 
+/* main_banner */
 .single-item div {
     width: 100%;
     margin-bottom: 10px;
@@ -17,7 +18,6 @@ body {
 }
 
 /* nuri */
-
 .container {
     /* max-width: 1360px; */
     /* width: 100%; */
@@ -50,6 +50,7 @@ body {
     padding: 10px 0;
     box-sizing: border-box;
     overflow: hidden;
+    margin-bottom: 30px;
 }
 
 .main_link_wrap h2 {
@@ -371,10 +372,7 @@ body {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* moonh */
-
 /* nuri 수정 */
 .compose_sns .slick-prev {
     left: 0;
@@ -784,11 +782,14 @@ body {
     color: white;
 }
 
-
-
 /* inj */
 
-
+/* main_notice */
+.mian_notice_title h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
 
 
 
@@ -1219,43 +1220,32 @@ body {
     .slick-dots {
         position: absolute;
         bottom: -25px;
-
         display: block;
-
         width: 100%;
         padding: 0;
         margin: 0;
-
         list-style: none;
-
         text-align: center;
     }
 
     .slick-dots li {
         position: relative;
-
         display: inline-block;
-
         width: 20px;
         height: 20px;
         margin: 0 5px;
         padding: 0;
-
         cursor: pointer;
     }
 
     .slick-dots li button {
         font-size: 0;
         line-height: 0;
-
         display: block;
-
         width: 20px;
         height: 20px;
         padding: 5px;
-
         cursor: pointer;
-
         color: transparent;
         border: 0;
         outline: none;
@@ -1276,20 +1266,15 @@ body {
         font-family: "slick";
         font-size: 6px;
         line-height: 20px;
-
         position: absolute;
         top: 0;
         left: 0;
-
         width: 20px;
         height: 20px;
-
         content: "•";
         text-align: center;
-
         opacity: 0.25;
         color: black;
-
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
