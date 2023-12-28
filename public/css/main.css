@@ -708,17 +708,12 @@ body {
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
-
-    display: block;
-
+    bottom: 30px;
     width: 100%;
     padding: 0;
     margin: 0;
-
-    list-style: none;
-
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
 }
 
 .slick-dots li {
@@ -764,7 +759,7 @@ body {
 
 .slick-dots li button:before {
     font-family: "slick";
-    font-size: 6px;
+    font-size: 30px;
     line-height: 20px;
 
     position: absolute;
@@ -778,15 +773,15 @@ body {
     text-align: center;
 
     opacity: 0.25;
-    color: black;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: 0.75;
-    color: black;
+    opacity: 0.95;
+    color: white;
 }
 
 
