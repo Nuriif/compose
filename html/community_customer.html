@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>고객의 소리</title>
+  <title>컴포즈커피 - 고객의 소리</title>
 
   <!-- favicon-->
   <link rel="icon" href="../public/i10mages/icon/favicon.ico">
 
   <!-- css -->
   <link rel="stylesheet" href="../public/css/customer.css">
-  
+
   <!-- Font Awesome CSS를 가져옴 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -83,10 +83,10 @@
       </dl>
     </div>
     <div class="join_wrap">
-     
+
       <form action="/register" method="post">
         <fieldset class="essencial">
-          
+
           <div>
             <label for="name">이름 <span class="red_text">(필수)</span></label>
             <input type="text" id="name" name="name" placeholder="이름을 입력해 주세요." required>
@@ -98,28 +98,29 @@
           <div>
             <label for="email">이메일 <span class="gray_text">(선택)</span></label>
             <input type="email" id="email" name="email" placeholder="이메일을 입력해 주세요.">
-          </div>  
-           <div>
+          </div>
+          <div>
             <label for="feedback_type">상담 유형 <span class="red_text">(필수)</span></label>
-          <div class="radio_box">
-           <div class="radio">
-            <input type="radio" name="type" value="good" id="good">
-            <label for="good" role="radio">칭찬</label>
-           </div>
-           <div class="radio">
-            <input type="radio" name="type" value="bad" id="bad">
-            <label for="bad" role="radio">불만</label>
-           </div>
-           <div class="radio">
-            <input type="radio" name="type" value="etc" id="etc">
-            <label for="etc" role="radio">기타문의</label>
-           </div>
-          </div>        
-          </div>           
-         
+            <div class="radio_box">
+              <div class="radio">
+                <input type="radio" name="type" value="good" id="good">
+                <label for="good" role="radio">칭찬</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="type" value="bad" id="bad">
+                <label for="bad" role="radio">불만</label>
+              </div>
+              <div class="radio">
+                <input type="radio" name="type" value="etc" id="etc">
+                <label for="etc" role="radio">기타문의</label>
+              </div>
+            </div>
+          </div>
+
           <div>
             <label for="text">글 내용 입력 <span class="red_text">(필수)</span></label>
-            <textarea class="textarea" name="text" placeholder="내용을 입력해 주세요.(이름, 연락처, 주소, 이메일, 주민등록번호 등 개인정보는 입력하지 않도록 주의하세요.)" required></textarea>
+            <textarea class="textarea" name="text"
+              placeholder="내용을 입력해 주세요.(이름, 연락처, 주소, 이메일, 주민등록번호 등 개인정보는 입력하지 않도록 주의하세요.)" required></textarea>
           </div>
 
           <div>
@@ -130,20 +131,17 @@
               <span>비밀번호는 추후 접수내역 조회 시에 활용되오니, 꼭 기억해 주세요.</span>
             </div>
           </div>
-        
-        
+
         </fieldset>
 
         <fieldset class="terms_box">
           <legend class="hide">약관 동의</legend>
 
           <!-- 전체 동의 -->
-          
-     
 
           <label id="all_agree">
             <input type="checkbox" class="all_agree" required>
-          개인정보 수집 및 이용 동의 <span class="red_text_r">(필수)</span>
+            개인정보 수집 및 이용 동의 <span class="red_text_r">(필수)</span>
           </label>
 
         </fieldset>
@@ -158,7 +156,6 @@
 
 </body>
 
-
 <!-- jquery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -166,7 +163,7 @@
   // On page load
   $(document).ready(function () {
     $(".sub_background").css({
-      "background": "url(../public/images/notice/notice_top_bg.jpg)", //배경이미지 바꾸시면 됩니다
+      "background": "url(../public/images/franchise/26272b85d16c4e08a8ad55f969d44b74.jpg)",
       "background-repeat": "no-repeat",
       "background-position": "center center",
     });

@@ -201,6 +201,10 @@
   margin-top: 10px;
 }
 
+._mc {
+  color: rgb(255, 91, 40);
+}
+
 @media screen and (max-width: 1200px) {
   .store_table .service li {
     width: 50%;
