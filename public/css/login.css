@@ -61,9 +61,9 @@ input[type="password"]:focus {
 }
 
 .fotgot_pw::before {
-    content: '';      
+    content: '';
     display: inline-block;
-    height: 13px;  
+    height: 13px;
     border-left: 1px solid #555555a9;
     vertical-align: middle;
     margin: 0 8px 0 10px;
@@ -89,10 +89,12 @@ input[type="password"]:focus {
 .login_btn_wrap {
     margin-bottom: 70px;
 }
-.sns_login_wrap{
+
+.sns_login_wrap {
     text-align: center;
 }
-.sns_login_title{
+
+.sns_login_title {
     display: inline-block;
     width: 170px;
     color: black;
@@ -100,14 +102,15 @@ input[type="password"]:focus {
     position: relative;
     background: #ffffff;
 }
-.sns_login_title_wrap hr{    
-    border: 1px solid #dddddd41 ;   
+
+.sns_login_title_wrap hr {
+    border: 1px solid #dddddd41;
     position: relative;
     bottom: 25px;
     z-index: -1;
 }
 
-.sns_icon_wrap{
+.sns_icon_wrap {
     width: 270px;
     margin: 30px auto;
     display: flex;
@@ -116,16 +119,17 @@ input[type="password"]:focus {
 }
 
 
-.sns_google_box{
-    width: 60px;    
+.sns_google_box {
+    width: 60px;
     height: 60px;
     border-radius: 50px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;  
+    vertical-align: middle;
 }
-.sns_google_box img{
-    width: 70px;     
+
+.sns_google_box img {
+    width: 70px;
 }
