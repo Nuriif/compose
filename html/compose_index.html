@@ -22,12 +22,11 @@
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <script>
-    window.addEventListener('scroll', () => {
-      if (window.innerHeight > 100) {
-        document.querySelector(".app_store").classList.add("on");
-        document.querySelector(".compose_map").classList.add("on");
-      }
-    });
+    // window.addEventListener('scroll', () => {
+    //   if (window.innerHeight > 100) {
+        
+    //   }
+    // });
   </script>
 </head>
 
@@ -318,6 +317,10 @@
     $(".main_bestmenu_wrap div.center").eq(1).hide();
     $(".main_bestmenu_wrap div.center").eq(2).hide();
     $(".menu_list ul li").eq(0).addClass("on");
+    setTimeout(() => {
+      document.querySelector(".app_store").classList.add("on");
+      document.querySelector(".compose_map").classList.add("on");
+    }, 400);
 
 
     $(".slider").slick({
