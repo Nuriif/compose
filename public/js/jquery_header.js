@@ -3,7 +3,7 @@ $(document).ready(function() {
     if ($(window).width() >= 768) {
       $(".gnb > li:not(#franchise_li), .gnb_bg").hover(
         function() {
-          $(".gnb ul, .gnb_bg").stop().slideDown(500);
+          $(".gnb ul, .gnb_bg").stop().slideDown(350);
         },
         function() {
           $(".gnb ul, .gnb_bg").stop().slideUp(10);
